@@ -4,13 +4,6 @@ import { AppService } from "src/app/_services/app.service";
 import { DataTableDirective } from "angular-datatables";
 import { TranslateService } from "@ngx-translate/core";
 import { Subject } from "rxjs";
-import {
-  FormGroup,
-  FormControl,
-  FormArray,
-  FormBuilder,
-  Validators,
-} from "@angular/forms";
 import Swal from "sweetalert2";
 
 @Component({
@@ -21,20 +14,14 @@ import Swal from "sweetalert2";
 export class ListComponent implements OnInit {
   @ViewChild(DataTableDirective, { static: false })
   public dtElement: DataTableDirective;
-  @ViewChild("modalTambah", { static: true }) public modalTambah: any;
-  @ViewChild("modalEdit", { static: true }) public modalEdit: any;
-  @ViewChild("modalLihatReviewer", { static: true })
-  public modalLihatReviewer: any;
   public dtOptions: any;
-  public dtTrigger = new Subject();
-
-  public loadTable: boolean;
-  public loadingForm: boolean;
-  public listUsers = [];
   public spinnerLoading: boolean;
+  public dtTrigger = new Subject();
+  public loadCard: boolean = false;
+  public loadingForm: boolean = false;
+  public listUsers = [];
 
   constructor(
-    private fb: FormBuilder,
     private broadcasterService: BroadcasterService,
     public translateService: TranslateService,
     private appService: AppService

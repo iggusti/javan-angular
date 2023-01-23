@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col-sm-12">
-    <app-card cardTitle="List" cardClass="card-datatable" headerClass="text-center text-md-left" [hidHeader]="false" [options]="false" [loading]="loadTable">
+    <app-card cardTitle="List" cardClass="card-datatable" headerClass="text-center text-md-left" [hidHeader]="false" [options]="false" [loading]="loadCard">
       <div class="my-3">
         <button type="button" class="btn btn-success" routerLink="/javan/add">
           <i class="fas fa-plus mr-2"></i>{{'ROOT.add' | translate}}
@@ -28,6 +28,7 @@
               <td class="word-wrap">{{item.born_place}}, {{item.born_date_update}}</td>
               <td class="word-wrap">{{item.zip_code}}</td>
               <td>
+                <button type="button" class="btn btn-sm btn-info mt-1 mr-1" title="{{'ROOT.detail' | translate}}" routerLink="/javan/view/{{item.id}}"><i class="feather icon-info"></i></button>
                 <button type="button" class="btn btn-sm btn-warning mt-1 mr-1" title="{{'ROOT.edit' | translate}}" routerLink="/javan/edit/{{item.id}}"><i class="feather icon-edit"></i></button>
                 <button type="button" class="btn btn-sm btn-danger mt-1 mr-1" title="{{'ROOT.delete' | translate}}" (click)="deleteUser(item.id)"><i class="feather icon-trash"></i></button>
               </td>
