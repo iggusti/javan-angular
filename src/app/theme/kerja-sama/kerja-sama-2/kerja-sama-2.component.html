@@ -1,0 +1,68 @@
+<div class="row">
+  <div class="col-12">
+    <app-card [hidHeader]="true" [options]="false" *ngIf="listData?.length != 0">
+      <app-apex-chart chartID="bar-hor" [chartConfig]="chartConfig"></app-apex-chart>
+    </app-card>
+  </div>
+</div>
+<div class="row" id="auto-clicked">
+  <div class="col-12">
+    <app-card cardClass="card-datatable" headerClass="text-center text-md-left" [hidHeader]="true" [options]="false" [loading]="loadCard">
+      <div class="table-responsive pb-1 p-2 page-bg">
+        <table datatable [dtOptions]="dtOptions" class="table table-hover table-bordered display compact" [dtTrigger]="dtTrigger">
+          <thead class="thead-light">
+            <tr>
+              <th></th>
+              <th colspan="11" class="text-center">Kegiatan - Pemberian Reward Program Studi Yang Melaksanakan Kerja
+                Sama MBKM</th>
+            </tr>
+            <tr>
+              <th width="10">No.</th>
+              <th>Program Studi</th>
+              <th class="word-wrap text-center">KKN Tematik</th>
+              <th class="word-wrap text-center">Pertukaran Pelajar</th>
+              <th class="word-wrap text-center">Magang / Praktik Kerja</th>
+              <th class="word-wrap text-center">Asistensi Mengajar</th>
+              <th class="word-wrap text-center">Penelitian / Riset</th>
+              <th class="word-wrap text-center">Proyek Kemanusiaan</th>
+              <th class="word-wrap text-center">Kegiatan Wirausaha</th>
+              <th class="word-wrap text-center">Studi / Proyek Independen</th>
+              <th class="word-wrap text-center">Akumulasi Jumlah Kerja Sama</th>
+            </tr>
+          </thead>
+          <tbody *ngIf="listData?.length != 0">
+            <tr *ngFor="let data of listData; let i = index;">
+              <th>{{i+1}}.</th>
+              <td class="word-wrap">{{data.study_program}}</td>
+              <td class="text-center">{{data.cooperation.kkn_tematik}}</td>
+              <td class="text-center">{{data.cooperation.student_exchange}}</td>
+              <td class="text-center">{{data.cooperation.internship}}</td>
+              <td class="text-center">{{data.cooperation.teaching_assistance}}</td>
+              <td class="text-center">{{data.cooperation.research}}</td>
+              <td class="text-center">{{data.cooperation.humanitarian_project}}</td>
+              <td class="text-center">{{data.cooperation.entrepreneurial_activity}}</td>
+              <td class="text-center">{{data.cooperation.independent_project}}</td>
+              <td class="text-center">{{data.sum_of_cooperation}}</td>
+            </tr>
+          </tbody>
+          <tbody *ngIf="listData?.length == 0 && spinnerLoading">
+            <tr>
+              <td colspan="11" class="no-data-available text-center">
+                <img src='assets/images/infinity-situ.svg'>
+              </td>
+            </tr>
+          </tbody>
+          <tbody *ngIf="listData?.length == 0 && !spinnerLoading">
+            <tr>
+              <td colspan="11" class="no-data-available text-center">
+                <div class="col-12 text-center pt-3 pb-1">
+                  <app-no-data-found></app-no-data-found>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </app-card>
+  </div>
+</div>

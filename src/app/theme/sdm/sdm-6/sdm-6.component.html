@@ -1,0 +1,65 @@
+<div class="row">
+  <div class="col-12">
+    <app-card [hidHeader]="true" [options]="false" *ngIf="listData?.length != 0">
+      <app-apex-chart chartID="bar-hor" [chartConfig]="chartConfig"></app-apex-chart>
+    </app-card>
+  </div>
+</div>
+<div class="row" id="auto-clicked">
+  <div class="col-12">
+    <app-card cardClass="card-datatable" headerClass="text-center text-md-left" [hidHeader]="true" [options]="false" [loading]="loadCard">
+      <div class="table-responsive pb-1 p-2 page-bg">
+        <table datatable [dtOptions]="dtOptions" class="table table-hover table-bordered display compact" [dtTrigger]="dtTrigger">
+          <thead class="thead-light">
+            <tr>
+              <th></th>
+              <th colspan="8" class="text-center">Kegiatan - Jumlah Perolehan Dana Kerja Sama Internasional Dalam Milyar
+                Rupiah (Luar Negeri)</th>
+            </tr>
+            <tr>
+              <th rowspan="2" width="10">No.</th>
+              <th rowspan="2">Fakultas</th>
+              <th colspan="5" class="text-center">Akumulasi Nilai Kontrak Tiap Jenis Mitra</th>
+              <th rowspan="2" class="text-center">Akumulasi Perolehan Dana</th>
+            </tr>
+            <tr>
+              <th class="text-center">Academics</th>
+              <th class="text-center">Business</th>
+              <th class="text-center">Goverment</th>
+              <th class="text-center">Community</th>
+              <th class="text-center">Media</th>
+            </tr>
+          </thead>
+          <tbody *ngIf="listData?.length != 0">
+            <tr *ngFor="let data of listData; let i = index;">
+              <th>{{i+1}}.</th>
+              <td class="word-wrap">{{data.study_program}}</td>
+              <td class="text-center">{{data.contract_value.academics}}</td>
+              <td class="text-center">{{data.contract_value.business}}</td>
+              <td class="text-center">{{data.contract_value.government}}</td>
+              <td class="text-center">{{data.contract_value.community}}</td>
+              <td class="text-center">{{data.contract_value.media}}</td>
+              <td class="text-center">{{data.accumulated_funds}}</td>
+            </tr>
+          </tbody>
+          <tbody *ngIf="listData?.length == 0 && spinnerLoading">
+            <tr>
+              <td colspan="8" class="no-data-available text-center">
+                <img src='assets/images/infinity-situ.svg'>
+              </td>
+            </tr>
+          </tbody>
+          <tbody *ngIf="listData?.length == 0 && !spinnerLoading">
+            <tr>
+              <td colspan="8" class="no-data-available text-center">
+                <div class="col-12 text-center pt-3 pb-1">
+                  <app-no-data-found></app-no-data-found>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </app-card>
+  </div>
+</div>

@@ -1,0 +1,114 @@
+<div class="row">
+  <div class="col-12">
+    <app-card [hidHeader]="true" [options]="false" *ngIf="listData?.length != 0">
+      <app-apex-chart chartID="bar-1" [chartConfig]="chartConfig1"></app-apex-chart>
+    </app-card>
+  </div>
+</div>
+<div class="row" id="auto-clicked">
+  <div class="col-12">
+    <app-card cardClass="card-datatable" headerClass="text-center text-md-left" [hidHeader]="true" [options]="false" [loading]="loadCard">
+      <div class="table-responsive pb-1 p-2 page-bg">
+        <table datatable [dtOptions]="dtOptions" class="table table-hover table-bordered display compact" [dtTrigger]="dtTrigger">
+          <thead class="thead-light">
+            <tr>
+              <th></th>
+              <th colspan="8" class="text-center">Penerimaan Mahasiswa Baru Rekap Umum</th>
+            </tr>
+            <tr>
+              <th width="10">No.</th>
+              <th class="text-center">Tahun</th>
+              <th>Jalur Pendaftaran</th>
+              <th class="text-center">Target Mahasiswa Baru</th>
+              <th class="text-center">Pendaftar Ikut Seleksi</th>
+              <th class="text-center">Pendaftar Lulus Seleksi</th>
+              <th class="text-center">Daftar Ulang</th>
+              <th class="text-center">Mengundurkan Diri</th>
+              <th class="text-center">Keketatan Persaingan</th>
+            </tr>
+          </thead>
+          <tbody *ngIf="listData?.length != 0">
+            <ng-container *ngFor="let data of listData; let i = index;">
+              <tr>
+                <th rowspan="8">{{i+1}}.</th>
+                <td rowspan="8" class="text-center">{{data.year}}</td>
+                <td>{{data.registration_path[0].path_name}}</td>
+                <td rowspan="8" class="text-center">{{data.target_new_student}}</td>
+                <td class="text-center">{{data.registration_path[0].following_selection}}</td>
+                <td class="text-center">{{data.registration_path[0].pass_selection}}</td>
+                <td class="text-center">{{data.registration_path[0].re_registration}}</td>
+                <td class="text-center">{{data.registration_path[0].resign}}</td>
+                <td rowspan="8" class="text-center">{{data.tight_competition}}</td>
+              </tr>
+              <tr>
+                <td>{{data.registration_path[1].path_name}}</td>
+                <td class="text-center">{{data.registration_path[1].following_selection}}</td>
+                <td class="text-center">{{data.registration_path[1].pass_selection}}</td>
+                <td class="text-center">{{data.registration_path[1].re_registration}}</td>
+                <td class="text-center">{{data.registration_path[1].resign}}</td>
+              </tr>
+              <tr>
+                <td>{{data.registration_path[2].path_name}}</td>
+                <td class="text-center">{{data.registration_path[2].following_selection}}</td>
+                <td class="text-center">{{data.registration_path[2].pass_selection}}</td>
+                <td class="text-center">{{data.registration_path[2].re_registration}}</td>
+                <td class="text-center">{{data.registration_path[2].resign}}</td>
+              </tr>
+              <tr>
+                <td>{{data.registration_path[3].path_name}}</td>
+                <td class="text-center">{{data.registration_path[3].following_selection}}</td>
+                <td class="text-center">{{data.registration_path[3].pass_selection}}</td>
+                <td class="text-center">{{data.registration_path[3].re_registration}}</td>
+                <td class="text-center">{{data.registration_path[3].resign}}</td>
+              </tr>
+              <tr>
+                <td>{{data.registration_path[4].path_name}}</td>
+                <td class="text-center">{{data.registration_path[4].following_selection}}</td>
+                <td class="text-center">{{data.registration_path[4].pass_selection}}</td>
+                <td class="text-center">{{data.registration_path[4].re_registration}}</td>
+                <td class="text-center">{{data.registration_path[4].resign}}</td>
+              </tr>
+              <tr>
+                <td>{{data.registration_path[5].path_name}}</td>
+                <td class="text-center">{{data.registration_path[5].following_selection}}</td>
+                <td class="text-center">{{data.registration_path[5].pass_selection}}</td>
+                <td class="text-center">{{data.registration_path[5].re_registration}}</td>
+                <td class="text-center">{{data.registration_path[5].resign}}</td>
+              </tr>
+              <tr>
+                <td>{{data.registration_path[6].path_name}}</td>
+                <td class="text-center">{{data.registration_path[6].following_selection}}</td>
+                <td class="text-center">{{data.registration_path[6].pass_selection}}</td>
+                <td class="text-center">{{data.registration_path[6].re_registration}}</td>
+                <td class="text-center">{{data.registration_path[6].resign}}</td>
+              </tr>
+              <tr>
+                <td>{{data.registration_path[7].path_name}}</td>
+                <td class="text-center">{{data.registration_path[7].following_selection}}</td>
+                <td class="text-center">{{data.registration_path[7].pass_selection}}</td>
+                <td class="text-center">{{data.registration_path[7].re_registration}}</td>
+                <td class="text-center">{{data.registration_path[7].resign}}</td>
+              </tr>
+            </ng-container>
+          </tbody>
+          <tbody *ngIf="listData?.length == 0 && spinnerLoading">
+            <tr>
+              <td colspan="9" class="no-data-available text-center">
+                <img src='assets/images/infinity-situ.svg'>
+              </td>
+            </tr>
+          </tbody>
+          <tbody *ngIf="listData?.length == 0 && !spinnerLoading">
+            <tr>
+              <td colspan="9" class="no-data-available text-center">
+                <div class="col-12 text-center pt-3 pb-1">
+                  <app-no-data-found></app-no-data-found>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </app-card>
+  </div>
+</div>

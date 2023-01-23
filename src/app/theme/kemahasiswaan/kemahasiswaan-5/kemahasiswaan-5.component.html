@@ -1,0 +1,98 @@
+<div class="row">
+  <div class="col-12">
+    <app-card [hidHeader]="true" [options]="false" *ngIf="listData?.length != 0">
+      <app-apex-chart chartID="line" [chartConfig]="chartConfig1"></app-apex-chart>
+    </app-card>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    <app-card [hidHeader]="true" [options]="false" *ngIf="listData?.length != 0">
+      <app-apex-chart chartID="bar-1" [chartConfig]="chartConfig2"></app-apex-chart>
+    </app-card>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    <app-card [hidHeader]="true" [options]="false" *ngIf="listData?.length != 0">
+      <app-apex-chart chartID="bar-2" [chartConfig]="chartConfig3"></app-apex-chart>
+    </app-card>
+  </div>
+</div>
+<div class="row" id="auto-clicked">
+  <div class="col-12">
+    <app-card cardClass="card-datatable" headerClass="text-center text-md-left" [hidHeader]="true" [options]="false"
+              [loading]="loadCard">
+      <div class="table-responsive pb-1 p-2 page-bg">
+        <table datatable [dtOptions]="dtOptions" class="table table-hover table-bordered display compact"
+               [dtTrigger]="dtTrigger">
+          <thead class="thead-light">
+            <tr>
+              <th></th>
+              <th colspan="16" class="text-center">Pengguna Lulusan</th>
+            </tr>
+            <tr>
+              <th width="10" rowspan="2">No.</th>
+              <th rowspan="2">Program Studi</th>
+              <th rowspan="2" class="text-center">Jumlah Responden</th>
+              <th colspan="4" class="text-center">Jenis Perusahaan</th>
+              <th colspan="4" class="text-center">Rata-rata Kepuasan Perusahaan<br>(4 Tahun Terakhir)</th>
+              <th colspan="5" class="text-center">Jabatan Responden</th>
+            </tr>
+            <tr>
+              <th class="text-center">Instansi Pemerintah</th>
+              <th class="text-center">Swasta</th>
+              <th class="text-center">Organisasi Non Profit</th>
+              <th class="text-center">BUMN / BUMD</th>
+              <th class="text-center">2022</th>
+              <th class="text-center">2021</th>
+              <th class="text-center">2020</th>
+              <th class="text-center">2019</th>
+              <th class="text-center">Direktur</th>
+              <th class="text-center">Manager</th>
+              <th class="text-center">Asistem Manager</th>
+              <th class="text-center">Supervisor</th>
+              <th class="text-center">Senior Staff</th>
+            </tr>
+          </thead>
+          <tbody *ngIf="listData?.length != 0">
+            <tr *ngFor="let data of listData; let i = index;">
+              <th>{{i+1}}.</th>
+              <td>{{data.study_program}}</td>
+              <td class="text-center">{{data.respondent_count}}</td>
+              <td class="text-center">{{data.company_type.government}}</td>
+              <td class="text-center">{{data.company_type.swasta}}</td>
+              <td class="text-center">{{data.company_type.non_profit_organization}}</td>
+              <td class="text-center">{{data.company_type.bumn}}</td>
+              <td class="text-center">{{data.average_company_satisfaction["2022"]}}</td>
+              <td class="text-center">{{data.average_company_satisfaction["2021"]}}</td>
+              <td class="text-center">{{data.average_company_satisfaction["2020"]}}</td>
+              <td class="text-center">{{data.average_company_satisfaction["2019"]}}</td>
+              <td class="text-center">{{data.respondent_position.direktur}}</td>
+              <td class="text-center">{{data.respondent_position.manajer}}</td>
+              <td class="text-center">{{data.respondent_position.asisten_manajer}}</td>
+              <td class="text-center">{{data.respondent_position.supervisor}}</td>
+              <td class="text-center">{{data.respondent_position.senior_staff}}</td>
+            </tr>
+          </tbody>
+          <tbody *ngIf="listData?.length == 0 && spinnerLoading">
+            <tr>
+              <td colspan="16" class="no-data-available text-center">
+                <img src='assets/images/infinity-situ.svg'>
+              </td>
+            </tr>
+          </tbody>
+          <tbody *ngIf="listData?.length == 0 && !spinnerLoading">
+            <tr>
+              <td colspan="16" class="no-data-available text-center">
+                <div class="col-12 text-center pt-3 pb-1">
+                  <app-no-data-found></app-no-data-found>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </app-card>
+  </div>
+</div>

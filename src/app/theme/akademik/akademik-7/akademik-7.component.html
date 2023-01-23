@@ -1,0 +1,76 @@
+<div class="row">
+  <div class="col-12">
+    <app-card [hidHeader]="true" [options]="false" *ngIf="listData?.length != 0">
+      <app-apex-chart chartID="bar-hor-1" [chartConfig]="chartConfig1"></app-apex-chart>
+    </app-card>
+  </div>
+</div>
+<div class="row" id="auto-clicked">
+  <div class="col-12">
+    <app-card cardClass="card-datatable" headerClass="text-center text-md-left" [hidHeader]="true" [options]="false" [loading]="loadCard">
+      <div class="table-responsive pb-1 p-2 page-bg">
+        <table datatable [dtOptions]="dtOptions" class="table table-hover table-bordered display compact" [dtTrigger]="dtTrigger">
+          <thead class="thead-light">
+            <tr>
+              <th></th>
+              <th colspan="13" class="text-center">Demografi Mahasiswa Aktif Berdasarkan Kewarganegaraan</th>
+            </tr>
+            <tr>
+              <th rowspan="2" width="10">No.</th>
+              <th rowspan="2">Program Studi</th>
+              <th colspan="11" class="text-center">Kewarganegawaan</th>
+              <th rowspan="2" class="text-center">Total</th>
+            </tr>
+            <tr>
+              <th class="text-center">Indonesia</th>
+              <th class="text-center">Brunei Darussalam</th>
+              <th class="text-center">Malaysia</th>
+              <th class="text-center">Kamboja</th>
+              <th class="text-center">Laos</th>
+              <th class="text-center">Myanmar</th>
+              <th class="text-center">Filipina</th>
+              <th class="text-center">Singapura</th>
+              <th class="text-center">Thailand</th>
+              <th class="text-center">Vietnam</th>
+              <th class="text-center">Lainnya</th>
+            </tr>
+          </thead>
+          <tbody *ngIf="listData?.length != 0">
+            <tr *ngFor="let data of listData; let i = index;">
+              <th>{{i+1}}.</th>
+              <td>{{data.study_program}}</td>
+              <td class="text-center">{{data.cityzenship.indonesia}}</td>
+              <td class="text-center">{{data.cityzenship.brunei}}</td>
+              <td class="text-center">{{data.cityzenship.malaysia}}</td>
+              <td class="text-center">{{data.cityzenship.kamboja}}</td>
+              <td class="text-center">{{data.cityzenship.laos}}</td>
+              <td class="text-center">{{data.cityzenship.myanmar}}</td>
+              <td class="text-center">{{data.cityzenship.filipina}}</td>
+              <td class="text-center">{{data.cityzenship.singapura}}</td>
+              <td class="text-center">{{data.cityzenship.thailand}}</td>
+              <td class="text-center">{{data.cityzenship.vietnam}}</td>
+              <td class="text-center">{{data.cityzenship.other}}</td>
+              <td class="text-center">{{data.total}}</td>
+            </tr>
+          </tbody>
+          <tbody *ngIf="listData?.length == 0 && spinnerLoading">
+            <tr>
+              <td colspan="14" class="no-data-available text-center">
+                <img src='assets/images/infinity-situ.svg'>
+              </td>
+            </tr>
+          </tbody>
+          <tbody *ngIf="listData?.length == 0 && !spinnerLoading">
+            <tr>
+              <td colspan="14" class="no-data-available text-center">
+                <div class="col-12 text-center pt-3 pb-1">
+                  <app-no-data-found></app-no-data-found>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </app-card>
+  </div>
+</div>

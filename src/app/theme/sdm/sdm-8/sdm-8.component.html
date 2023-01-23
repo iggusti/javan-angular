@@ -1,0 +1,53 @@
+<div class="row">
+  <div class="col-12">
+    <app-card [hidHeader]="true" [options]="false" *ngIf="listData?.length != 0">
+      <app-apex-chart chartID="donut" [chartConfig]="chartConfig"></app-apex-chart>
+    </app-card>
+  </div>
+</div>
+<div class="row" id="auto-clicked">
+  <div class="col-12">
+    <app-card cardClass="card-datatable" headerClass="text-center text-md-left" [hidHeader]="true" [options]="false" [loading]="loadCard">
+      <div class="table-responsive pb-1 p-2 page-bg">
+        <table datatable [dtOptions]="dtOptions" class="table table-hover table-bordered display compact" [dtTrigger]="dtTrigger">
+          <thead class="thead-light">
+            <tr>
+              <th></th>
+              <th colspan="4" class="text-center">Kegiatan - Jumlah Dosen Asing</th>
+            </tr>
+            <tr>
+              <th width="10">No.</th>
+              <th class="word-wrap">Nama Mitra / Perguruan Tinggi</th>
+              <th class="word-wrap">Negara Asal</th>
+              <th class="text-center">Jumlah Dosen Asing</th>
+            </tr>
+          </thead>
+          <tbody *ngIf="listData?.length != 0">
+            <tr *ngFor="let data of listData; let i = index;">
+              <th>{{i+1}}.</th>
+              <td class="word-wrap">{{data.university}}</td>
+              <td class="word-wrap">{{data.country}}</td>
+              <td class="text-center">{{data.number_of_lecturer}}</td>
+            </tr>
+          </tbody>
+          <tbody *ngIf="listData?.length == 0 && spinnerLoading">
+            <tr>
+              <td colspan="4" class="no-data-available text-center">
+                <img src='assets/images/infinity-situ.svg'>
+              </td>
+            </tr>
+          </tbody>
+          <tbody *ngIf="listData?.length == 0 && !spinnerLoading">
+            <tr>
+              <td colspan="4" class="no-data-available text-center">
+                <div class="col-12 text-center pt-3 pb-1">
+                  <app-no-data-found></app-no-data-found>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </app-card>
+  </div>
+</div>

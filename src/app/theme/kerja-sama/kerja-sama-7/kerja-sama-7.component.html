@@ -1,0 +1,71 @@
+<div class="row">
+  <div class="col-6">
+    <app-card [hidHeader]="true" [options]="false" *ngIf="listData?.length != 0">
+      <app-apex-chart chartID="polarArea-1" [chartConfig]="chartConfig1"></app-apex-chart>
+    </app-card>
+  </div>
+  <div class="col-6">
+    <app-card [hidHeader]="true" [options]="false" *ngIf="listData?.length != 0">
+      <app-apex-chart chartID="polarArea-2" [chartConfig]="chartConfig2"></app-apex-chart>
+    </app-card>
+  </div>
+</div>
+<div class="row" id="auto-clicked">
+  <div class="col-12">
+    <app-card cardClass="card-datatable" headerClass="text-center text-md-left" [hidHeader]="true" [options]="false" [loading]="loadCard">
+      <div class="table-responsive pb-1 p-2 page-bg">
+        <table datatable [dtOptions]="dtOptions" class="table table-hover table-bordered display compact" [dtTrigger]="dtTrigger">
+          <thead class="thead-light">
+            <tr>
+              <th></th>
+              <th colspan="9" class="text-center">Kegiatan - Jumlah Peserta Internasional Summer Course (Dalam Negeri)</th>
+            </tr>
+            <tr>
+              <th rowspan="2" width="10">No.</th>
+              <th rowspan="2">Kegiatan Summer Course</th>
+              <th colspan="6" class="text-center">Jumlah Peserta Per Lokasi Kegiatan</th>
+              <th rowspan="2" class="text-center">Akumulasi Summer Course</th>
+            </tr>
+            <tr>
+              <th class="text-center">Asia</th>
+              <th class="text-center">Afrika</th>
+              <th class="text-center">Eropa</th>
+              <th class="text-center">Amerika Utara</th>
+              <th class="text-center">Amerika Selatan</th>
+              <th class="text-center">Australia</th>
+            </tr>
+          </thead>
+          <tbody *ngIf="listData?.length != 0">
+            <tr *ngFor="let data of listData; let i = index;">
+              <th>{{i+1}}.</th>
+              <td class="word-wrap">{{data.summer_course_event}}</td>
+              <td class="text-center">{{data.cooperation.asia}}</td>
+              <td class="text-center">{{data.cooperation.afrika}}</td>
+              <td class="text-center">{{data.cooperation.eropa}}</td>
+              <td class="text-center">{{data.cooperation.amerika_utara}}</td>
+              <td class="text-center">{{data.cooperation.amerika_selatan}}</td>
+              <td class="text-center">{{data.cooperation.australia}}</td>
+              <td class="text-center">{{data.accumulated_summer_course}}</td>
+            </tr>
+          </tbody>
+          <tbody *ngIf="listData?.length == 0 && spinnerLoading">
+            <tr>
+              <td colspan="9" class="no-data-available text-center">
+                <img src='assets/images/infinity-situ.svg'>
+              </td>
+            </tr>
+          </tbody>
+          <tbody *ngIf="listData?.length == 0 && !spinnerLoading">
+            <tr>
+              <td colspan="9" class="no-data-available text-center">
+                <div class="col-12 text-center pt-3 pb-1">
+                  <app-no-data-found></app-no-data-found>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </app-card>
+  </div>
+</div>

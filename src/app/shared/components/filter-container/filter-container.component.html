@@ -1,0 +1,11 @@
+<div class="row p-1 border rounded m-0 filter-case align-items-center" [ngClass]="filterClass" [class.card-load]="loading">
+  <div class="col-filter-header">
+    <div class="filter-icon">
+      <i class="icofont icofont-filter"></i> <span> Filter</span>
+    </div>
+  </div>
+  <ng-content></ng-content>
+  <div class="card-loader" *ngIf="loading">
+    <img class="spinner-infinite" src="assets/images/infinity-situ-transp.svg" aria-label="loading">
+  </div>
+</div>

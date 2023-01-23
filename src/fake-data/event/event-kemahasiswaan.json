@@ -1,0 +1,2010 @@
+[
+  {
+    "students_id": "STD-001",
+    "service": "Prestasi Mahasiswa",
+    "information_data": [
+      "Daftar nama mahasiswa berprestasi",
+      "Daftar prestasi mahasiswa"
+    ],
+    "report_document": {
+      "title": "Laporan prestasi mahasiswa per tahun, per fakultas dan per prodi",
+      "data": [
+        "Daftar nama dan jumlah mahasiswa berprestasi",
+        "Daftar jenis dan jumlah prestasi mahasiswa",
+        "Prosentasi jumlah mahasiswa berprestasi dibandingkan dengan jumlah mahasiswa (per prodi, per fakultas dan Universitas)"
+      ]
+    },
+    "dashboard_model": {
+      "use_table": true,
+      "chart_type": [
+        {
+          "purpose": "Jml prestasi per prodi",
+          "type": "Bar"
+        },
+        {
+          "purpose": "Prestasi per tahun",
+          "type": "Line"
+        }
+      ],
+      "cluster": "Prodi Fakultas"
+    },
+    "data": [
+      {
+        "study_program": "S1 Kedokteran Gigi",
+        "active_student_count": 600,
+        "kemendikbudristek_competitions_count": 30,
+        "kemendikbudristek_outstanding_student_count": 90,
+        "independent_competitions_count": 20,
+        "independent_outstanding_student_count": 60,
+        "ratio_outstanding_student": 15
+      },
+      {
+        "study_program": "S1 Teknik Elektro",
+        "active_student_count": 500,
+        "kemendikbudristek_competitions_count": 25,
+        "kemendikbudristek_outstanding_student_count": 75,
+        "independent_competitions_count": 15,
+        "independent_outstanding_student_count": 45,
+        "ratio_outstanding_student": 20
+      },
+      {
+        "study_program": "S1 Teknik Mesin",
+        "active_student_count": 1000,
+        "kemendikbudristek_competitions_count": 30,
+        "kemendikbudristek_outstanding_student_count": 90,
+        "independent_competitions_count": 20,
+        "independent_outstanding_student_count": 60,
+        "ratio_outstanding_student": 12
+      },
+      {
+        "study_program": "S1 Teknik Sipil",
+        "active_student_count": 800,
+        "kemendikbudristek_competitions_count": 40,
+        "kemendikbudristek_outstanding_student_count": 120,
+        "independent_competitions_count": 30,
+        "independent_outstanding_student_count": 90,
+        "ratio_outstanding_student": 12.5
+      },
+      {
+        "study_program": "S1 Teknik Industri",
+        "active_student_count": 1500,
+        "kemendikbudristek_competitions_count": 50,
+        "kemendikbudristek_outstanding_student_count": 150,
+        "independent_competitions_count": 25,
+        "independent_outstanding_student_count": 75,
+        "ratio_outstanding_student": 14
+      },
+      {
+        "study_program": "S1 Teknik Informatika",
+        "active_student_count": 1000,
+        "kemendikbudristek_competitions_count": 40,
+        "kemendikbudristek_outstanding_student_count": 120,
+        "independent_competitions_count": 20,
+        "independent_outstanding_student_count": 60,
+        "ratio_outstanding_student": 16
+      },
+      {
+        "study_program": "S1 Teknik Kimia",
+        "active_student_count": 1000,
+        "kemendikbudristek_competitions_count": 35,
+        "kemendikbudristek_outstanding_student_count": 105,
+        "independent_competitions_count": 20,
+        "independent_outstanding_student_count": 60,
+        "ratio_outstanding_student": 14
+      },
+      {
+        "study_program": "S1 Teknik Lingkungan",
+        "active_student_count": 1500,
+        "kemendikbudristek_competitions_count": 45,
+        "kemendikbudristek_outstanding_student_count": 135,
+        "independent_competitions_count": 25,
+        "independent_outstanding_student_count": 75,
+        "ratio_outstanding_student": 10
+      },
+      {
+        "study_program": "S1 Teknik Pertambangan",
+        "active_student_count": 2000,
+        "kemendikbudristek_competitions_count": 80,
+        "kemendikbudristek_outstanding_student_count": 240,
+        "independent_competitions_count": 45,
+        "independent_outstanding_student_count": 135,
+        "ratio_outstanding_student": 15
+      },
+      {
+        "study_program": "S1 Teknik Geologi",
+        "active_student_count": 1500,
+        "kemendikbudristek_competitions_count": 60,
+        "kemendikbudristek_outstanding_student_count": 180,
+        "independent_competitions_count": 35,
+        "independent_outstanding_student_count": 105,
+        "ratio_outstanding_student": 12
+      },
+      {
+        "study_program": "S1 Sistem Informasi",
+        "active_student_count": 1000,
+        "kemendikbudristek_competitions_count": 40,
+        "kemendikbudristek_outstanding_student_count": 120,
+        "independent_competitions_count": 25,
+        "independent_outstanding_student_count": 75,
+        "ratio_outstanding_student": 10
+      },
+      {
+        "study_program": "S1 Manajemen",
+        "active_student_count": 2000,
+        "kemendikbudristek_competitions_count": 100,
+        "kemendikbudristek_outstanding_student_count": 300,
+        "independent_competitions_count": 60,
+        "independent_outstanding_student_count": 180,
+        "ratio_outstanding_student": 15
+      },
+      {
+        "study_program": "S1 Akuntansi",
+        "active_student_count": 1000,
+        "kemendikbudristek_competitions_count": 50,
+        "kemendikbudristek_outstanding_student_count": 150,
+        "independent_competitions_count": 30,
+        "independent_outstanding_student_count": 90,
+        "ratio_outstanding_student": 15
+      },
+      {
+        "study_program": "S1 Psikologi",
+        "active_student_count": 1500,
+        "kemendikbudristek_competitions_count": 75,
+        "kemendikbudristek_outstanding_student_count": 225,
+        "independent_competitions_count": 45,
+        "independent_outstanding_student_count": 135,
+        "ratio_outstanding_student": 20
+      },
+      {
+        "study_program": "S1 Farmasi",
+        "active_student_count": 2000,
+        "kemendikbudristek_competitions_count": 120,
+        "kemendikbudristek_outstanding_student_count": 360,
+        "independent_competitions_count": 60,
+        "independent_outstanding_student_count": 180,
+        "ratio_outstanding_student": 18
+      }
+    ]
+  },
+  {
+    "students_id": "STD-002",
+    "service": "Organisasi Mahasiswa",
+    "information_data": [
+      "Daftar Unit Kegiatan Mahasiswa (UKM) : nama UKM, Pembina, Pengurus, dan anggota",
+      "Program kegiatan/kerja UKM",
+      "Daftar pendanaan UKM"
+    ],
+    "report_document": {
+      "title": "Laporan Unit Kegiatan Mahasiswa",
+      "data": [
+        "Daftar nama UKM",
+        "Penilaian kinerja UKM sesuai dengan program kerja",
+        "Daftar prestasi UKM (keikutsertaan Kompetisi)",
+        "Prosentasi pendanaan tiap UKM"
+      ]
+    },
+    "dashboard_model": {
+      "use_table": true,
+      "chart_type": [
+        {
+          "purpose": "Jml prestasi per ormawa",
+          "type": "Treemap"
+        },
+        {
+          "purpose": "Jml pendanaan per ormawa",
+          "type": "Treemap"
+        },
+        {
+          "purpose": "Penilaian kinerja per ormawa",
+          "type": "Bar"
+        }
+      ],
+      "cluster": "Ormawa"
+    },
+    "data": [
+      {
+        "ormawa": "HMTC (Himpunan Mahasiswa Teknik Sipil)",
+        "singkatan": "HMTC",
+        "event_count": 50,
+        "total_funding": 60750000,
+        "performance_assessment": 70
+      },
+      {
+        "ormawa": "HMFE (Himpunan Mahasiswa Fakultas Ekonomi)",
+        "singkatan": "HMFE",
+        "event_count": 45,
+        "total_funding": 55650000,
+        "performance_assessment": 65
+      },
+      {
+        "ormawa": "HMSI (Himpunan Mahasiswa Sistem Informasi)",
+        "singkatan": "HMSI",
+        "event_count": 50,
+        "total_funding": 60150000,
+        "performance_assessment": 70
+      },
+      {
+        "ormawa": "HMTM (Himpunan Mahasiswa Teknik Mesin)",
+        "singkatan": "HMTM",
+        "event_count": 55,
+        "total_funding": 65000000,
+        "performance_assessment": 75
+      },
+      {
+        "ormawa": "HMTE (Himpunan Mahasiswa Teknik Elektro)",
+        "singkatan": "HMTE",
+        "event_count": 60,
+        "total_funding": 70850000,
+        "performance_assessment": 80
+      },
+      {
+        "ormawa": "HMTF (Himpunan Mahasiswa Teknik Fisika)",
+        "singkatan": "HMTF",
+        "event_count": 65,
+        "total_funding": 75000000,
+        "performance_assessment": 85
+      },
+      {
+        "ormawa": "HMBI (Himpunan Mahasiswa Biologi)",
+        "singkatan": "HMBI",
+        "event_count": 70,
+        "total_funding": 80150000,
+        "performance_assessment": 90
+      },
+      {
+        "ormawa": "HMKM (Himpunan Mahasiswa Kimia)",
+        "singkatan": "HMKM",
+        "event_count": 75,
+        "total_funding": 85100000,
+        "performance_assessment": 95
+      },
+      {
+        "ormawa": "HMTI (Himpunan Mahasiswa Teknik Informatika)",
+        "singkatan": "HMTI",
+        "event_count": 80,
+        "total_funding": 83500000,
+        "performance_assessment": 83
+      },
+      {
+        "ormawa": "HMFST (Himpunan Mahasiswa Fakultas Sains dan Teknologi)",
+        "singkatan": "HMFST",
+        "event_count": 85,
+        "total_funding": 76500000,
+        "performance_assessment": 95
+      },
+      {
+        "ormawa": "HMPK (Himpunan Mahasiswa Pendidikan Kesehatan)",
+        "singkatan": "HMPK",
+        "event_count": 90,
+        "total_funding": 55000000,
+        "performance_assessment": 65
+      },
+      {
+        "ormawa": "HMSDN (Himpunan Mahasiswa Sains dan Teknologi Keperawatan)",
+        "singkatan": "HMSDN",
+        "event_count": 95,
+        "total_funding": 65550000,
+        "performance_assessment": 70
+      },
+      {
+        "ormawa": "HMPSI (Himpunan Mahasiswa Psikologi)",
+        "singkatan": "HMPSI",
+        "event_count": 100,
+        "total_funding": 73150000,
+        "performance_assessment": 80
+      },
+      {
+        "ormawa": "HMJM (Himpunan Mahasiswa Jurusan Matematika)",
+        "singkatan": "HMJM",
+        "event_count": 110,
+        "total_funding": 81750000,
+        "performance_assessment": 65
+      },
+      {
+        "ormawa": "HMPI (Himpunan Mahasiswa Pendidikan Islam)",
+        "singkatan": "HMPI",
+        "event_count": 120,
+        "total_funding": 67500000,
+        "performance_assessment": 70
+      }
+    ]
+  },
+  {
+    "students_id": "STD-003",
+    "service": "Beasiswa",
+    "information_data": [
+      "Mitra pemberi beasiswa",
+      "Besaran beasiswa",
+      "Durasi pemberian beasiswa",
+      "Daftar penerima beasiswa"
+    ],
+    "report_document": {
+      "title": "Laporan beasiswa per semester dan per tahun",
+      "data": [
+        "Daftar nama dan Jumlah penerima beasiswa",
+        "Rata – rata dan total jumlah beasiswa",
+        "Daftar nama dan jumlah mitra pemberi beasiswa",
+        "Surat Keputusan distribusi/penerimaan beasiswa"
+      ]
+    },
+    "dashboard_model": {
+      "use_table": true,
+      "chart_type": [
+        {
+          "purpose": "Jml beasiswa per fakultas",
+          "type": "Bar"
+        },
+        {
+          "purpose": "Jml mahasiswa penerima beasiswa",
+          "type": "Bar"
+        },
+        {
+          "purpose": "Jml beasiswa per tahun",
+          "type": "Bar"
+        }
+      ],
+      "cluster": "Fakultas Tahun"
+    },
+    "data": [
+      {
+        "faculty": "Fakultas Kedokteran",
+        "internal_scholarship": 103506525,
+        "internal_scholarship_student": 428,
+        "external_scholarship": 122522290,
+        "external_scholarship_student": 551,
+        "average_gpa": 3.89
+      },
+      {
+        "faculty": "Fakultas Pertanian",
+        "internal_scholarship": 82905382,
+        "internal_scholarship_student": 325,
+        "external_scholarship": 103221596,
+        "external_scholarship_student": 423,
+        "average_gpa": 3.79
+      },
+      {
+        "faculty": "Fakultas Ilmu Budaya",
+        "internal_scholarship": 94560200,
+        "internal_scholarship_student": 368,
+        "external_scholarship": 116286400,
+        "external_scholarship_student": 471,
+        "average_gpa": 3.82
+      },
+      {
+        "faculty": "Fakultas Matematika dan IPA",
+        "internal_scholarship": 101607000,
+        "internal_scholarship_student": 400,
+        "external_scholarship": 125879000,
+        "external_scholarship_student": 500,
+        "average_gpa": 3.85
+      },
+      {
+        "faculty": "Fakultas Ilmu Sosial dan Ilmu Politik",
+        "internal_scholarship": 110135500,
+        "internal_scholarship_student": 432,
+        "external_scholarship": 134423100,
+        "external_scholarship_student": 529,
+        "average_gpa": 3.85
+      },
+      {
+        "faculty": "Fakultas Kesehatan Masyarakat",
+        "internal_scholarship": 118663950,
+        "internal_scholarship_student": 465,
+        "external_scholarship": 144827140,
+        "external_scholarship_student": 573,
+        "average_gpa": 3.88
+      },
+      {
+        "faculty": "Fakultas Keperawatan",
+        "internal_scholarship": 127213400,
+        "internal_scholarship_student": 498,
+        "external_scholarship": 153966120,
+        "external_scholarship_student": 623,
+        "average_gpa": 3.9
+      },
+      {
+        "faculty": "Fakultas Psikologi",
+        "internal_scholarship": 135772850,
+        "internal_scholarship_student": 532,
+        "external_scholarship": 164727420,
+        "external_scholarship_student": 674,
+        "average_gpa": 3.8
+      },
+      {
+        "faculty": "Fakultas Ilmu Komputer dan Teknologi Informasi",
+        "internal_scholarship": 144342300,
+        "internal_scholarship_student": 566,
+        "external_scholarship": 174786880,
+        "external_scholarship_student": 727,
+        "average_gpa": 3.84
+      },
+      {
+        "faculty": "Fakultas Farmasi",
+        "internal_scholarship": 152911750,
+        "internal_scholarship_student": 600,
+        "external_scholarship": 184894110,
+        "external_scholarship_student": 781,
+        "average_gpa": 3.82
+      },
+      {
+        "faculty": "Fakultas Kehutanan",
+        "internal_scholarship": 161481200,
+        "internal_scholarship_student": 635,
+        "external_scholarship": 194976320,
+        "external_scholarship_student": 836,
+        "average_gpa": 3.75
+      },
+      {
+        "faculty": "Sekolah Pascasarjana",
+        "internal_scholarship": 170061050,
+        "internal_scholarship_student": 670,
+        "external_scholarship": 204587330,
+        "external_scholarship_student": 894,
+        "average_gpa": 3.85
+      },
+      {
+        "faculty": "Fakultas Kedokteran Gigi",
+        "internal_scholarship": 178630500,
+        "internal_scholarship_student": 706,
+        "external_scholarship": 214156780,
+        "external_scholarship_student": 951,
+        "average_gpa": 3.8
+      },
+      {
+        "faculty": "Fakultas Ekonomi dan Bisnis",
+        "internal_scholarship": 187199950,
+        "internal_scholarship_student": 743,
+        "external_scholarship": 222919940,
+        "external_scholarship_student": 1010,
+        "average_gpa": 3.76
+      },
+      {
+        "faculty": "Fakultas Teknik",
+        "internal_scholarship": 195769400,
+        "internal_scholarship_student": 780,
+        "external_scholarship": 234723280,
+        "external_scholarship_student": 1071,
+        "average_gpa": 3.8
+      },
+      {
+        "faculty": "Fakultas Hukum",
+        "internal_scholarship": 204338850,
+        "internal_scholarship_student": 818,
+        "external_scholarship": 247426360,
+        "external_scholarship_student": 1131,
+        "average_gpa": 3.82
+      }
+    ]
+  },
+  {
+    "students_id": "STD-004",
+    "service": "Tracer Study",
+    "information_data": [
+      "Data alumni",
+      "Jawaban seluruh pertanyaan DIKTI",
+      "Jawaban seluruh pertanyaan Universitas",
+      "Jawaban seluruh pertanyaan Fakultas dan Prodi"
+    ],
+    "report_document": {
+      "title": "Laporan tracer study",
+      "data": [
+        "Respon Rate",
+        "Klasifikasi Data Alumni",
+        "Persentase Data Alumni",
+        "Jumlah data alumni per Fakultas",
+        "Linier Profil Lulusan dengan Kebutuhan Stakeholder"
+      ]
+    },
+    "dashboard_model": {
+      "use_table": true,
+      "chart_type": [
+        {
+          "purpose": "Kondisi lulusan",
+          "type": "Bar"
+        },
+        {
+          "purpose": "Jenis Prsh Tmp Krj",
+          "type": "Bar"
+        },
+        {
+          "purpose": "Linieritas dgn Stakeholder",
+          "type": "Bar"
+        },
+        {
+          "purpose": "PT Studi Lanjut",
+          "type": "Bar"
+        },
+        {
+          "purpose": "Jml Alumni",
+          "type": "Bar"
+        }
+      ],
+      "cluster": "Fakultas"
+    },
+    "data": [
+      {
+        "faculty": "Fakultas Kedokteran",
+        "alumni_count": 2500,
+        "graduate_condition": {
+          "working": 500,
+          "entrepreneur": 30,
+          "continuing_study": 120,
+          "not_yet_working": 185
+        },
+        "company_type": {
+          "government": 140,
+          "non_profit_organization": 160,
+          "swasta": 123,
+          "own_company": 12,
+          "bumn": 56
+        },
+        "linearity": {
+          "very_tight": 145,
+          "tightly": 235,
+          "enough_tight": 90,
+          "less_tight": 35
+        },
+        "graduate_pt": {
+          "ptn": 50,
+          "pts": 60,
+          "pt_ln": 10
+        }
+      },
+      {
+        "faculty": "Fakultas Hukum",
+        "alumni_count": 2300,
+        "graduate_condition": {
+          "working": 460,
+          "entrepreneur": 28,
+          "continuing_study": 110,
+          "not_yet_working": 170
+        },
+        "company_type": {
+          "government": 128,
+          "non_profit_organization": 146,
+          "swasta": 111,
+          "own_company": 11,
+          "bumn": 50
+        },
+        "linearity": {
+          "very_tight": 131,
+          "tightly": 214,
+          "enough_tight": 82,
+          "less_tight": 32
+        },
+        "graduate_pt": {
+          "ptn": 45,
+          "pts": 54,
+          "pt_ln": 19
+        }
+      },
+      {
+        "faculty": "Fakultas Pertanian",
+        "alumni_count": 2000,
+        "graduate_condition": {
+          "working": 420,
+          "entrepreneur": 44,
+          "continuing_study": 96,
+          "not_yet_working": 144
+        },
+        "company_type": {
+          "government": 112,
+          "non_profit_organization": 128,
+          "swasta": 93,
+          "own_company": 9,
+          "bumn": 40
+        },
+        "linearity": {
+          "very_tight": 108,
+          "tightly": 182,
+          "enough_tight": 68,
+          "less_tight": 26
+        },
+        "graduate_pt": {
+          "ptn": 36,
+          "pts": 43,
+          "pt_ln": 17
+        }
+      },
+      {
+        "faculty": "Fakultas Teknik",
+        "alumni_count": 2750,
+        "graduate_condition": {
+          "working": 550,
+          "entrepreneur": 33,
+          "continuing_study": 135,
+          "not_yet_working": 203
+        },
+        "company_type": {
+          "government": 154,
+          "non_profit_organization": 97,
+          "swasta": 90,
+          "own_company": 12,
+          "bumn": 32
+        },
+        "linearity": {
+          "very_tight": 110,
+          "tightly": 178,
+          "enough_tight": 38,
+          "less_tight": 25
+        },
+        "graduate_pt": {
+          "ptn": 40,
+          "pts": 38,
+          "pt_ln": 19
+        }
+      },
+      {
+        "faculty": "Fakultas Ekonomi dan Bisnis",
+        "alumni_count": 2800,
+        "graduate_condition": {
+          "working": 560,
+          "entrepreneur": 34,
+          "continuing_study": 140,
+          "not_yet_working": 206
+        },
+        "company_type": {
+          "government": 158,
+          "non_profit_organization": 168,
+          "swasta": 123,
+          "own_company": 13,
+          "bumn": 58
+        },
+        "linearity": {
+          "very_tight": 150,
+          "tightly": 238,
+          "enough_tight": 94,
+          "less_tight": 36
+        },
+        "graduate_pt": {
+          "ptn": 52,
+          "pts": 62,
+          "pt_ln": 11
+        }
+      },
+      {
+        "faculty": "Fakultas Kedokteran Gigi",
+        "alumni_count": 2400,
+        "graduate_condition": {
+          "working": 480,
+          "entrepreneur": 29,
+          "continuing_study": 115,
+          "not_yet_working": 177
+        },
+        "company_type": {
+          "government": 136,
+          "non_profit_organization": 156,
+          "swasta": 117,
+          "own_company": 11,
+          "bumn": 53
+        },
+        "linearity": {
+          "very_tight": 141,
+          "tightly": 227,
+          "enough_tight": 87,
+          "less_tight": 34
+        },
+        "graduate_pt": {
+          "ptn": 48,
+          "pts": 57,
+          "pt_ln": 10
+        }
+      },
+      {
+        "faculty": "Fakultas Ilmu Budaya",
+        "alumni_count": 2100,
+        "graduate_condition": {
+          "working": 420,
+          "entrepreneur": 26,
+          "continuing_study": 105,
+          "not_yet_working": 154
+        },
+        "company_type": {
+          "government": 122,
+          "non_profit_organization": 142,
+          "swasta": 101,
+          "own_company": 10,
+          "bumn": 46
+        },
+        "linearity": {
+          "very_tight": 123,
+          "tightly": 201,
+          "enough_tight": 75,
+          "less_tight": 29
+        },
+        "graduate_pt": {
+          "ptn": 42,
+          "pts": 49,
+          "pt_ln": 18
+        }
+      },
+      {
+        "faculty": "Fakultas Matematika dan IPA",
+        "alumni_count": 2650,
+        "graduate_condition": {
+          "working": 530,
+          "entrepreneur": 32,
+          "continuing_study": 130,
+          "not_yet_working": 195
+        },
+        "company_type": {
+          "government": 148,
+          "non_profit_organization": 164,
+          "swasta": 120,
+          "own_company": 12,
+          "bumn": 50
+        },
+        "linearity": {
+          "very_tight": 115,
+          "tightly": 212,
+          "enough_tight": 85,
+          "less_tight": 24
+        },
+        "graduate_pt": {
+          "ptn": 36,
+          "pts": 52,
+          "pt_ln": 12
+        }
+      },
+      {
+        "faculty": "Fakultas Ilmu Sosial dan Ilmu Politik",
+        "alumni_count": 2200,
+        "graduate_condition": {
+          "working": 440,
+          "entrepreneur": 27,
+          "continuing_study": 110,
+          "not_yet_working": 162
+        },
+        "company_type": {
+          "government": 124,
+          "non_profit_organization": 144,
+          "swasta": 103,
+          "own_company": 10,
+          "bumn": 47
+        },
+        "linearity": {
+          "very_tight": 126,
+          "tightly": 204,
+          "enough_tight": 76,
+          "less_tight": 29
+        },
+        "graduate_pt": {
+          "ptn": 43,
+          "pts": 50,
+          "pt_ln": 18
+        }
+      },
+      {
+        "faculty": "Fakultas Kesehatan Masyarakat",
+        "alumni_count": 2350,
+        "graduate_condition": {
+          "working": 470,
+          "entrepreneur": 29,
+          "continuing_study": 118,
+          "not_yet_working": 173
+        },
+        "company_type": {
+          "government": 138,
+          "non_profit_organization": 158,
+          "swasta": 115,
+          "own_company": 11,
+          "bumn": 53
+        },
+        "linearity": {
+          "very_tight": 144,
+          "tightly": 231,
+          "enough_tight": 89,
+          "less_tight": 35
+        },
+        "graduate_pt": {
+          "ptn": 49,
+          "pts": 58,
+          "pt_ln": 10
+        }
+      },
+      {
+        "faculty": "Fakultas Farmasi",
+        "alumni_count": 2450,
+        "graduate_condition": {
+          "working": 490,
+          "entrepreneur": 30,
+          "continuing_study": 122,
+          "not_yet_working": 180
+        },
+        "company_type": {
+          "government": 143,
+          "non_profit_organization": 163,
+          "swasta": 121,
+          "own_company": 12,
+          "bumn": 55
+        },
+        "linearity": {
+          "very_tight": 147,
+          "tightly": 237,
+          "enough_tight": 92,
+          "less_tight": 36
+        },
+        "graduate_pt": {
+          "ptn": 51,
+          "pts": 61,
+          "pt_ln": 11
+        }
+      },
+      {
+        "faculty": "Fakultas Kehutanan",
+        "alumni_count": 2150,
+        "graduate_condition": {
+          "working": 430,
+          "entrepreneur": 26,
+          "continuing_study": 104,
+          "not_yet_working": 159
+        },
+        "company_type": {
+          "government": 121,
+          "non_profit_organization": 141,
+          "swasta": 98,
+          "own_company": 9,
+          "bumn": 44
+        },
+        "linearity": {
+          "very_tight": 120,
+          "tightly": 195,
+          "enough_tight": 72,
+          "less_tight": 28
+        },
+        "graduate_pt": {
+          "ptn": 41,
+          "pts": 49,
+          "pt_ln": 18
+        }
+      },
+      {
+        "faculty": "Sekolah Pascasarjana",
+        "alumni_count": 2400,
+        "graduate_condition": {
+          "working": 480,
+          "entrepreneur": 29,
+          "continuing_study": 115,
+          "not_yet_working": 177
+        },
+        "company_type": {
+          "government": 136,
+          "non_profit_organization": 156,
+          "swasta": 117,
+          "own_company": 11,
+          "bumn": 53
+        },
+        "linearity": {
+          "very_tight": 141,
+          "tightly": 227,
+          "enough_tight": 87,
+          "less_tight": 30
+        },
+        "graduate_pt": {
+          "ptn": 37,
+          "pts": 42,
+          "pt_ln": 14
+        }
+      },
+      {
+        "faculty": "Fakultas Ilmu Komputer dan Teknologi Informasi",
+        "alumni_count": 2150,
+        "graduate_condition": {
+          "working": 430,
+          "entrepreneur": 26,
+          "continuing_study": 105,
+          "not_yet_working": 158
+        },
+        "company_type": {
+          "government": 122,
+          "non_profit_organization": 140,
+          "swasta": 100,
+          "own_company": 9,
+          "bumn": 45
+        },
+        "linearity": {
+          "very_tight": 120,
+          "tightly": 196,
+          "enough_tight": 72,
+          "less_tight": 28
+        },
+        "graduate_pt": {
+          "ptn": 44,
+          "pts": 52,
+          "pt_ln": 18
+        }
+      },
+      {
+        "faculty": "Fakultas Keperawatan",
+        "alumni_count": 2000,
+        "graduate_condition": {
+          "working": 420,
+          "entrepreneur": 44,
+          "continuing_study": 96,
+          "not_yet_working": 144
+        },
+        "company_type": {
+          "government": 128,
+          "non_profit_organization": 152,
+          "swasta": 118,
+          "own_company": 11,
+          "bumn": 49
+        },
+        "linearity": {
+          "very_tight": 129,
+          "tightly": 209,
+          "enough_tight": 80,
+          "less_tight": 31
+        },
+        "graduate_pt": {
+          "ptn": 46,
+          "pts": 54,
+          "pt_ln": 19
+        }
+      }
+    ]
+  },
+  {
+    "students_id": "STD-005",
+    "service": "Pengguna Lulusan",
+    "information_data": [
+      "Daftar perusahaan tempat bekerja alumni",
+      "Nama atasan langsung alumni",
+      "Survey kepuasan pengguna lulusan"
+    ],
+    "report_document": {
+      "title": "Laporan pengguna lulusan",
+      "data": [
+        "Daftar perusahaan tempat bekerja alumni",
+        "Hasil survey pengguna lulusan"
+      ]
+    },
+    "dashboard_model": {
+      "use_table": true,
+      "chart_type": [
+        {
+          "purpose": "Rata-rata kepuasan prshn",
+          "type": "Line Series"
+        },
+        {
+          "purpose": "Jenis perusahaan",
+          "type": "Bar"
+        },
+        {
+          "purpose": "Jabatan responden",
+          "type": "Bar"
+        }
+      ],
+      "cluster": "Fakultas"
+    },
+    "data": [
+      {
+        "study_program": "S1 Sistem Informasi",
+        "respondent_count": 40,
+        "company_type": {
+          "government": 10,
+          "swasta": 14,
+          "non_profit_organization": 12,
+          "bumn": 12
+        },
+        "average_company_satisfaction": {
+          "2019": "90%",
+          "2020": "93%",
+          "2021": "94%",
+          "2022": "98%"
+        },
+        "respondent_position": {
+          "direktur": 6,
+          "manajer": 10,
+          "asisten_manajer": 10,
+          "supervisor": 15,
+          "senior_staff": 10
+        }
+      },
+      {
+        "study_program": "S1 Teknik Elektro",
+        "respondent_count": 50,
+        "company_type": {
+          "government": 20,
+          "swasta": 16,
+          "non_profit_organization": 25,
+          "bumn": 25
+        },
+        "average_company_satisfaction": {
+          "2019": "88%",
+          "2020": "91%",
+          "2021": "95%",
+          "2022": "98%"
+        },
+        "respondent_position": {
+          "direktur": 8,
+          "manajer": 16,
+          "asisten_manajer": 13,
+          "supervisor": 29,
+          "senior_staff": 15
+        }
+      },
+      {
+        "study_program": "S1 Teknik Sipil",
+        "respondent_count": 35,
+        "company_type": {
+          "government": 13,
+          "swasta": 25,
+          "non_profit_organization": 35,
+          "bumn": 25
+        },
+        "average_company_satisfaction": {
+          "2019": "86%",
+          "2020": "90%",
+          "2021": "93%",
+          "2022": "96%"
+        },
+        "respondent_position": {
+          "direktur": 10,
+          "manajer": 20,
+          "asisten_manajer": 15,
+          "supervisor": 20,
+          "senior_staff": 10
+        }
+      },
+      {
+        "study_program": "S1 Teknik Mesin",
+        "respondent_count": 30,
+        "company_type": {
+          "government": 26,
+          "swasta": 35,
+          "non_profit_organization": 14,
+          "bumn": 12
+        },
+        "average_company_satisfaction": {
+          "2019": "92%",
+          "2020": "94%",
+          "2021": "96%",
+          "2022": "98%"
+        },
+        "respondent_position": {
+          "direktur": 9,
+          "manajer": 15,
+          "asisten_manajer": 27,
+          "supervisor": 10,
+          "senior_staff": 15
+        }
+      },
+      {
+        "study_program": "S1 Akuntansi",
+        "respondent_count": 45,
+        "company_type": {
+          "government": 11,
+          "swasta": 23,
+          "non_profit_organization": 16,
+          "bumn": 17
+        },
+        "average_company_satisfaction": {
+          "2019": "86%",
+          "2020": "91%",
+          "2021": "95%",
+          "2022": "97%"
+        },
+        "respondent_position": {
+          "direktur": 7,
+          "manajer": 22,
+          "asisten_manajer": 14,
+          "supervisor": 27,
+          "senior_staff": 29
+        }
+      },
+      {
+        "study_program": "S1 Ilmu Hukum",
+        "respondent_count": 40,
+        "company_type": {
+          "government": 25,
+          "swasta": 17,
+          "non_profit_organization": 22,
+          "bumn": 14
+        },
+        "average_company_satisfaction": {
+          "2019": "90%",
+          "2020": "93%",
+          "2021": "94%",
+          "2022": "98%"
+        },
+        "respondent_position": {
+          "direktur": 7,
+          "manajer": 12,
+          "asisten_manajer": 15,
+          "supervisor": 20,
+          "senior_staff": 32
+        }
+      },
+      {
+        "study_program": "S1 Manajemen",
+        "respondent_count": 55,
+        "company_type": {
+          "government": 30,
+          "swasta": 28,
+          "non_profit_organization": 18,
+          "bumn": 12
+        },
+        "average_company_satisfaction": {
+          "2019": "89%",
+          "2020": "94%",
+          "2021": "96%",
+          "2022": "97%"
+        },
+        "respondent_position": {
+          "direktur": 10,
+          "manajer": 8,
+          "asisten_manajer": 22,
+          "supervisor": 16,
+          "senior_staff": 26
+        }
+      },
+      {
+        "study_program": "S1 Teknik Lingkungan",
+        "respondent_count": 40,
+        "company_type": {
+          "government": 20,
+          "swasta": 15,
+          "non_profit_organization": 28,
+          "bumn": 15
+        },
+        "average_company_satisfaction": {
+          "2019": "87%",
+          "2020": "90%",
+          "2021": "93%",
+          "2022": "97%"
+        },
+        "respondent_position": {
+          "direktur": 3,
+          "manajer": 7,
+          "asisten_manajer": 20,
+          "supervisor": 15,
+          "senior_staff": 20
+        }
+      },
+      {
+        "study_program": "S1 Psikologi",
+        "respondent_count": 55,
+        "company_type": {
+          "government": 25,
+          "swasta": 22,
+          "non_profit_organization": 31,
+          "bumn": 14
+        },
+        "average_company_satisfaction": {
+          "2019": "93%",
+          "2020": "93%",
+          "2021": "95%",
+          "2022": "98%"
+        },
+        "respondent_position": {
+          "direktur": 3,
+          "manajer": 6,
+          "asisten_manajer": 25,
+          "supervisor": 28,
+          "senior_staff": 25
+        }
+      },
+      {
+        "study_program": "S1 Teknik Industri",
+        "respondent_count": 35,
+        "company_type": {
+          "government": 12,
+          "swasta": 22,
+          "non_profit_organization": 27,
+          "bumn": 24
+        },
+        "average_company_satisfaction": {
+          "2019": "87%",
+          "2020": "90%",
+          "2021": "95%",
+          "2022": "98%"
+        },
+        "respondent_position": {
+          "direktur": 5,
+          "manajer": 9,
+          "asisten_manajer": 16,
+          "supervisor": 25,
+          "senior_staff": 30
+        }
+      },
+      {
+        "study_program": "S1 Farmasi",
+        "respondent_count": 40,
+        "company_type": {
+          "government": 20,
+          "swasta": 28,
+          "non_profit_organization": 28,
+          "bumn": 15
+        },
+        "average_company_satisfaction": {
+          "2019": "88%",
+          "2020": "92%",
+          "2021": "95%",
+          "2022": "98%"
+        },
+        "respondent_position": {
+          "direktur": 12,
+          "manajer": 20,
+          "asisten_manajer": 25,
+          "supervisor": 30,
+          "senior_staff": 32
+        }
+      },
+      {
+        "study_program": "S1 Kedokteran",
+        "respondent_count": 30,
+        "company_type": {
+          "government": 16,
+          "swasta": 27,
+          "non_profit_organization": 31,
+          "bumn": 14
+        },
+        "average_company_satisfaction": {
+          "2019": "90%",
+          "2020": "95%",
+          "2021": "96%",
+          "2022": "99%"
+        },
+        "respondent_position": {
+          "direktur": 5,
+          "manajer": 8,
+          "asisten_manajer": 25,
+          "supervisor": 25,
+          "senior_staff": 30
+        }
+      },
+      {
+        "study_program": "S1 Ilmu Keperawatan",
+        "respondent_count": 40,
+        "company_type": {
+          "government": 16,
+          "swasta": 24,
+          "non_profit_organization": 22,
+          "bumn": 12
+        },
+        "average_company_satisfaction": {
+          "2019": "90%",
+          "2020": "92%",
+          "2021": "96%",
+          "2022": "97%"
+        },
+        "respondent_position": {
+          "direktur": 4,
+          "manajer": 8,
+          "asisten_manajer": 18,
+          "supervisor": 30,
+          "senior_staff": 24
+        }
+      },
+      {
+        "study_program": "S1 Ilmu Kesehatan Masyarakat",
+        "respondent_count": 35,
+        "company_type": {
+          "government": 20,
+          "swasta": 32,
+          "non_profit_organization": 28,
+          "bumn": 15
+        },
+        "average_company_satisfaction": {
+          "2019": "87%",
+          "2020": "93%",
+          "2021": "94%",
+          "2022": "97%"
+        },
+        "respondent_position": {
+          "direktur": 4,
+          "manajer": 9,
+          "asisten_manajer": 18,
+          "supervisor": 22,
+          "senior_staff": 15
+        }
+      }
+    ]
+  },
+  {
+    "students_id": "STD-006",
+    "service": "Asrama",
+    "information_data": [
+      "Pendaftaran asrama",
+      "Nama penghuni asrama",
+      "Program kegiatan asrama"
+    ],
+    "report_document": {
+      "title": "Laporan asrama",
+      "data": ["Daftar nama penghuni asrama"]
+    },
+    "dashboard_model": {
+      "use_table": true,
+      "chart_type": [
+        {
+          "purpose": "Jml penghuni asrama per fakultas",
+          "type": "Bar"
+        },
+        {
+          "purpose": "Jml penghuni asrama per gedung",
+          "type": "Bar"
+        },
+        {
+          "purpose": "Penghuni asrama per gender",
+          "type": "Pie"
+        },
+        {
+          "purpose": "rekap penghuni asrama",
+          "type": "Bar"
+        }
+      ],
+      "cluster": "Fakultas"
+    },
+    "datapergedung": {
+      "total_gedung_a": 4625,
+      "total_gedung_b": 3285,
+      "total_gedung_c": 4637,
+      "total_gedung_d": 2900
+    },
+    "data_1": [
+      {
+        "faculty": "Fakultas Kedokteran",
+        "regular_student": {
+          "gedung_a": {
+            "putra": 100,
+            "putri": 0
+          },
+          "gedung_b": {
+            "putra": 0,
+            "putri": 150
+          },
+          "gedung_c": {
+            "putra": 200,
+            "putri": 0
+          },
+          "gedung_d": {
+            "putra": 250,
+            "putri": 0
+          }
+        },
+        "scholarship_student": {
+          "gedung_a": {
+            "putra": 50,
+            "putri": 0
+          },
+          "gedung_b": {
+            "putra": 0,
+            "putri": 80
+          },
+          "gedung_c": {
+            "putra": 50,
+            "putri": 0
+          },
+          "gedung_d": {
+            "putra": 50,
+            "putri": 0
+          }
+        },
+        "foreign_student": {
+          "gedung_a": {
+            "putra": 20,
+            "putri": 0
+          },
+          "gedung_b": {
+            "putra": 0,
+            "putri": 50
+          },
+          "gedung_c": {
+            "putra": 10,
+            "putri": 0
+          },
+          "gedung_d": {
+            "putra": 5,
+            "putri": 0
+          }
+        }
+      },
+      {
+        "faculty": "Fakultas Hukum",
+        "regular_student": {
+          "gedung_a": {
+            "putra": 150,
+            "putri": 0
+          },
+          "gedung_b": {
+            "putra": 0,
+            "putri": 200
+          },
+          "gedung_c": {
+            "putra": 250,
+            "putri": 0
+          },
+          "gedung_d": {
+            "putra": 150,
+            "putri": 0
+          }
+        },
+        "scholarship_student": {
+          "gedung_a": {
+            "putra": 250,
+            "putri": 0
+          },
+          "gedung_b": {
+            "putra": 0,
+            "putri": 150
+          },
+          "gedung_c": {
+            "putra": 225,
+            "putri": 0
+          },
+          "gedung_d": {
+            "putra": 75,
+            "putri": 0
+          }
+        },
+        "foreign_student": {
+          "gedung_a": {
+            "putra": 30,
+            "putri": 0
+          },
+          "gedung_b": {
+            "putra": 0,
+            "putri": 15
+          },
+          "gedung_c": {
+            "putra": 10,
+            "putri": 0
+          },
+          "gedung_d": {
+            "putra": 15,
+            "putri": 0
+          }
+        }
+      },
+      {
+        "faculty": "Fakultas Pertanian",
+        "regular_student": {
+          "gedung_a": {
+            "putra": 180,
+            "putri": 0
+          },
+          "gedung_b": {
+            "putra": 0,
+            "putri": 220
+          },
+          "gedung_c": {
+            "putra": 220,
+            "putri": 0
+          },
+          "gedung_d": {
+            "putra": 150,
+            "putri": 0
+          }
+        },
+        "scholarship_student": {
+          "gedung_a": {
+            "putra": 260,
+            "putri": 0
+          },
+          "gedung_b": {
+            "putra": 0,
+            "putri": 130
+          },
+          "gedung_c": {
+            "putra": 270,
+            "putri": 0
+          },
+          "gedung_d": {
+            "putra": 80,
+            "putri": 0
+          }
+        },
+        "foreign_student": {
+          "gedung_a": {
+            "putra": 25,
+            "putri": 0
+          },
+          "gedung_b": {
+            "putra": 0,
+            "putri": 15
+          },
+          "gedung_c": {
+            "putra": 15,
+            "putri": 0
+          },
+          "gedung_d": {
+            "putra": 20,
+            "putri": 0
+          }
+        }
+      },
+      {
+        "faculty": "Fakultas Teknik",
+        "regular_student": {
+          "gedung_a": {
+            "putra": 160,
+            "putri": 0
+          },
+          "gedung_b": {
+            "putra": 0,
+            "putri": 250
+          },
+          "gedung_c": {
+            "putra": 200,
+            "putri": 0
+          },
+          "gedung_d": {
+            "putra": 160,
+            "putri": 0
+          }
+        },
+        "scholarship_student": {
+          "gedung_a": {
+            "putra": 240,
+            "putri": 0
+          },
+          "gedung_b": {
+            "putra": 0,
+            "putri": 150
+          },
+          "gedung_c": {
+            "putra": 250,
+            "putri": 0
+          },
+          "gedung_d": {
+            "putra": 90,
+            "putri": 0
+          }
+        },
+        "foreign_student": {
+          "gedung_a": {
+            "putra": 30,
+            "putri": 0
+          },
+          "gedung_b": {
+            "putra": 0,
+            "putri": 20
+          },
+          "gedung_c": {
+            "putra": 17,
+            "putri": 0
+          },
+          "gedung_d": {
+            "putra": 25,
+            "putri": 0
+          }
+        }
+      },
+      {
+        "faculty": "Fakultas Ekonomi dan Bisnis",
+        "regular_student": {
+          "gedung_a": {
+            "putra": 200,
+            "putri": 0
+          },
+          "gedung_b": {
+            "putra": 0,
+            "putri": 150
+          },
+          "gedung_c": {
+            "putra": 220,
+            "putri": 0
+          },
+          "gedung_d": {
+            "putra": 140,
+            "putri": 0
+          }
+        },
+        "scholarship_student": {
+          "gedung_a": {
+            "putra": 260,
+            "putri": 0
+          },
+          "gedung_b": {
+            "putra": 0,
+            "putri": 140
+          },
+          "gedung_c": {
+            "putra": 200,
+            "putri": 0
+          },
+          "gedung_d": {
+            "putra": 110,
+            "putri": 0
+          }
+        },
+        "foreign_student": {
+          "gedung_a": {
+            "putra": 45,
+            "putri": 0
+          },
+          "gedung_b": {
+            "putra": 0,
+            "putri": 25
+          },
+          "gedung_c": {
+            "putra": 30,
+            "putri": 0
+          },
+          "gedung_d": {
+            "putra": 20,
+            "putri": 0
+          }
+        }
+      },
+      {
+        "faculty": "Fakultas Kedokteran Gigi",
+        "regular_student": {
+          "gedung_a": {
+            "putra": 260,
+            "putri": 0
+          },
+          "gedung_b": {
+            "putra": 0,
+            "putri": 120
+          },
+          "gedung_c": {
+            "putra": 260,
+            "putri": 0
+          },
+          "gedung_d": {
+            "putra": 130,
+            "putri": 0
+          }
+        },
+        "scholarship_student": {
+          "gedung_a": {
+            "putra": 240,
+            "putri": 0
+          },
+          "gedung_b": {
+            "putra": 0,
+            "putri": 150
+          },
+          "gedung_c": {
+            "putra": 220,
+            "putri": 0
+          },
+          "gedung_d": {
+            "putra": 140,
+            "putri": 0
+          }
+        },
+        "foreign_student": {
+          "gedung_a": {
+            "putra": 30,
+            "putri": 0
+          },
+          "gedung_b": {
+            "putra": 0,
+            "putri": 15
+          },
+          "gedung_c": {
+            "putra": 25,
+            "putri": 0
+          },
+          "gedung_d": {
+            "putra": 10,
+            "putri": 0
+          }
+        }
+      },
+      {
+        "faculty": "Fakultas Ilmu Budaya",
+        "regular_student": {
+          "gedung_a": {
+            "putra": 200,
+            "putri": 0
+          },
+          "gedung_b": {
+            "putra": 0,
+            "putri": 160
+          },
+          "gedung_c": {
+            "putra": 230,
+            "putri": 0
+          },
+          "gedung_d": {
+            "putra": 150,
+            "putri": 0
+          }
+        },
+        "scholarship_student": {
+          "gedung_a": {
+            "putra": 260,
+            "putri": 0
+          },
+          "gedung_b": {
+            "putra": 0,
+            "putri": 120
+          },
+          "gedung_c": {
+            "putra": 250,
+            "putri": 0
+          },
+          "gedung_d": {
+            "putra": 120,
+            "putri": 0
+          }
+        },
+        "foreign_student": {
+          "gedung_a": {
+            "putra": 15,
+            "putri": 0
+          },
+          "gedung_b": {
+            "putra": 0,
+            "putri": 5
+          },
+          "gedung_c": {
+            "putra": 10,
+            "putri": 0
+          },
+          "gedung_d": {
+            "putra": 15,
+            "putri": 0
+          }
+        }
+      },
+      {
+        "faculty": "Fakultas Matematika dan IPA",
+        "regular_student": {
+          "gedung_a": {
+            "putra": 300,
+            "putri": 0
+          },
+          "gedung_b": {
+            "putra": 0,
+            "putri": 260
+          },
+          "gedung_c": {
+            "putra": 250,
+            "putri": 0
+          },
+          "gedung_d": {
+            "putra": 160,
+            "putri": 0
+          }
+        },
+        "scholarship_student": {
+          "gedung_a": {
+            "putra": 250,
+            "putri": 0
+          },
+          "gedung_b": {
+            "putra": 0,
+            "putri": 100
+          },
+          "gedung_c": {
+            "putra": 240,
+            "putri": 0
+          },
+          "gedung_d": {
+            "putra": 160,
+            "putri": 0
+          }
+        },
+        "foreign_student": {
+          "gedung_a": {
+            "putra": 40,
+            "putri": 0
+          },
+          "gedung_b": {
+            "putra": 0,
+            "putri": 10
+          },
+          "gedung_c": {
+            "putra": 15,
+            "putri": 0
+          },
+          "gedung_d": {
+            "putra": 20,
+            "putri": 0
+          }
+        }
+      },
+      {
+        "faculty": "Fakultas Ilmu Sosial dan Ilmu Politik",
+        "regular_student": {
+          "gedung_a": {
+            "putra": 240,
+            "putri": 0
+          },
+          "gedung_b": {
+            "putra": 0,
+            "putri": 200
+          },
+          "gedung_c": {
+            "putra": 150,
+            "putri": 0
+          },
+          "gedung_d": {
+            "putra": 220,
+            "putri": 0
+          }
+        },
+        "scholarship_student": {
+          "gedung_a": {
+            "putra": 240,
+            "putri": 0
+          },
+          "gedung_b": {
+            "putra": 0,
+            "putri": 100
+          },
+          "gedung_c": {
+            "putra": 290,
+            "putri": 0
+          },
+          "gedung_d": {
+            "putra": 140,
+            "putri": 0
+          }
+        },
+        "foreign_student": {
+          "gedung_a": {
+            "putra": 20,
+            "putri": 0
+          },
+          "gedung_b": {
+            "putra": 0,
+            "putri": 15
+          },
+          "gedung_c": {
+            "putra": 25,
+            "putri": 0
+          },
+          "gedung_d": {
+            "putra": 15,
+            "putri": 0
+          }
+        }
+      },
+      {
+        "faculty": "Fakultas Kesehatan Masyarakat",
+        "regular_student": {
+          "gedung_a": {
+            "putra": 260,
+            "putri": 0
+          },
+          "gedung_b": {
+            "putra": 0,
+            "putri": 120
+          },
+          "gedung_c": {
+            "putra": 260,
+            "putri": 0
+          },
+          "gedung_d": {
+            "putra": 130,
+            "putri": 0
+          }
+        },
+        "scholarship_student": {
+          "gedung_a": {
+            "putra": 240,
+            "putri": 0
+          },
+          "gedung_b": {
+            "putra": 0,
+            "putri": 150
+          },
+          "gedung_c": {
+            "putra": 220,
+            "putri": 0
+          },
+          "gedung_d": {
+            "putra": 140,
+            "putri": 0
+          }
+        },
+        "foreign_student": {
+          "gedung_a": {
+            "putra": 30,
+            "putri": 0
+          },
+          "gedung_b": {
+            "putra": 0,
+            "putri": 15
+          },
+          "gedung_c": {
+            "putra": 25,
+            "putri": 0
+          },
+          "gedung_d": {
+            "putra": 10,
+            "putri": 0
+          }
+        }
+      }
+    ],
+    "data_2": [
+      {
+        "building_name": "Gedung A",
+        "peruntukan": "Putra",
+        "total_capacity": 1200,
+        "available_capacity": 1000,
+        "occupancy": 900,
+        "empty": 100,
+        "occupancy_ration": "90%"
+      },
+      {
+        "building_name": "Gedung B",
+        "peruntukan": "Putri",
+        "total_capacity": 1000,
+        "available_capacity": 950,
+        "occupancy": 850,
+        "empty": 100,
+        "occupancy_ration": "89%"
+      },
+      {
+        "building_name": "Gedung C",
+        "peruntukan": "Putra",
+        "total_capacity": 900,
+        "available_capacity": 900,
+        "occupancy": 800,
+        "empty": 100,
+        "occupancy_ration": "88%"
+      },
+      {
+        "building_name": "Gedung D",
+        "peruntukan": "Putra",
+        "total_capacity": 1100,
+        "available_capacity": 1100,
+        "occupancy": 960,
+        "empty": 140,
+        "occupancy_ration": "87%"
+      },
+      {
+        "building_name": "Gedung E",
+        "peruntukan": "Putri",
+        "total_capacity": 1000,
+        "available_capacity": 950,
+        "occupancy": 950,
+        "empty": 0,
+        "occupancy_ration": "100%"
+      },
+      {
+        "building_name": "Gedung F",
+        "peruntukan": "Putri",
+        "total_capacity": 1200,
+        "available_capacity": 1150,
+        "occupancy": 1000,
+        "empty": 150,
+        "occupancy_ration": "86%"
+      },
+      {
+        "building_name": "Gedung G",
+        "peruntukan": "Putra",
+        "total_capacity": 1200,
+        "available_capacity": 1200,
+        "occupancy": 1150,
+        "empty": 50,
+        "occupancy_ration": "95%"
+      },
+      {
+        "building_name": "Gedung H",
+        "peruntukan": "Putra",
+        "total_capacity": 1000,
+        "available_capacity": 950,
+        "occupancy": 950,
+        "empty": 0,
+        "occupancy_ration": "100%"
+      },
+      {
+        "building_name": "Gedung I",
+        "peruntukan": "Putri",
+        "total_capacity": 1150,
+        "available_capacity": 1100,
+        "occupancy": 1060,
+        "empty": 40,
+        "occupancy_ration": "96%"
+      },
+      {
+        "building_name": "Gedung J",
+        "peruntukan": "Putri",
+        "total_capacity": 1100,
+        "available_capacity": 1050,
+        "occupancy": 1010,
+        "empty": 40,
+        "occupancy_ration": "96%"
+      }
+    ]
+  }
+]

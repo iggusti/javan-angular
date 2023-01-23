@@ -1,0 +1,77 @@
+<div class="row">
+  <div class="col-12">
+    <app-card [hidHeader]="true" [options]="false" *ngIf="listData?.length != 0">
+      <app-apex-chart chartID="bar" [chartConfig]="chartConfig1"></app-apex-chart>
+    </app-card>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-6">
+    <app-card [hidHeader]="true" [options]="false" *ngIf="listData?.length != 0">
+      <app-apex-chart chartID="line-1" [chartConfig]="chartConfig2"></app-apex-chart>
+    </app-card>
+  </div>
+  <div class="col-sm-6">
+    <app-card [hidHeader]="true" [options]="false" *ngIf="listData?.length != 0">
+      <app-apex-chart chartID="line-2" [chartConfig]="chartConfig3"></app-apex-chart>
+    </app-card>
+  </div>
+</div>
+<div class="row" id="auto-clicked">
+  <div class="col-12">
+    <app-card cardClass="card-datatable" headerClass="text-center text-md-left" [hidHeader]="true" [options]="false" [loading]="loadCard">
+      <div class="table-responsive pb-1 p-2 page-bg">
+        <table datatable [dtOptions]="dtOptions" class="table table-hover table-bordered display compact" [dtTrigger]="dtTrigger">
+          <thead class="thead-light">
+            <tr>
+              <th></th>
+              <th colspan="7" class="text-center">Prestasi Mahasiswa</th>
+            </tr>
+            <tr>
+              <th rowspan="2" width="10" class="text-center">No.</th>
+              <th rowspan="2">Program Studi</th>
+              <th rowspan="2" class="text-center">Jumlah Mahasiswa Aktif</th>
+              <th colspan="2" class="text-center">Kompetisi Kemendikbudristek</th>
+              <th colspan="2" class="text-center">Kompetisi Mandiri</th>
+              <th rowspan="2" class="text-center">Rasio Mahasiswa Berprestasi</th>
+            </tr>
+            <tr>
+              <th class="text-center">Jumlah Kompetisi</th>
+              <th class="text-center">Jumlah Mahasiswa Berprestasi</th>
+              <th class="text-center">Jumlah Kompetisi</th>
+              <th class="text-center">Jumlah Mahasiswa Berprestasi</th>
+            </tr>
+          </thead>
+          <tbody *ngIf="listData?.length != 0">
+            <tr *ngFor="let data of listData; let i = index;">
+              <th>{{i+1}}.</th>
+              <td class="word-wrap">{{data.study_program}}</td>
+              <td class="text-center">{{data.active_student_count}}</td>
+              <td class="text-center">{{data.kemendikbudristek_competitions_count}}</td>
+              <td class="text-center">{{data.kemendikbudristek_outstanding_student_count}}</td>
+              <td class="text-center">{{data.independent_competitions_count}}</td>
+              <td class="text-center">{{data.independent_outstanding_student_count}}</td>
+              <td class="text-center">{{data.ratio_outstanding_student}}</td>
+            </tr>
+          </tbody>
+          <tbody *ngIf="listData?.length == 0 && spinnerLoading">
+            <tr>
+              <td colspan="7" class="no-data-available text-center">
+                <img src='assets/images/infinity-situ.svg'>
+              </td>
+            </tr>
+          </tbody>
+          <tbody *ngIf="listData?.length == 0 && !spinnerLoading">
+            <tr>
+              <td colspan="7" class="no-data-available text-center">
+                <div class="col-12 text-center pt-3 pb-1">
+                  <app-no-data-found></app-no-data-found>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </app-card>
+  </div>
+</div>

@@ -1,0 +1,221 @@
+<div class="row">
+  <div class="col-12">
+    <app-card [hidHeader]="true" [options]="false" *ngIf="listData1?.length != 0">
+      <app-apex-chart chartID="bar-hor-1" [chartConfig]="chartConfig1"></app-apex-chart>
+    </app-card>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-6">
+    <app-card [hidHeader]="true" [options]="false" *ngIf="listData1?.length != 0">
+      <app-apex-chart chartID="bar-hor-2" [chartConfig]="chartConfig2"></app-apex-chart>
+    </app-card>
+  </div>
+  <div class="col-sm-6">
+    <app-card [hidHeader]="true" [options]="false" *ngIf="listData1?.length != 0">
+      <app-apex-chart chartID="donut" [chartConfig]="chartConfig3"></app-apex-chart>
+    </app-card>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    <app-card [hidHeader]="true" [options]="false" *ngIf="listData1?.length != 0">
+      <app-apex-chart chartID="bar" [chartConfig]="chartConfig4"></app-apex-chart>
+    </app-card>
+  </div>
+</div>
+<div class="row" id="auto-clicked">
+  <div class="col-12">
+    <app-card cardClass="card-datatable" headerClass="text-center text-md-left" [hidHeader]="true" [options]="false" [loading]="loadCard">
+      <div class="table-responsive pb-1 p-2 page-bg">
+        <table datatable [dtOptions]="dtOptions" class="table table-hover table-bordered display compact" [dtTrigger]="dtTrigger">
+          <thead class="thead-light">
+            <tr>
+              <th></th>
+              <th colspan="10" class="text-center">Asrama</th>
+            </tr>
+            <tr>
+              <th rowspan="2" width="10">No.</th>
+              <th rowspan="2"></th>
+              <th colspan="2" class="text-center">Gedung A<br>Kosong::10</th>
+              <th colspan="2" class="text-center">Gedung B<br>Kosong::15</th>
+              <th colspan="2" class="text-center">Gedung C<br>Kosong::20</th>
+              <th colspan="2" class="text-center">Gedung D<br>Kosong::13</th>
+            </tr>
+            <tr>
+              <th class="text-center">Putra</th>
+              <th class="text-center">Putri</th>
+              <th class="text-center">Putra</th>
+              <th class="text-center">Putri</th>
+              <th class="text-center">Putra</th>
+              <th class="text-center">Putri</th>
+              <th class="text-center">Putra</th>
+              <th class="text-center">Putri</th>
+            </tr>
+          </thead>
+          <tbody *ngFor="let data of listData1; let i = index;">
+            <tr>
+              <th rowspan="5" class="align-top">{{i+1}}.</th>
+              <td class="word-wrap font-weight-bold" colspan="9">{{data.faculty}}</td>
+            </tr>
+            <tr>
+              <td class="word-wrap">Mahasiswa Reguler</td>
+              <td class="text-center">{{data.regular_student.gedung_a.putra}}</td>
+              <td class="text-center">{{data.regular_student.gedung_a.putri}}</td>
+              <td class="text-center">{{data.regular_student.gedung_b.putra}}</td>
+              <td class="text-center">{{data.regular_student.gedung_b.putri}}</td>
+              <td class="text-center">{{data.regular_student.gedung_c.putra}}</td>
+              <td class="text-center">{{data.regular_student.gedung_c.putri}}</td>
+              <td class="text-center">{{data.regular_student.gedung_d.putra}}</td>
+              <td class="text-center">{{data.regular_student.gedung_d.putri}}</td>
+            </tr>
+            <tr>
+              <td class="word-wrap">Mahasiswa Beasiswa</td>
+              <td class="text-center">{{data.scholarship_student.gedung_a.putra}}</td>
+              <td class="text-center">{{data.scholarship_student.gedung_a.putri}}</td>
+              <td class="text-center">{{data.scholarship_student.gedung_b.putra}}</td>
+              <td class="text-center">{{data.scholarship_student.gedung_b.putri}}</td>
+              <td class="text-center">{{data.scholarship_student.gedung_c.putra}}</td>
+              <td class="text-center">{{data.scholarship_student.gedung_c.putri}}</td>
+              <td class="text-center">{{data.scholarship_student.gedung_d.putra}}</td>
+              <td class="text-center">{{data.scholarship_student.gedung_d.putri}}</td>
+            </tr>
+            <tr>
+              <td class="word-wrap">Mahasiswa Asing</td>
+              <td class="text-center">{{data.foreign_student.gedung_a.putra}}</td>
+              <td class="text-center">{{data.foreign_student.gedung_a.putri}}</td>
+              <td class="text-center">{{data.foreign_student.gedung_b.putra}}</td>
+              <td class="text-center">{{data.foreign_student.gedung_b.putri}}</td>
+              <td class="text-center">{{data.foreign_student.gedung_c.putra}}</td>
+              <td class="text-center">{{data.foreign_student.gedung_c.putri}}</td>
+              <td class="text-center">{{data.foreign_student.gedung_d.putra}}</td>
+              <td class="text-center">{{data.foreign_student.gedung_d.putri}}</td>
+            </tr>
+            <tr>
+              <td class="font-weight-bold">Total</td>
+              <td class="text-center" colspan="2">{{data.regular_student.gedung_a.putra +
+                data.regular_student.gedung_a.putri + data.scholarship_student.gedung_a.putra +
+                data.scholarship_student.gedung_a.putri + data.foreign_student.gedung_a.putra +
+                data.foreign_student.gedung_a.putri}}</td>
+              <td class="text-center" colspan="2">{{data.regular_student.gedung_b.putra +
+                data.regular_student.gedung_b.putri + data.scholarship_student.gedung_b.putra +
+                data.scholarship_student.gedung_b.putri + data.foreign_student.gedung_b.putra +
+                data.foreign_student.gedung_b.putri}}</td>
+              <td class="text-center" colspan="2">{{data.regular_student.gedung_c.putra +
+                data.regular_student.gedung_c.putri + data.scholarship_student.gedung_c.putra +
+                data.scholarship_student.gedung_c.putri + data.foreign_student.gedung_c.putra +
+                data.foreign_student.gedung_c.putri}}</td>
+              <td class="text-center" colspan="2">{{data.regular_student.gedung_d.putra +
+                data.regular_student.gedung_d.putri + data.scholarship_student.gedung_d.putra +
+                data.scholarship_student.gedung_d.putri + data.foreign_student.gedung_d.putra +
+                data.foreign_student.gedung_d.putri}}</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <th></th>
+              <th colspan="10"></th>
+            </tr>
+            <tr>
+              <th rowspan="6"></th>
+              <th>Pendaftar</th>
+              <th class="text-center">1000</th>
+              <th colspan="7"></th>
+            </tr>
+            <tr>
+              <th>Lolos Seleksi</th>
+              <th class="text-center">800</th>
+              <th colspan="7"></th>
+            </tr>
+            <tr>
+              <th>Registrasi</th>
+              <th class="text-center">750</th>
+              <th colspan="7"></th>
+            </tr>
+            <tr>
+              <th>Pembayaran</th>
+              <th class="text-center">700</th>
+              <th colspan="7"></th>
+            </tr>
+            <tr>
+              <th>Penghuni</th>
+              <th class="text-center">650</th>
+              <th colspan="7"></th>
+            </tr>
+            <tr>
+              <th>Total Kapasitas</th>
+              <th class="text-center">1000</th>
+              <th colspan="7"></th>
+            </tr>
+          </tbody>
+          <tbody *ngIf="listData1?.length == 0 && spinnerLoading">
+            <tr>
+              <td colspan="10" class="no-data-available text-center">
+                <img src='assets/images/infinity-situ.svg'>
+              </td>
+            </tr>
+          </tbody>
+          <tbody *ngIf="listData1?.length == 0 && !spinnerLoading">
+            <tr>
+              <td colspan="10" class="no-data-available text-center">
+                <div class="col-12 text-center pt-3 pb-1">
+                  <app-no-data-found></app-no-data-found>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </app-card>
+    <app-card cardClass="card-datatable" headerClass="text-center text-md-left" [hidHeader]="true" [options]="false" [loading]="loadCard">
+      <div class="table-responsive pb-1 p-2 page-bg">
+        <table datatable [dtOptions]="dtOptions" class="table table-hover table-bordered display compact" [dtTrigger]="dtTrigger">
+          <thead class="thead-light">
+            <tr>
+              <th></th>
+              <th colspan="8" class="text-center">Ketersediaan Gedung Asrama per Semester <br> Semester Berjalan : Gasal 2022/2023</th>
+            </tr>
+            <tr>
+              <th width="10">No.</th>
+              <th>Nama Gedung</th>
+              <th>Peruntukan</th>
+              <th class="text-center">Total Kapasitas (Orang)</th>
+              <th class="text-center">Kapasitas Tersedia</th>
+              <th class="text-center">Kosong (Orang)</th>
+              <th class="text-center">Okupansi (Orang)</th>
+              <th class="text-center">Rasio Okupansi (%)</th>
+            </tr>
+          </thead>
+          <tbody *ngIf="listData2?.length != 0">
+            <tr *ngFor="let data of listData2; let i = index;">
+              <th>{{i+1}}.</th>
+              <td>{{data.building_name}}</td>
+              <td>{{data.peruntukan}}</td>
+              <td class="text-center">{{data.total_capacity}}</td>
+              <td class="text-center">{{data.available_capacity}}</td>
+              <td class="text-center">{{data.occupancy}}</td>
+              <td class="text-center">{{data.empty}}</td>
+              <td class="text-center">{{data.occupancy_ration}}</td>
+            </tr>
+          </tbody>
+          <tbody *ngIf="listData2?.length == 0 && spinnerLoading">
+            <tr>
+              <td colspan="8" class="no-data-available text-center">
+                <img src='assets/images/infinity-situ.svg'>
+              </td>
+            </tr>
+          </tbody>
+          <tbody *ngIf="listData2?.length == 0 && !spinnerLoading">
+            <tr>
+              <td colspan="8" class="no-data-available text-center">
+                <div class="col-12 text-center pt-3 pb-1">
+                  <app-no-data-found></app-no-data-found>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </app-card>
+  </div>
+</div>

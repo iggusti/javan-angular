@@ -1,0 +1,90 @@
+<div class="row">
+  <div class="col-sm-6">
+    <app-card [hidHeader]="true" [options]="false" *ngIf="listData?.length != 0">
+      <app-apex-chart chartID="donut-1" [chartConfig]="chartConfig1"></app-apex-chart>
+    </app-card>
+  </div>
+  <div class="col-sm-6">
+    <app-card [hidHeader]="true" [options]="false" *ngIf="listData?.length != 0">
+      <app-apex-chart chartID="donut-2" [chartConfig]="chartConfig2"></app-apex-chart>
+    </app-card>
+  </div>
+</div>
+<div class="row" id="auto-clicked">
+  <div class="col-12">
+    <app-card cardClass="card-datatable" headerClass="text-center text-md-left" [hidHeader]="true" [options]="false" [loading]="loadCard">
+      <div class="table-responsive pb-1 p-2 page-bg">
+        <table datatable [dtOptions]="dtOptions" class="table table-hover table-bordered display compact" [dtTrigger]="dtTrigger">
+          <thead class="thead-light">
+            <tr>
+              <th></th>
+              <th colspan="14" class="text-center">Kegiatan - Persentase dosen yang berkegiatan tridharma di kampus lain, di QS100 berdasarkan bidang ilmu (QS100 by subject)</th>
+            </tr>
+            <tr>
+              <th rowspan="3" width="10" class="text-center">No.</th>
+              <th rowspan="3">Program Studi</th>
+              <th colspan="6" class="text-center">Jumlah Dosen Berkegiatan di Dalam Negeri</th>
+              <th colspan="6" class="text-center">Jumlah Dosen Berkegiatan di Luar Negeri</th>
+            </tr>
+            <tr>
+              <th colspan="2" class="word-wrap text-center">Pendidikan dan Pengajaran</th>
+              <th colspan="2" class="word-wrap text-center">Penelitian dan Pengembangan</th>
+              <th colspan="2" class="word-wrap text-center">Pengabdian Kepada Masyarakat</th>
+              <th colspan="2" class="word-wrap text-center">Pendidikan dan Pengajaran</th>
+              <th colspan="2" class="word-wrap text-center">Penelitian dan Pengembangan</th>
+              <th colspan="2" class="word-wrap text-center">Pengabdian Kepada Masyarakat</th>
+            </tr>
+            <tr>
+              <th class="text-center">MoA</th>
+              <th class="text-center">IA</th>
+              <th class="text-center">MoA</th>
+              <th class="text-center">IA</th>
+              <th class="text-center">MoA</th>
+              <th class="text-center">IA</th>
+              <th class="text-center">MoA</th>
+              <th class="text-center">IA</th>
+              <th class="text-center">MoA</th>
+              <th class="text-center">IA</th>
+              <th class="text-center">MoA</th>
+              <th class="text-center">IA</th>
+            </tr>
+          </thead>
+          <tbody *ngIf="listData?.length != 0">
+            <tr *ngFor="let data of listData; let i = index;">
+              <th>{{i+1}}.</th>
+              <td class="word-wrap">{{data.study_program}}</td>
+              <td class="text-center">{{data.dn[0].moa}}</td>
+              <td class="text-center">{{data.dn[0].ia}}</td>
+              <td class="text-center">{{data.dn[1].moa}}</td>
+              <td class="text-center">{{data.dn[1].ia}}</td>
+              <td class="text-center">{{data.dn[2].moa}}</td>
+              <td class="text-center">{{data.dn[2].ia}}</td>
+              <td class="text-center">{{data.ln[0].moa}}</td>
+              <td class="text-center">{{data.ln[0].ia}}</td>
+              <td class="text-center">{{data.ln[1].moa}}</td>
+              <td class="text-center">{{data.ln[1].ia}}</td>
+              <td class="text-center">{{data.ln[2].moa}}</td>
+              <td class="text-center">{{data.ln[2].ia}}</td>
+            </tr>
+          </tbody>
+          <tbody *ngIf="listData?.length == 0 && spinnerLoading">
+            <tr>
+              <td colspan="14" class="no-data-available text-center">
+                <img src='assets/images/infinity-situ.svg'>
+              </td>
+            </tr>
+          </tbody>
+          <tbody *ngIf="listData?.length == 0 && !spinnerLoading">
+            <tr>
+              <td colspan="14" class="no-data-available text-center">
+                <div class="col-12 text-center pt-3 pb-1">
+                  <app-no-data-found></app-no-data-found>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </app-card>
+  </div>
+</div>

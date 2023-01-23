@@ -1,0 +1,2228 @@
+[
+  {
+    "academic_id": "ACA-001",
+    "name": "Rekapitulasi Akreditasi Program Studi",
+    "data": [
+      {
+        "accreditation_status": "A",
+        "program": [
+          {
+            "program_name": "Diploma 2",
+            "total": 3
+          },
+          {
+            "program_name": "Diploma 3",
+            "total": 2
+          },
+          {
+            "program_name": "Diploma 4",
+            "total": 0
+          },
+          {
+            "program_name": "Sarjana (S-1)",
+            "total": 30
+          },
+          {
+            "program_name": "Profesi",
+            "total": 4
+          },
+          {
+            "program_name": "Magister (S-2)",
+            "total": 11
+          },
+          {
+            "program_name": "Doktor (S-3)",
+            "total": 0
+          },
+          {
+            "program_name": "Spesialis",
+            "total": 16
+          }
+        ],
+        "total_program": 66
+      },
+      {
+        "accreditation_status": "B",
+        "program": [
+          {
+            "program_name": "Diploma 2",
+            "total": 8
+          },
+          {
+            "program_name": "Diploma 3",
+            "total": 13
+          },
+          {
+            "program_name": "Diploma 4",
+            "total": 0
+          },
+          {
+            "program_name": "Sarjana (S-1)",
+            "total": 17
+          },
+          {
+            "program_name": "Profesi",
+            "total": 1
+          },
+          {
+            "program_name": "Magister (S-2)",
+            "total": 29
+          },
+          {
+            "program_name": "Doktor (S-3)",
+            "total": 19
+          },
+          {
+            "program_name": "Spesialis",
+            "total": 5
+          }
+        ],
+        "total_program": 92
+      },
+      {
+        "accreditation_status": "C",
+        "program": [
+          {
+            "program_name": "Diploma 2",
+            "total": 0
+          },
+          {
+            "program_name": "Diploma 3",
+            "total": 0
+          },
+          {
+            "program_name": "Diploma 4",
+            "total": 0
+          },
+          {
+            "program_name": "Sarjana (S-1)",
+            "total": 0
+          },
+          {
+            "program_name": "Profesi",
+            "total": 0
+          },
+          {
+            "program_name": "Magister (S-2)",
+            "total": 1
+          },
+          {
+            "program_name": "Doktor (S-3)",
+            "total": 4
+          },
+          {
+            "program_name": "Spesialis",
+            "total": 0
+          }
+        ],
+        "total_program": 5
+      },
+      {
+        "accreditation_status": "Kadaluarsa",
+        "program": [
+          {
+            "program_name": "Diploma 2",
+            "total": 0
+          },
+          {
+            "program_name": "Diploma 3",
+            "total": 0
+          },
+          {
+            "program_name": "Diploma 4",
+            "total": 0
+          },
+          {
+            "program_name": "Sarjana (S-1)",
+            "total": 0
+          },
+          {
+            "program_name": "Profesi",
+            "total": 0
+          },
+          {
+            "program_name": "Magister (S-2)",
+            "total": 0
+          },
+          {
+            "program_name": "Doktor (S-3)",
+            "total": 0
+          },
+          {
+            "program_name": "Spesialis",
+            "total": 0
+          }
+        ],
+        "total_program": 0
+      },
+      {
+        "accreditation_status": "Belum Terakreditasi",
+        "program": [
+          {
+            "program_name": "Diploma 2",
+            "total": 0
+          },
+          {
+            "program_name": "Diploma 3",
+            "total": 0
+          },
+          {
+            "program_name": "Diploma 4",
+            "total": 0
+          },
+          {
+            "program_name": "Sarjana (S-1)",
+            "total": 0
+          },
+          {
+            "program_name": "Profesi",
+            "total": 2
+          },
+          {
+            "program_name": "Magister (S-2)",
+            "total": 1
+          },
+          {
+            "program_name": "Doktor (S-3)",
+            "total": 0
+          },
+          {
+            "program_name": "Spesialis",
+            "total": 1
+          }
+        ],
+        "total_program": 4
+      }
+    ],
+    "total_accreditation": [
+      {
+        "program_name": "Diploma 2",
+        "total": 11
+      },
+      {
+        "program_name": "Diploma 3",
+        "total": 15
+      },
+      {
+        "program_name": "Diploma 4",
+        "total": 0
+      },
+      {
+        "program_name": "Sarjana (S-1)",
+        "total": 47
+      },
+      {
+        "program_name": "Profesi",
+        "total": 7
+      },
+      {
+        "program_name": "Magister (S-2)",
+        "total": 42
+      },
+      {
+        "program_name": "Doktor (S-3)",
+        "total": 23
+      },
+      {
+        "program_name": "Spesialis",
+        "total": 22
+      }
+    ]
+  },
+  {
+    "academic_id": "ACA-002",
+    "name": "Rekapitulasi Akreditasi Program Studi Per Fakultas",
+    "data": [
+      {
+        "study_program": "Analis Farmasi dan Makanan",
+        "level": "D3",
+        "accreditation": {
+          "sk_akreditasi": "481/SK/BAN-PT/Akred/Dpl-III/XII/2014",
+          "tanggal_sk_akreditasi": "29 Desember 2014",
+          "tanggal_akhir_sk_akreditasi": "28 Desember 2018",
+          "nilai": 362,
+          "grade": "A",
+          "status": "berlaku"
+        }
+      },
+      {
+        "study_program": "Perpustakaan",
+        "level": "D3",
+        "accreditation": {
+          "sk_akreditasi": "2513/SK/BAN-PT/Akred/Dipl-III/IX/2018",
+          "tanggal_sk_akreditasi": "12 September 2018",
+          "tanggal_akhir_sk_akreditasi": "12 September 2023",
+          "nilai": 378,
+          "grade": "A",
+          "status": "berlaku"
+        }
+      },
+      {
+        "study_program": "Kedokteran",
+        "level": "S1",
+        "accreditation": {
+          "sk_akreditasi": "0688/LAM-PTKes/Akr/Sar/VII/2016",
+          "tanggal_sk_akreditasi": "31 Juli 2016",
+          "tanggal_akhir_sk_akreditasi": "30 Juli 2021",
+          "nilai": 370,
+          "grade": "A",
+          "status": "berlaku"
+        }
+      },
+      {
+        "study_program": "Ilmu Hukum",
+        "level": "S1",
+        "accreditation": {
+          "sk_akreditasi": "437/SK/BAN-PT/Akred/S/XI/2014",
+          "tanggal_sk_akreditasi": "02 November 2014",
+          "tanggal_akhir_sk_akreditasi": "01 November 2019",
+          "nilai": 368,
+          "grade": "A",
+          "status": "berlaku"
+        }
+      },
+      {
+        "study_program": "Peternakan",
+        "level": "S1",
+        "accreditation": {
+          "sk_akreditasi": "0096/SK/BAN-PT/Akred/S/I/2017",
+          "tanggal_sk_akreditasi": "10 Januari 2017",
+          "tanggal_akhir_sk_akreditasi": "10 Januari 2022",
+          "nilai": 368,
+          "grade": "A",
+          "status": "berlaku"
+        }
+      },
+      {
+        "study_program": "Ilmu Komputer",
+        "level": "S1",
+        "accreditation": {
+          "sk_akreditasi": "247/SK/BAN-PT/Ak-XVI/S/XII/2013",
+          "tanggal_sk_akreditasi": "13 Desember 2013",
+          "tanggal_akhir_sk_akreditasi": "13 Desember 2018",
+          "nilai": 374,
+          "grade": "A",
+          "status": "berlaku"
+        }
+      },
+      {
+        "study_program": "Teknik Mesin",
+        "level": "S1",
+        "accreditation": {
+          "sk_akreditasi": "10967/SK/BAN-PT/AK-ISK/S/IX/2021",
+          "tanggal_sk_akreditasi": "21 September 2021",
+          "tanggal_akhir_sk_akreditasi": "30 Desember 2025",
+          "nilai": 376,
+          "grade": "A",
+          "status": "berlaku"
+        }
+      },
+      {
+        "study_program": "Psikologi",
+        "level": "S1",
+        "accreditation": {
+          "sk_akreditasi": "5757/SK/BAN-PT/Ak.KP/S/VIII/2022",
+          "tanggal_sk_akreditasi": "16 Maret 2022",
+          "tanggal_akhir_sk_akreditasi": "15 Maret 2027",
+          "nilai": 370,
+          "grade": "A",
+          "status": "berlaku"
+        }
+      },
+      {
+        "study_program": "Teknik Sipil",
+        "level": "S1",
+        "accreditation": {
+          "sk_akreditasi": "1718/SK/BAN-PT/Ak-PPJ/S/III/2022",
+          "tanggal_sk_akreditasi": "22 Maret 2022",
+          "tanggal_akhir_sk_akreditasi": "22 Maret 2027",
+          "nilai": 353,
+          "grade": "A",
+          "status": "berlaku"
+        }
+      }
+    ]
+  },
+  {
+    "academic_id": "ACA-003",
+    "name": "Jumlah Mahasiswa",
+    "data": [
+      {
+        "study_program": "S1 Ilmu Hukum",
+        "active": {
+          "regular": 1022,
+          "transfer": 32
+        },
+        "cuti": {
+          "regular": 12,
+          "transfer": 0
+        },
+        "non_active": {
+          "regular": 82,
+          "transfer": 2
+        },
+        "total_active_cuti_non_active": {
+          "regular": 1116,
+          "transfer": 34
+        },
+        "graduated": 951,
+        "resign": 64,
+        "die": 1,
+        "switch_study_program": 16,
+        "inbound": 13,
+        "outbound": 5,
+        "total": 1150
+      },
+      {
+        "study_program": "S1 Ilmu Administrasi Publik",
+        "active": {
+          "regular": 900,
+          "transfer": 30
+        },
+        "cuti": {
+          "regular": 10,
+          "transfer": 1
+        },
+        "non_active": {
+          "regular": 70,
+          "transfer": 3
+        },
+        "total_active_cuti_non_active": {
+          "regular": 980,
+          "transfer": 34
+        },
+        "graduated": 899,
+        "resign": 41,
+        "die": 0,
+        "switch_study_program": 24,
+        "inbound": 30,
+        "outbound": 20,
+        "total": 1014
+      },
+      {
+        "study_program": "S1 Ekonomi",
+        "active": {
+          "regular": 800,
+          "transfer": 20
+        },
+        "cuti": {
+          "regular": 15,
+          "transfer": 2
+        },
+        "non_active": {
+          "regular": 50,
+          "transfer": 1
+        },
+        "total_active_cuti_non_active": {
+          "regular": 865,
+          "transfer": 23
+        },
+        "graduated": 724,
+        "resign": 22,
+        "die": 1,
+        "switch_study_program": 92,
+        "inbound": 30,
+        "outbound": 19,
+        "total": 888
+      },
+      {
+        "study_program": "S1 Akuntansi",
+        "active": {
+          "regular": 700,
+          "transfer": 25
+        },
+        "cuti": {
+          "regular": 20,
+          "transfer": 1
+        },
+        "non_active": {
+          "regular": 40,
+          "transfer": 2
+        },
+        "total_active_cuti_non_active": {
+          "regular": 760,
+          "transfer": 28
+        },
+        "graduated": 693,
+        "resign": 19,
+        "die": 3,
+        "switch_study_program": 48,
+        "inbound": 15,
+        "outbound": 10,
+        "total": 788
+      },
+      {
+        "study_program": "S1 Teknik Sipil",
+        "active": {
+          "regular": 600,
+          "transfer": 20
+        },
+        "cuti": {
+          "regular": 10,
+          "transfer": 1
+        },
+        "non_active": {
+          "regular": 40,
+          "transfer": 2
+        },
+        "total_active_cuti_non_active": {
+          "regular": 650,
+          "transfer": 23
+        },
+        "graduated": 622,
+        "resign": 21,
+        "die": 0,
+        "switch_study_program": 12,
+        "inbound": 10,
+        "outbound": 8,
+        "total": 673
+      },
+      {
+        "study_program": "S1 Teknik Elektro",
+        "active": {
+          "regular": 500,
+          "transfer": 15
+        },
+        "cuti": {
+          "regular": 8,
+          "transfer": 1
+        },
+        "non_active": {
+          "regular": 30,
+          "transfer": 1
+        },
+        "total_active_cuti_non_active": {
+          "regular": 538,
+          "transfer": 17
+        },
+        "graduated": 516,
+        "resign": 8,
+        "die": 1,
+        "switch_study_program": 13,
+        "inbound": 10,
+        "outbound": 7,
+        "total": 555
+      },
+      {
+        "study_program": "S1 Matematika",
+        "active": {
+          "regular": 800,
+          "transfer": 25
+        },
+        "cuti": {
+          "regular": 20,
+          "transfer": 1
+        },
+        "non_active": {
+          "regular": 60,
+          "transfer": 3
+        },
+        "total_active_cuti_non_active": {
+          "regular": 880,
+          "transfer": 29
+        },
+        "graduated": 731,
+        "resign": 86,
+        "die": 4,
+        "switch_study_program": 60,
+        "inbound": 18,
+        "outbound": 10,
+        "total": 909
+      },
+      {
+        "study_program": "S1 Fisika",
+        "active": {
+          "regular": 700,
+          "transfer": 20
+        },
+        "cuti": {
+          "regular": 15,
+          "transfer": 1
+        },
+        "non_active": {
+          "regular": 50,
+          "transfer": 2
+        },
+        "total_active_cuti_non_active": {
+          "regular": 765,
+          "transfer": 23
+        },
+        "graduated": 622,
+        "resign": 88,
+        "die": 1,
+        "switch_study_program": 52,
+        "inbound": 15,
+        "outbound": 10,
+        "total": 788
+      },
+      {
+        "study_program": "S1 Kimia",
+        "active": {
+          "regular": 800,
+          "transfer": 20
+        },
+        "cuti": {
+          "regular": 15,
+          "transfer": 2
+        },
+        "non_active": {
+          "regular": 50,
+          "transfer": 1
+        },
+        "total_active_cuti_non_active": {
+          "regular": 865,
+          "transfer": 23
+        },
+        "graduated": 724,
+        "resign": 22,
+        "die": 1,
+        "switch_study_program": 92,
+        "inbound": 30,
+        "outbound": 19,
+        "total": 888
+      },
+      {
+        "study_program": "S1 Kimia",
+        "active": {
+          "regular": 600,
+          "transfer": 15
+        },
+        "cuti": {
+          "regular": 10,
+          "transfer": 1
+        },
+        "non_active": {
+          "regular": 40,
+          "transfer": 2
+        },
+        "total_active_cuti_non_active": {
+          "regular": 650,
+          "transfer": 18
+        },
+        "graduated": 528,
+        "resign": 80,
+        "die": 2,
+        "switch_study_program": 40,
+        "inbound": 10,
+        "outbound": 8,
+        "total": 668
+      }
+    ]
+  },
+  {
+    "academic_id": "ACA-004",
+    "name": "Penerimaan Mahasiswa Baru Rekap Umum",
+    "data": [
+      {
+        "year": 2023,
+        "target_new_student": 3500,
+        "tight_competition": "12:01",
+        "registration_path": [
+          {
+            "path_name": "Program Kerjasama Perusahaan/Institusi/Pemerintah",
+            "following_selection": 7500,
+            "pass_selection": 105,
+            "re_registration": 100,
+            "resign": 5
+          },
+          {
+            "path_name": "Prestasi",
+            "following_selection": 1500,
+            "pass_selection": 140,
+            "re_registration": 138,
+            "resign": 2
+          },
+          {
+            "path_name": "PMDK",
+            "following_selection": 2500,
+            "pass_selection": 525,
+            "re_registration": 515,
+            "resign": 10
+          },
+          {
+            "path_name": "Seleksi Mandiri",
+            "following_selection": 3800,
+            "pass_selection": 1050,
+            "re_registration": 1050,
+            "resign": 0
+          },
+          {
+            "path_name": "Ujian Masuk Bersama",
+            "following_selection": 5000,
+            "pass_selection": 1575,
+            "re_registration": 1557,
+            "resign": 18
+          },
+          {
+            "path_name": "SNBT",
+            "following_selection": 625,
+            "pass_selection": 35,
+            "re_registration": 32,
+            "resign": 3
+          },
+          {
+            "path_name": "SNBP",
+            "following_selection": 580,
+            "pass_selection": 50,
+            "re_registration": 46,
+            "resign": 4
+          },
+          {
+            "path_name": "Program Internasional",
+            "following_selection": 120,
+            "pass_selection": 20,
+            "re_registration": 18,
+            "resign": 2
+          }
+        ]
+      },
+      {
+        "year": 2022,
+        "target_new_student": 3200,
+        "tight_competition": "16:01",
+        "registration_path": [
+          {
+            "path_name": "Program Kerjasama Perusahaan/Institusi/Pemerintah",
+            "following_selection": 1200,
+            "pass_selection": 224,
+            "re_registration": 221,
+            "resign": 3
+          },
+          {
+            "path_name": "Prestasi",
+            "following_selection": 570,
+            "pass_selection": 256,
+            "re_registration": 2481,
+            "resign": 8
+          },
+          {
+            "path_name": "PMDK",
+            "following_selection": 2800,
+            "pass_selection": 544,
+            "re_registration": 539,
+            "resign": 5
+          },
+          {
+            "path_name": "Seleksi Mandiri",
+            "following_selection": 1450,
+            "pass_selection": 800,
+            "re_registration": 798,
+            "resign": 2
+          },
+          {
+            "path_name": "Ujian Masuk Bersama",
+            "following_selection": 4900,
+            "pass_selection": 1216,
+            "re_registration": 1209,
+            "resign": 7
+          },
+          {
+            "path_name": "SNBT",
+            "following_selection": 420,
+            "pass_selection": 50,
+            "re_registration": 40,
+            "resign": 10
+          },
+          {
+            "path_name": "SNBP",
+            "following_selection": 370,
+            "pass_selection": 68,
+            "re_registration": 62,
+            "resign": 6
+          },
+          {
+            "path_name": "Program Internasional",
+            "following_selection": 65,
+            "pass_selection": 42,
+            "re_registration": 41,
+            "resign": 1
+          }
+        ]
+      },
+      {
+        "year": 2021,
+        "target_new_student": 3200,
+        "tight_competition": "20:01",
+        "registration_path": [
+          {
+            "path_name": "Program Kerjasama Perusahaan/Institusi/Pemerintah",
+            "following_selection": 1480,
+            "pass_selection": 160,
+            "re_registration": 153,
+            "resign": 7
+          },
+          {
+            "path_name": "Prestasi",
+            "following_selection": 2600,
+            "pass_selection": 192,
+            "re_registration": 186,
+            "resign": 6
+          },
+          {
+            "path_name": "PMDK",
+            "following_selection": 4510,
+            "pass_selection": 320,
+            "re_registration": 302,
+            "resign": 18
+          },
+          {
+            "path_name": "Seleksi Mandiri",
+            "following_selection": 1335,
+            "pass_selection": 960,
+            "re_registration": 935,
+            "resign": 25
+          },
+          {
+            "path_name": "Ujian Masuk Bersama",
+            "following_selection": 6080,
+            "pass_selection": 1120,
+            "re_registration": 1080,
+            "resign": 40
+          },
+          {
+            "path_name": "SNBT",
+            "following_selection": 520,
+            "pass_selection": 280,
+            "re_registration": 278,
+            "resign": 2
+          },
+          {
+            "path_name": "SNBP",
+            "following_selection": 325,
+            "pass_selection": 115,
+            "re_registration": 110,
+            "resign": 5
+          },
+          {
+            "path_name": "Program Internasional",
+            "following_selection": 145,
+            "pass_selection": 53,
+            "re_registration": 50,
+            "resign": 3
+          }
+        ]
+      },
+      {
+        "year": 2020,
+        "target_new_student": 3350,
+        "tight_competition": "13:01",
+        "registration_path": [
+          {
+            "path_name": "Program Kerjasama Perusahaan/Institusi/Pemerintah",
+            "following_selection": 1120,
+            "pass_selection": 75,
+            "re_registration": 71,
+            "resign": 4
+          },
+          {
+            "path_name": "Prestasi",
+            "following_selection": 4820,
+            "pass_selection": 140,
+            "re_registration": 132,
+            "resign": 8
+          },
+          {
+            "path_name": "PMDK",
+            "following_selection": 3650,
+            "pass_selection": 320,
+            "re_registration": 299,
+            "resign": 24
+          },
+          {
+            "path_name": "Seleksi Mandiri",
+            "following_selection": 1270,
+            "pass_selection": 845,
+            "re_registration": 828,
+            "resign": 17
+          },
+          {
+            "path_name": "Ujian Masuk Bersama",
+            "following_selection": 5025,
+            "pass_selection": 1750,
+            "re_registration": 1705,
+            "resign": 45
+          },
+          {
+            "path_name": "SNBT",
+            "following_selection": 455,
+            "pass_selection": 65,
+            "re_registration": 62,
+            "resign": 3
+          },
+          {
+            "path_name": "SNBP",
+            "following_selection": 980,
+            "pass_selection": 75,
+            "re_registration": 66,
+            "resign": 9
+          },
+          {
+            "path_name": "Program Internasional",
+            "following_selection": 125,
+            "pass_selection": 80,
+            "re_registration": 77,
+            "resign": 3
+          }
+        ]
+      },
+      {
+        "year": 2019,
+        "target_new_student": 3100,
+        "tight_competition": "15:01",
+        "registration_path": [
+          {
+            "path_name": "Program Kerjasama Perusahaan/Institusi/Pemerintah",
+            "following_selection": 1060,
+            "pass_selection": 155,
+            "re_registration": 147,
+            "resign": 8
+          },
+          {
+            "path_name": "Prestasi",
+            "following_selection": 670,
+            "pass_selection": 248,
+            "re_registration": 231,
+            "resign": 17
+          },
+          {
+            "path_name": "PMDK",
+            "following_selection": 2400,
+            "pass_selection": 483,
+            "re_registration": 471,
+            "resign": 12
+          },
+          {
+            "path_name": "Seleksi Mandiri",
+            "following_selection": 3700,
+            "pass_selection": 527,
+            "re_registration": 524,
+            "resign": 3
+          },
+          {
+            "path_name": "Ujian Masuk Bersama",
+            "following_selection": 4050,
+            "pass_selection": 992,
+            "re_registration": 963,
+            "resign": 29
+          },
+          {
+            "path_name": "SNBT",
+            "following_selection": 720,
+            "pass_selection": 465,
+            "re_registration": 461,
+            "resign": 4
+          },
+          {
+            "path_name": "SNBP",
+            "following_selection": 520,
+            "pass_selection": 80,
+            "re_registration": 70,
+            "resign": 10
+          },
+          {
+            "path_name": "Program Internasional",
+            "following_selection": 300,
+            "pass_selection": 150,
+            "re_registration": 144,
+            "resign": 6
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "academic_id": "ACA-005",
+    "name": "Penerimaan Mahasiswa Baru Rekap Program Studi",
+    "data": [
+      {
+        "study_program": "Teknik Lingkungan",
+        "target_new_student": 3500,
+        "tight_competition": "12:01",
+        "registration_path": [
+          {
+            "path_name": "Program Kerjasama Perusahaan/Institusi/Pemerintah",
+            "following_selection": 7500,
+            "pass_selection": 175,
+            "re_registration": 175,
+            "resign": 0
+          },
+          {
+            "path_name": "Prestasi",
+            "following_selection": 1500,
+            "pass_selection": 420,
+            "re_registration": 402,
+            "resign": 18
+          },
+          {
+            "path_name": "PMDK",
+            "following_selection": 2500,
+            "pass_selection": 350,
+            "re_registration": 330,
+            "resign": 20
+          },
+          {
+            "path_name": "Seleksi Mandiri",
+            "following_selection": 3000,
+            "pass_selection": 700,
+            "re_registration": 700,
+            "resign": 0
+          },
+          {
+            "path_name": "Ujian Masuk Bersama",
+            "following_selection": 9000,
+            "pass_selection": 1225,
+            "re_registration": 1211,
+            "resign": 14
+          },
+          {
+            "path_name": "SNBT",
+            "following_selection": 1500,
+            "pass_selection": 300,
+            "re_registration": 308,
+            "resign": 22
+          },
+          {
+            "path_name": "SNBP",
+            "following_selection": 1800,
+            "pass_selection": 180,
+            "re_registration": 173,
+            "resign": 7
+          },
+          {
+            "path_name": "Program Internasional",
+            "following_selection": 520,
+            "pass_selection": 120,
+            "re_registration": 118,
+            "resign": 2
+          }
+        ]
+      },
+      {
+        "study_program": "Teknik Mesin",
+        "target_new_student": 2500,
+        "tight_competition": "16:01",
+        "registration_path": [
+          {
+            "path_name": "Program Kerjasama Perusahaan/Institusi/Pemerintah",
+            "following_selection": 4000,
+            "pass_selection": 125,
+            "re_registration": 119,
+            "resign": 6
+          },
+          {
+            "path_name": "Prestasi",
+            "following_selection": 2500,
+            "pass_selection": 50,
+            "re_registration": 41,
+            "resign": 9
+          },
+          {
+            "path_name": "PMDK",
+            "following_selection": 3250,
+            "pass_selection": 375,
+            "re_registration": 375,
+            "resign": 0
+          },
+          {
+            "path_name": "Seleksi Mandiri",
+            "following_selection": 5500,
+            "pass_selection": 530,
+            "re_registration": 505,
+            "resign": 25
+          },
+          {
+            "path_name": "Ujian Masuk Bersama",
+            "following_selection": 7800,
+            "pass_selection": 1275,
+            "re_registration": 1258,
+            "resign": 17
+          },
+          {
+            "path_name": "SNBT",
+            "following_selection": 1200,
+            "pass_selection": 75,
+            "re_registration": 72,
+            "resign": 3
+          },
+          {
+            "path_name": "SNBP",
+            "following_selection": 2400,
+            "pass_selection": 20,
+            "re_registration": 14,
+            "resign": 6
+          },
+          {
+            "path_name": "Program Internasional",
+            "following_selection": 800,
+            "pass_selection": 50,
+            "re_registration": 50,
+            "resign": 0
+          }
+        ]
+      },
+      {
+        "study_program": "Teknik Kimia",
+        "target_new_student": 2900,
+        "tight_competition": "15:01",
+        "registration_path": [
+          {
+            "path_name": "Program Kerjasama Perusahaan/Institusi/Pemerintah",
+            "following_selection": 2000,
+            "pass_selection": 290,
+            "re_registration": 279,
+            "resign": 11
+          },
+          {
+            "path_name": "Prestasi",
+            "following_selection": 2800,
+            "pass_selection": 145,
+            "re_registration": 140,
+            "resign": 5
+          },
+          {
+            "path_name": "PMDK",
+            "following_selection": 3600,
+            "pass_selection": 580,
+            "re_registration": 580,
+            "resign": 0
+          },
+          {
+            "path_name": "Seleksi Mandiri",
+            "following_selection": 5200,
+            "pass_selection": 535,
+            "re_registration": 510,
+            "resign": 25
+          },
+          {
+            "path_name": "Ujian Masuk Bersama",
+            "following_selection": 9800,
+            "pass_selection": 1160,
+            "re_registration": 1142,
+            "resign": 18
+          },
+          {
+            "path_name": "SNBT",
+            "following_selection": 1450,
+            "pass_selection": 90,
+            "re_registration": 83,
+            "resign": 7
+          },
+          {
+            "path_name": "SNBP",
+            "following_selection": 1200,
+            "pass_selection": 30,
+            "re_registration": 30,
+            "resign": 0
+          },
+          {
+            "path_name": "Program Internasional",
+            "following_selection": 400,
+            "pass_selection": 70,
+            "re_registration": 64,
+            "resign": 6
+          }
+        ]
+      },
+      {
+        "study_program": "Teknik Industri",
+        "target_new_student": 3300,
+        "tight_competition": "13:01",
+        "registration_path": [
+          {
+            "path_name": "Program Kerjasama Perusahaan/Institusi/Pemerintah",
+            "following_selection": 4500,
+            "pass_selection": 170,
+            "re_registration": 135,
+            "resign": 35
+          },
+          {
+            "path_name": "Prestasi",
+            "following_selection": 1485,
+            "pass_selection": 290,
+            "re_registration": 270,
+            "resign": 20
+          },
+          {
+            "path_name": "PMDK",
+            "following_selection": 2190,
+            "pass_selection": 480,
+            "re_registration": 480,
+            "resign": 0
+          },
+          {
+            "path_name": "Seleksi Mandiri",
+            "following_selection": 3450,
+            "pass_selection": 620,
+            "re_registration": 612,
+            "resign": 8
+          },
+          {
+            "path_name": "Ujian Masuk Bersama",
+            "following_selection": 7500,
+            "pass_selection": 1485,
+            "re_registration": 1465,
+            "resign": 20
+          },
+          {
+            "path_name": "SNBT",
+            "following_selection": 2200,
+            "pass_selection": 150,
+            "re_registration": 136,
+            "resign": 14
+          },
+          {
+            "path_name": "SNBP",
+            "following_selection": 750,
+            "pass_selection": 85,
+            "re_registration": 79,
+            "resign": 6
+          },
+          {
+            "path_name": "Program Internasional",
+            "following_selection": 200,
+            "pass_selection": 20,
+            "re_registration": 18,
+            "resign": 2
+          }
+        ]
+      },
+      {
+        "study_program": "Teknik Elektro",
+        "target_new_student": 2700,
+        "tight_competition": "14:01",
+        "registration_path": [
+          {
+            "path_name": "Program Kerjasama Perusahaan/Institusi/Pemerintah",
+            "following_selection": 3000,
+            "pass_selection": 135,
+            "re_registration": 131,
+            "resign": 4
+          },
+          {
+            "path_name": "Prestasi",
+            "following_selection": 2500,
+            "pass_selection": 216,
+            "re_registration": 214,
+            "resign": 2
+          },
+          {
+            "path_name": "PMDK",
+            "following_selection": 6000,
+            "pass_selection": 390,
+            "re_registration": 382,
+            "resign": 8
+          },
+          {
+            "path_name": "Seleksi Mandiri",
+            "following_selection": 4200,
+            "pass_selection": 605,
+            "re_registration": 590,
+            "resign": 15
+          },
+          {
+            "path_name": "Ujian Masuk Bersama",
+            "following_selection": 8800,
+            "pass_selection": 1134,
+            "re_registration": 1122,
+            "resign": 12
+          },
+          {
+            "path_name": "SNBT",
+            "following_selection": 1600,
+            "pass_selection": 165,
+            "re_registration": 165,
+            "resign": 0
+          },
+          {
+            "path_name": "SNBP",
+            "following_selection": 1500,
+            "pass_selection": 25,
+            "re_registration": 11,
+            "resign": 14
+          },
+          {
+            "path_name": "Program Internasional",
+            "following_selection": 300,
+            "pass_selection": 30,
+            "re_registration": 29,
+            "resign": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "academic_id": "ACA-006",
+    "name": "Mahasiswa Registrasi",
+    "data": [
+      {
+        "faculty": "Fakultas Hukum",
+        "study_program": "S1 Ilmu Hukum",
+        "school_year": "2023-1",
+        "registration_status": {
+          "registration": 2000,
+          "not_register": 20,
+          "cuti": 12
+        },
+        "payment_status": {
+          "paid_off": 1980,
+          "not_yet_paid_off": 10,
+          "arrears": 10
+        },
+        "funding_source": {
+          "independent": 1000,
+          "full_scholarship": 500,
+          "non_full_scholarship": 450,
+          "aim_mission": 30
+        }
+      },
+      {
+        "faculty": "Fakultas Kedokteran",
+        "study_program": "S1 Kedokteran",
+        "school_year": "2023-1",
+        "registration_status": {
+          "registration": 1750,
+          "not_register": 30,
+          "cuti": 15
+        },
+        "payment_status": {
+          "paid_off": 1690,
+          "not_yet_paid_off": 25,
+          "arrears": 35
+        },
+        "funding_source": {
+          "independent": 990,
+          "full_scholarship": 365,
+          "non_full_scholarship": 300,
+          "aim_mission": 35
+        }
+      },
+      {
+        "faculty": "Fakultas Pertanian",
+        "study_program": "S1 Agribisnis",
+        "school_year": "2023-1",
+        "registration_status": {
+          "registration": 1500,
+          "not_register": 45,
+          "cuti": 20
+        },
+        "payment_status": {
+          "paid_off": 1380,
+          "not_yet_paid_off": 40,
+          "arrears": 80
+        },
+        "funding_source": {
+          "independent": 920,
+          "full_scholarship": 200,
+          "non_full_scholarship": 220,
+          "aim_mission": 40
+        }
+      },
+      {
+        "faculty": "Fakultas Pertanian",
+        "study_program": "S1 Agribisnis",
+        "school_year": "2023-1",
+        "registration_status": {
+          "registration": 1800,
+          "not_register": 40,
+          "cuti": 30
+        },
+        "payment_status": {
+          "paid_off": 1720,
+          "not_yet_paid_off": 50,
+          "arrears": 30
+        },
+        "funding_source": {
+          "independent": 1000,
+          "full_scholarship": 370,
+          "non_full_scholarship": 300,
+          "aim_mission": 50
+        }
+      },
+      {
+        "faculty": "Fakultas Pertanian",
+        "study_program": "S1 Peternakan",
+        "school_year": "2023-1",
+        "registration_status": {
+          "registration": 2100,
+          "not_register": 10,
+          "cuti": 15
+        },
+        "payment_status": {
+          "paid_off": 2030,
+          "not_yet_paid_off": 35,
+          "arrears": 35
+        },
+        "funding_source": {
+          "independent": 1200,
+          "full_scholarship": 450,
+          "non_full_scholarship": 340,
+          "aim_mission": 40
+        }
+      },
+      {
+        "faculty": "Fakultas Teknik",
+        "study_program": "S1 Teknik Sipil",
+        "school_year": "2023-1",
+        "registration_status": {
+          "registration": 1700,
+          "not_register": 12,
+          "cuti": 22
+        },
+        "payment_status": {
+          "paid_off": 1660,
+          "not_yet_paid_off": 25,
+          "arrears": 15
+        },
+        "funding_source": {
+          "independent": 900,
+          "full_scholarship": 280,
+          "non_full_scholarship": 465,
+          "aim_mission": 15
+        }
+      },
+      {
+        "faculty": "Fakultas Teknik",
+        "study_program": "S1 Teknik ELektro",
+        "school_year": "2023-1",
+        "registration_status": {
+          "registration": 1850,
+          "not_register": 5,
+          "cuti": 18
+        },
+        "payment_status": {
+          "paid_off": 1835,
+          "not_yet_paid_off": 5,
+          "arrears": 10
+        },
+        "funding_source": {
+          "independent": 970,
+          "full_scholarship": 350,
+          "non_full_scholarship": 480,
+          "aim_mission": 35
+        }
+      },
+      {
+        "faculty": "Fakultas Teknik",
+        "study_program": "S1 Teknik Mesin",
+        "school_year": "2023-1",
+        "registration_status": {
+          "registration": 2200,
+          "not_register": 35,
+          "cuti": 25
+        },
+        "payment_status": {
+          "paid_off": 2140,
+          "not_yet_paid_off": 20,
+          "arrears": 40
+        },
+        "funding_source": {
+          "independent": 1100,
+          "full_scholarship": 560,
+          "non_full_scholarship": 460,
+          "aim_mission": 20
+        }
+      },
+      {
+        "faculty": "Fakultas Ilmu Komputer dan Teknologi Informasi",
+        "study_program": "S1 Ilmu Komputer",
+        "school_year": "2023-1",
+        "registration_status": {
+          "registration": 2000,
+          "not_register": 20,
+          "cuti": 16
+        },
+        "payment_status": {
+          "paid_off": 1960,
+          "not_yet_paid_off": 20,
+          "arrears": 20
+        },
+        "funding_source": {
+          "independent": 940,
+          "full_scholarship": 520,
+          "non_full_scholarship": 415,
+          "aim_mission": 85
+        }
+      },
+      {
+        "faculty": "Fakultas Ilmu Komputer dan Teknologi Informasi",
+        "study_program": "S1 Teknologi Informasi",
+        "school_year": "2023-1",
+        "registration_status": {
+          "registration": 1900,
+          "not_register": 10,
+          "cuti": 13
+        },
+        "payment_status": {
+          "paid_off": 1870,
+          "not_yet_paid_off": 25,
+          "arrears": 5
+        },
+        "funding_source": {
+          "independent": 1250,
+          "full_scholarship": 435,
+          "non_full_scholarship": 175,
+          "aim_mission": 10
+        }
+      }
+    ]
+  },
+  {
+    "academic_id": "ACA-007",
+    "name": "Demografi Mahasiswa Aktif Berdasarkan Kewarganegaraan",
+    "data": [
+      {
+        "study_program": "S1 Ilmu Hukum",
+        "cityzenship": {
+          "indonesia": 1910,
+          "brunei": 2,
+          "malaysia": 2,
+          "kamboja": 35,
+          "laos": 8,
+          "myanmar": 3,
+          "filipina": 14,
+          "singapura": 7,
+          "thailand": 1,
+          "vietnam": 0,
+          "other": 2
+        },
+        "total": 2014
+      },
+      {
+        "study_program": "S1 Kedokteran",
+        "cityzenship": {
+          "indonesia": 2200,
+          "brunei": 6,
+          "malaysia": 0,
+          "kamboja": 2,
+          "laos": 5,
+          "myanmar": 0,
+          "filipina": 2,
+          "singapura": 0,
+          "thailand": 6,
+          "vietnam": 4,
+          "other": 5
+        },
+        "total": 2230
+      },
+      {
+        "study_program": "S1 Agroteknologi",
+        "cityzenship": {
+          "indonesia": 1365,
+          "brunei": 0,
+          "malaysia": 11,
+          "kamboja": 0,
+          "laos": 0,
+          "myanmar": 1,
+          "filipina": 1,
+          "singapura": 1,
+          "thailand": 0,
+          "vietnam": 1,
+          "other": 1
+        },
+        "total": 1381
+      },
+      {
+        "study_program": "S1 Agribisnis",
+        "cityzenship": {
+          "indonesia": 1750,
+          "brunei": 4,
+          "malaysia": 15,
+          "kamboja": 18,
+          "laos": 7,
+          "myanmar": 2,
+          "filipina": 6,
+          "singapura": 2,
+          "thailand": 12,
+          "vietnam": 2,
+          "other": 0
+        },
+        "total": 1818
+      },
+      {
+        "study_program": "S1 Peternakan",
+        "cityzenship": {
+          "indonesia": 2100,
+          "brunei": 0,
+          "malaysia": 0,
+          "kamboja": 5,
+          "laos": 3,
+          "myanmar": 10,
+          "filipina": 5,
+          "singapura": 8,
+          "thailand": 5,
+          "vietnam": 11,
+          "other": 7
+        },
+        "total": 2154
+      },
+      {
+        "study_program": "S1 Teknik Sipil",
+        "cityzenship": {
+          "indonesia": 1975,
+          "brunei": 0,
+          "malaysia": 8,
+          "kamboja": 3,
+          "laos": 0,
+          "myanmar": 5,
+          "filipina": 4,
+          "singapura": 5,
+          "thailand": 17,
+          "vietnam": 0,
+          "other": 4
+        },
+        "total": 2021
+      },
+      {
+        "study_program": "S1 Teknik ELektro",
+        "cityzenship": {
+          "indonesia": 2350,
+          "brunei": 22,
+          "malaysia": 6,
+          "kamboja": 0,
+          "laos": 1,
+          "myanmar": 0,
+          "filipina": 0,
+          "singapura": 12,
+          "thailand": 7,
+          "vietnam": 9,
+          "other": 4
+        },
+        "total": 2411
+      },
+      {
+        "study_program": "S1 Teknik Mesin",
+        "cityzenship": {
+          "indonesia": 2000,
+          "brunei": 1,
+          "malaysia": 1,
+          "kamboja": 10,
+          "laos": 2,
+          "myanmar": 4,
+          "filipina": 10,
+          "singapura": 3,
+          "thailand": 2,
+          "vietnam": 3,
+          "other": 4
+        },
+        "total": 2045
+      },
+      {
+        "study_program": "S1 Ilmu Komputer",
+        "cityzenship": {
+          "indonesia": 1880,
+          "brunei": 3,
+          "malaysia": 3,
+          "kamboja": 0,
+          "laos": 19,
+          "myanmar": 11,
+          "filipina": 3,
+          "singapura": 8,
+          "thailand": 20,
+          "vietnam": 2,
+          "other": 3
+        },
+        "total": 1952
+      },
+      {
+        "study_program": "S1 Teknologi Informasi",
+        "cityzenship": {
+          "indonesia": 1650,
+          "brunei": 12,
+          "malaysia": 25,
+          "kamboja": 1,
+          "laos": 4,
+          "myanmar": 6,
+          "filipina": 0,
+          "singapura": 0,
+          "thailand": 22,
+          "vietnam": 5,
+          "other": 0
+        },
+        "total": 1725
+      }
+    ]
+  },
+  {
+    "academic_id": "ACA-008",
+    "name": "Demografi Mahasiswa Aktif Berdasarkan Jenis Kelamin dan Pekerjaan Orang Tua",
+    "data": [
+      {
+        "study_program": "S1 Ilmu Hukum",
+        "gender": {
+          "male": 1400,
+          "female": 1250
+        },
+        "parent_job": {
+          "farmer": 265,
+          "pns": 450,
+          "lecturer": 315,
+          "doctor": 55,
+          "politikus": 100,
+          "enterpreneur": 325,
+          "private_employees": 460,
+          "laborer": 390,
+          "artist": 120,
+          "others": 171
+        }
+      },
+      {
+        "study_program": "S1 Kedokteran",
+        "gender": {
+          "male": 920,
+          "female": 1110
+        },
+        "parent_job": {
+          "farmer": 150,
+          "pns": 620,
+          "lecturer": 171,
+          "doctor": 40,
+          "politikus": 265,
+          "enterpreneur": 200,
+          "private_employees": 120,
+          "laborer": 265,
+          "artist": 200,
+          "others": 0
+        }
+      },
+      {
+        "study_program": "S1 Agroteknologi",
+        "gender": {
+          "male": 1050,
+          "female": 1450
+        },
+        "parent_job": {
+          "farmer": 350,
+          "pns": 255,
+          "lecturer": 380,
+          "doctor": 20,
+          "politikus": 170,
+          "enterpreneur": 325,
+          "private_employees": 280,
+          "laborer": 360,
+          "artist": 140,
+          "others": 220
+        }
+      },
+      {
+        "study_program": "S1 Agribisnis",
+        "gender": {
+          "male": 950,
+          "female": 935
+        },
+        "parent_job": {
+          "farmer": 180,
+          "pns": 330,
+          "lecturer": 240,
+          "doctor": 35,
+          "politikus": 40,
+          "enterpreneur": 210,
+          "private_employees": 150,
+          "laborer": 300,
+          "artist": 125,
+          "others": 275
+        }
+      },
+      {
+        "study_program": "S1 Peternakan",
+        "gender": {
+          "male": 1210,
+          "female": 1170
+        },
+        "parent_job": {
+          "farmer": 420,
+          "pns": 190,
+          "lecturer": 290,
+          "doctor": 5,
+          "politikus": 125,
+          "enterpreneur": 180,
+          "private_employees": 270,
+          "laborer": 345,
+          "artist": 240,
+          "others": 315
+        }
+      },
+      {
+        "study_program": "S1 Teknik Sipil",
+        "gender": {
+          "male": 1150,
+          "female": 1230
+        },
+        "parent_job": {
+          "farmer": 140,
+          "pns": 265,
+          "lecturer": 225,
+          "doctor": 60,
+          "politikus": 50,
+          "enterpreneur": 500,
+          "private_employees": 285,
+          "laborer": 500,
+          "artist": 105,
+          "others": 250
+        }
+      },
+      {
+        "study_program": "S1 Teknik ELektro",
+        "gender": {
+          "male": 980,
+          "female": 820
+        },
+        "parent_job": {
+          "farmer": 230,
+          "pns": 80,
+          "lecturer": 270,
+          "doctor": 30,
+          "politikus": 145,
+          "enterpreneur": 305,
+          "private_employees": 230,
+          "laborer": 210,
+          "artist": 180,
+          "others": 120
+        }
+      },
+      {
+        "study_program": "S1 Teknik Mesin",
+        "gender": {
+          "male": 1500,
+          "female": 940
+        },
+        "parent_job": {
+          "farmer": 50,
+          "pns": 265,
+          "lecturer": 495,
+          "doctor": 28,
+          "politikus": 80,
+          "enterpreneur": 175,
+          "private_employees": 290,
+          "laborer": 350,
+          "artist": 310,
+          "others": 400
+        }
+      },
+      {
+        "study_program": "S1 Ilmu Komputer",
+        "gender": {
+          "male": 1200,
+          "female": 1080
+        },
+        "parent_job": {
+          "farmer": 110,
+          "pns": 175,
+          "lecturer": 165,
+          "doctor": 10,
+          "politikus": 130,
+          "enterpreneur": 360,
+          "private_employees": 500,
+          "laborer": 330,
+          "artist": 280,
+          "others": 220
+        }
+      },
+      {
+        "study_program": "S1 Teknologi Informasi",
+        "gender": {
+          "male": 1360,
+          "female": 1310
+        },
+        "parent_job": {
+          "farmer": 90,
+          "pns": 390,
+          "lecturer": 185,
+          "doctor": 0,
+          "politikus": 70,
+          "enterpreneur": 265,
+          "private_employees": 430,
+          "laborer": 625,
+          "artist": 265,
+          "others": 350
+        }
+      }
+    ]
+  },
+  {
+    "academic_id": "ACA-009",
+    "name": "Demografi Mahasiswa Aktif Berdasarkan Domisili",
+    "data": [
+      {
+        "domicile": "Aceh",
+        "student_type": {
+          "regular": 140,
+          "pindahan": 45,
+          "international": 0,
+          "mbkm": 125
+        },
+        "total": 310
+      },
+      {
+        "domicile": "Sumatra Utara",
+        "student_type": {
+          "regular": 250,
+          "pindahan": 30,
+          "international": 10,
+          "mbkm": 100
+        },
+        "total": 390
+      },
+      {
+        "domicile": "Sumatra Barat",
+        "student_type": {
+          "regular": 82,
+          "pindahan": 12,
+          "international": 15,
+          "mbkm": 20
+        },
+        "total": 129
+      },
+      {
+        "domicile": "Riau",
+        "student_type": {
+          "regular": 150,
+          "pindahan": 27,
+          "international": 18,
+          "mbkm": 110
+        },
+        "total": 305
+      },
+      {
+        "domicile": "Jambi",
+        "student_type": {
+          "regular": 180,
+          "pindahan": 30,
+          "international": 25,
+          "mbkm": 30
+        },
+        "total": 265
+      },
+      {
+        "domicile": "Sumatra Selatan",
+        "student_type": {
+          "regular": 140,
+          "pindahan": 10,
+          "international": 8,
+          "mbkm": 45
+        },
+        "total": 203
+      },
+      {
+        "domicile": "Bengkulu",
+        "student_type": {
+          "regular": 35,
+          "pindahan": 3,
+          "international": 35,
+          "mbkm": 17
+        },
+        "total": 90
+      },
+      {
+        "domicile": "Lampung",
+        "student_type": {
+          "regular": 90,
+          "pindahan": 18,
+          "international": 3,
+          "mbkm": 20
+        },
+        "total": 131
+      },
+      {
+        "domicile": "Kepulauan Bangka Belitung",
+        "student_type": {
+          "regular": 84,
+          "pindahan": 25,
+          "international": 14,
+          "mbkm": 60
+        },
+        "total": 183
+      },
+      {
+        "domicile": "Kepulauan Riau",
+        "student_type": {
+          "regular": 60,
+          "pindahan": 20,
+          "international": 15,
+          "mbkm": 25
+        },
+        "total": 120
+      },
+      {
+        "domicile": "Daerah Khusus Ibukota Jakarta",
+        "student_type": {
+          "regular": 72,
+          "pindahan": 5,
+          "international": 1,
+          "mbkm": 48
+        },
+        "total": 126
+      },
+      {
+        "domicile": "Jawa Barat",
+        "student_type": {
+          "regular": 160,
+          "pindahan": 1,
+          "international": 5,
+          "mbkm": 9
+        },
+        "total": 175
+      },
+      {
+        "domicile": "Jawa Tengah",
+        "student_type": {
+          "regular": 120,
+          "pindahan": 15,
+          "international": 3,
+          "mbkm": 0
+        },
+        "total": 138
+      },
+      {
+        "domicile": "Daerah Istimewa Yogyakarta",
+        "student_type": {
+          "regular": 23,
+          "pindahan": 25,
+          "international": 2,
+          "mbkm": 30
+        },
+        "total": 80
+      },
+      {
+        "domicile": "Jawa Timur",
+        "student_type": {
+          "regular": 80,
+          "pindahan": 0,
+          "international": 5,
+          "mbkm": 25
+        },
+        "total": 110
+      },
+      {
+        "domicile": "Banten",
+        "student_type": {
+          "regular": 121,
+          "pindahan": 10,
+          "international": 7,
+          "mbkm": 16
+        },
+        "total": 154
+      },
+      {
+        "domicile": "Bali",
+        "student_type": {
+          "regular": 11,
+          "pindahan": 25,
+          "international": 5,
+          "mbkm": 18
+        },
+        "total": 59
+      },
+      {
+        "domicile": "Nusa Tenggara Barat",
+        "student_type": {
+          "regular": 30,
+          "pindahan": 8,
+          "international": 2,
+          "mbkm": 12
+        },
+        "total": 52
+      },
+      {
+        "domicile": "Nusa Tenggara Timur",
+        "student_type": {
+          "regular": 6,
+          "pindahan": 10,
+          "international": 12,
+          "mbkm": 11
+        },
+        "total": 39
+      },
+      {
+        "domicile": "Kalimantan Barat",
+        "student_type": {
+          "regular": 10,
+          "pindahan": 45,
+          "international": 10,
+          "mbkm": 0
+        },
+        "total": 65
+      },
+      {
+        "domicile": "Kalimantan Tengah",
+        "student_type": {
+          "regular": 1,
+          "pindahan": 20,
+          "international": 0,
+          "mbkm": 0
+        },
+        "total": 21
+      },
+      {
+        "domicile": "Kalimantan Selatan",
+        "student_type": {
+          "regular": 13,
+          "pindahan": 5,
+          "international": 11,
+          "mbkm": 0
+        },
+        "total": 29
+      },
+      {
+        "domicile": "Kalimantan Timur",
+        "student_type": {
+          "regular": 16,
+          "pindahan": 2,
+          "international": 7,
+          "mbkm": 1
+        },
+        "total": 26
+      },
+      {
+        "domicile": "Kalimantan Utara",
+        "student_type": {
+          "regular": 7,
+          "pindahan": 0,
+          "international": 0,
+          "mbkm": 23
+        },
+        "total": 30
+      },
+      {
+        "domicile": "Sulawesi Utara",
+        "student_type": {
+          "regular": 12,
+          "pindahan": 8,
+          "international": 9,
+          "mbkm": 2
+        },
+        "total": 31
+      },
+      {
+        "domicile": "Sulawesi Tengah",
+        "student_type": {
+          "regular": 9,
+          "pindahan": 4,
+          "international": 6,
+          "mbkm": 1
+        },
+        "total": 20
+      },
+      {
+        "domicile": "Sulawesi Selatan",
+        "student_type": {
+          "regular": 11,
+          "pindahan": 3,
+          "international": 30,
+          "mbkm": 1
+        },
+        "total": 45
+      },
+      {
+        "domicile": "Sulawesi Tenggara",
+        "student_type": {
+          "regular": 13,
+          "pindahan": 6,
+          "international": 3,
+          "mbkm": 0
+        },
+        "total": 22
+      },
+      {
+        "domicile": "Gorontalo",
+        "student_type": {
+          "regular": 12,
+          "pindahan": 0,
+          "international": 1,
+          "mbkm": 0
+        },
+        "total": 13
+      },
+      {
+        "domicile": "Sulawesi Barat",
+        "student_type": {
+          "regular": 14,
+          "pindahan": 0,
+          "international": 1,
+          "mbkm": 2
+        },
+        "total": 17
+      },
+      {
+        "domicile": "Maluku",
+        "student_type": {
+          "regular": 5,
+          "pindahan": 1,
+          "international": 0,
+          "mbkm": 3
+        },
+        "total": 9
+      },
+      {
+        "domicile": "Maluku Utara",
+        "student_type": {
+          "regular": 9,
+          "pindahan": 2,
+          "international": 20,
+          "mbkm": 5
+        },
+        "total": 36
+      },
+      {
+        "domicile": "Papua",
+        "student_type": {
+          "regular": 4,
+          "pindahan": 5,
+          "international": 4,
+          "mbkm": 7
+        },
+        "total": 20
+      },
+      {
+        "domicile": "Papua Barat",
+        "student_type": {
+          "regular": 1,
+          "pindahan": 0,
+          "international": 3,
+          "mbkm": 4
+        },
+        "total": 8
+      },
+      {
+        "domicile": "Papua Selatan",
+        "student_type": {
+          "regular": 2,
+          "pindahan": 3,
+          "international": 8,
+          "mbkm": 1
+        },
+        "total": 14
+      },
+      {
+        "domicile": "Papua Tengah",
+        "student_type": {
+          "regular": 3,
+          "pindahan": 1,
+          "international": 2,
+          "mbkm": 3
+        },
+        "total": 9
+      },
+      {
+        "domicile": "Papua Pegunungan",
+        "student_type": {
+          "regular": 1,
+          "pindahan": 8,
+          "international": 0,
+          "mbkm": 2
+        },
+        "total": 11
+      },
+      {
+        "domicile": "Papua Barat Daya",
+        "student_type": {
+          "regular": 5,
+          "pindahan": 0,
+          "international": 4,
+          "mbkm": 6
+        },
+        "total": 15
+      }
+    ]
+  }
+]

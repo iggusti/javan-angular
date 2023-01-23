@@ -1,0 +1,59 @@
+<div class="row" id="auto-clicked">
+  <div class="col-12">
+    <app-card cardClass="card-datatable" headerClass="text-center text-md-left" [hidHeader]="true" [options]="false" [loading]="loadCard">
+      <div class="table-responsive pb-1 p-2 page-bg">
+        <table datatable [dtOptions]="dtOptions" class="table table-hover table-bordered display compact" [dtTrigger]="dtTrigger">
+          <thead class="thead-light">
+            <tr>
+              <th></th>
+              <th colspan="8" class="text-center">Fakultas : ...</th>
+            </tr>
+            <tr>
+              <th rowspan="2" width="10">No.</th>
+              <th rowspan="2">Program Studi</th>
+              <th rowspan="2" class="text-center">Jenjang</th>
+              <th colspan="6" class="text-center">Akreditasi</th>
+            </tr>
+            <tr>
+              <th>SK Akreditasi</th>
+              <th>Tanggal SK Akreditasi</th>
+              <th>Tanggal Akhir SK Akreditasi</th>
+              <th class="text-center">Nilai</th>
+              <th class="text-center">Peringkat</th>
+              <th class="text-center">Akreditasi</th>
+            </tr>
+          </thead>
+          <tbody *ngIf="listData?.length != 0">
+            <tr *ngFor="let data of listData; let i = index;">
+              <th>{{i+1}}.</th>
+              <td class="word-wrap">{{data.study_program}}</td>
+              <td class="text-center">{{data.level}}</td>
+              <td>{{data.accreditation.sk_akreditasi}}</td>
+              <td>{{data.accreditation.tanggal_sk_akreditasi}}</td>
+              <td>{{data.accreditation.tanggal_akhir_sk_akreditasi}}</td>
+              <td class="text-center">{{data.accreditation.nilai}}</td>
+              <td class="text-center">{{data.accreditation.grade}}</td>
+              <td class="text-center">{{data.accreditation.status}}</td>
+            </tr>
+          </tbody>
+          <tbody *ngIf="listData?.length == 0 && spinnerLoading">
+            <tr>
+              <td colspan="9" class="no-data-available text-center">
+                <img src='assets/images/infinity-situ.svg'>
+              </td>
+            </tr>
+          </tbody>
+          <tbody *ngIf="listData?.length == 0 && !spinnerLoading">
+            <tr>
+              <td colspan="9" class="no-data-available text-center">
+                <div class="col-12 text-center pt-3 pb-1">
+                  <app-no-data-found></app-no-data-found>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </app-card>
+  </div>
+</div>

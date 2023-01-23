@@ -1,0 +1,86 @@
+<div class="row">
+  <div class="col-sm-6">
+    <app-card [hidHeader]="true" [options]="false" *ngIf="listData?.length != 0">
+      <app-apex-chart chartID="bar-hor-2" [chartConfig]="chartConfig1"></app-apex-chart>
+    </app-card>
+  </div>
+  <div class="col-sm-6">
+    <app-card [hidHeader]="true" [options]="false" *ngIf="listData?.length != 0">
+      <app-apex-chart chartID="donut" [chartConfig]="chartConfig2"></app-apex-chart>
+    </app-card>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    <app-card [hidHeader]="true" [options]="false" *ngIf="listData?.length != 0">
+      <app-apex-chart chartID="bar-hor-1" [chartConfig]="chartConfig3"></app-apex-chart>
+    </app-card>
+  </div>
+</div>
+<div class="row" id="auto-clicked">
+  <div class="col-12">
+    <app-card cardClass="card-datatable" headerClass="text-center text-md-left" [hidHeader]="true" [options]="false" [loading]="loadCard">
+      <div class="table-responsive pb-1 p-2 page-bg">
+        <table datatable [dtOptions]="dtOptions" class="table table-hover table-bordered display compact" [dtTrigger]="dtTrigger">
+          <thead class="thead-light">
+            <tr>
+              <th rowspan="2" width="10">No.</th>
+              <th rowspan="2">Fakultas</th>
+              <th rowspan="2">Program Studi</th>
+              <th rowspan="2" class="word-wrap text-center">Tahun Ajaran (semester)</th>
+              <th colspan="3" class="text-center">Status Registrasi</th>
+              <th colspan="3" class="text-center">Status Pembayaran</th>
+              <th colspan="4" class="text-center">Asal Pembiayaan</th>
+            </tr>
+            <tr>
+              <th class="text-center">Registrasi</th>
+              <th class="text-center">Tidak Registrasi</th>
+              <th class="text-center">Cuti</th>
+              <th class="text-center">Lunas</th>
+              <th class="text-center">Belum Lunas</th>
+              <th class="text-center">Tunggakan</th>
+              <th class="text-center">Mandiri</th>
+              <th class="text-center">Beasiswa Penuh</th>
+              <th class="word-wrap text-center">Beasiswa Tidak Penuh</th>
+              <th class="text-center">Bidik Misi</th>
+            </tr>
+          </thead>
+          <tbody *ngIf="listData?.length != 0">
+            <tr *ngFor="let data of listData; let i = index;">
+              <th>{{i+1}}.</th>
+              <td>{{data.faculty}}</td>
+              <td>{{data.study_program}}</td>
+              <td class="text-center">{{data.school_year}}</td>
+              <td class="text-center">{{data.registration_status.registration}}</td>
+              <td class="text-center">{{data.registration_status.not_register}}</td>
+              <td class="text-center">{{data.registration_status.cuti}}</td>
+              <td class="text-center">{{data.payment_status.paid_off}}</td>
+              <td class="text-center">{{data.payment_status.not_yet_paid_off}}</td>
+              <td class="text-center">{{data.payment_status.arrears}}</td>
+              <td class="text-center">{{data.funding_source.independent}}</td>
+              <td class="text-center">{{data.funding_source.full_scholarship}}</td>
+              <td class="text-center">{{data.funding_source.non_full_scholarship}}</td>
+              <td class="text-center">{{data.funding_source.aim_mission}}</td>
+            </tr>
+          </tbody>
+          <tbody *ngIf="listData?.length == 0 && spinnerLoading">
+            <tr>
+              <td colspan="14" class="no-data-available text-center">
+                <img src='assets/images/infinity-situ.svg'>
+              </td>
+            </tr>
+          </tbody>
+          <tbody *ngIf="listData?.length == 0 && !spinnerLoading">
+            <tr>
+              <td colspan="14" class="no-data-available text-center">
+                <div class="col-12 text-center pt-3 pb-1">
+                  <app-no-data-found></app-no-data-found>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </app-card>
+  </div>
+</div>

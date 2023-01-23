@@ -1,0 +1,82 @@
+<div class="row">
+  <div class="col-sm-6">
+    <app-card [hidHeader]="true" [options]="false" *ngIf="listData?.length != 0">
+      <app-apex-chart chartID="pie-1" [chartConfig]="chartConfig1"></app-apex-chart>
+    </app-card>
+  </div>
+  <div class="col-sm-6">
+    <app-card [hidHeader]="true" [options]="false" *ngIf="listData?.length != 0">
+      <app-apex-chart chartID="pie-2" [chartConfig]="chartConfig2"></app-apex-chart>
+    </app-card>
+  </div>
+</div>
+<div class="row" id="auto-clicked">
+  <div class="col-12">
+    <app-card cardClass="card-datatable" headerClass="text-center text-md-left" [hidHeader]="true" [options]="false" [loading]="loadCard">
+      <div class="table-responsive pb-1 p-2 page-bg">
+        <table datatable [dtOptions]="dtOptions" class="table table-hover table-bordered display compact" [dtTrigger]="dtTrigger">
+          <thead class="thead-light">
+            <tr>
+              <th></th>
+              <th colspan="14" class="text-center">Demografi Mahasiswa Aktif Berdasarkan Jenis Kelamin dan Pekerjaan Orang Tua</th>
+            </tr>
+            <tr>
+              <th rowspan="2" width="10">No.</th>
+              <th rowspan="2">Program Studi</th>
+              <th colspan="2" class="text-center">Jenis Kelamin</th>
+              <th colspan="10" class="text-center">Pekerjaan Orang Tua</th>
+            </tr>
+            <tr>
+              <th class="text-center">Laki-laki</th>
+              <th class="text-center">Perempuan</th>
+              <th class="text-center">Petani / Peternak</th>
+              <th class="text-center">PNS / ASN</th>
+              <th class="text-center">Guru / Dosen</th>
+              <th class="text-center">Dokter</th>
+              <th class="text-center">Politikus</th>
+              <th class="text-center">Pedagang / Wiraswasta</th>
+              <th class="text-center">Pegawai Swasta</th>
+              <th class="text-center">Buruh</th>
+              <th class="text-center">Seni / Lukis / Artis / Sejenisnya</th>
+              <th class="text-center">Lain-lain</th>
+            </tr>
+          </thead>
+          <tbody *ngIf="listData?.length != 0">
+            <tr *ngFor="let data of listData; let i = index;">
+              <th>{{i+1}}.</th>
+              <td>{{data.study_program}}</td>
+              <td>{{data.gender.male}}</td>
+              <td>{{data.gender.female}}</td>
+              <td class="text-center">{{data.parent_job.farmer}}</td>
+              <td class="text-center">{{data.parent_job.pns}}</td>
+              <td class="text-center">{{data.parent_job.lecturer}}</td>
+              <td class="text-center">{{data.parent_job.doctor}}</td>
+              <td class="text-center">{{data.parent_job.politikus}}</td>
+              <td class="text-center">{{data.parent_job.enterpreneur}}</td>
+              <td class="text-center">{{data.parent_job.private_employees}}</td>
+              <td class="text-center">{{data.parent_job.laborer}}</td>
+              <td class="text-center">{{data.parent_job.artist}}</td>
+              <td class="text-center">{{data.parent_job.others}}</td>
+            </tr>
+          </tbody>
+          <tbody *ngIf="listData?.length == 0 && spinnerLoading">
+            <tr>
+              <td colspan="15" class="no-data-available text-center">
+                <img src='assets/images/infinity-situ.svg'>
+              </td>
+            </tr>
+          </tbody>
+          <tbody *ngIf="listData?.length == 0 && !spinnerLoading">
+            <tr>
+              <td colspan="15" class="no-data-available text-center">
+                <div class="col-12 text-center pt-3 pb-1">
+                  <app-no-data-found></app-no-data-found>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </app-card>
+  </div>
+</div>

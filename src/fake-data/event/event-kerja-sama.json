@@ -1,0 +1,2001 @@
+[
+  {
+    "event_id": "E-001",
+    "event_name": "Pemberian reward Program Studi penerima anugerah kerja sama terbaik",
+    "program_name": "Menguatkan kapasitas Departemen/Program Studi dalam keterlibatan kerja sama Universitas yang berskala nasional maupun internasiona",
+    "dashboard_model": {
+      "use_table": true,
+      "chart_type": "Bar",
+      "cluster": "Fakultas"
+    },
+    "data": [
+      {
+        "study_program": "S1 Kedokteran",
+        "dn_cooperation": {
+          "mou": 10,
+          "moa": 7,
+          "ia": 5
+        },
+        "ln_cooperation": {
+          "mou": 15,
+          "moa": 20,
+          "ia": 10
+        },
+        "sum_of_cooperation": 67
+      },
+      {
+        "study_program": "S1 Ilmu Hukum",
+        "dn_cooperation": {
+          "mou": 7,
+          "moa": 13,
+          "ia": 6
+        },
+        "ln_cooperation": {
+          "mou": 21,
+          "moa": 14,
+          "ia": 13
+        },
+        "sum_of_cooperation": 74
+      },
+      {
+        "study_program": "S1 Agroteknologi",
+        "dn_cooperation": {
+          "mou": 14,
+          "moa": 21,
+          "ia": 8
+        },
+        "ln_cooperation": {
+          "mou": 4,
+          "moa": 7,
+          "ia": 9
+        },
+        "sum_of_cooperation": 63
+      },
+      {
+        "study_program": "S1 Agribisnis",
+        "dn_cooperation": {
+          "mou": 23,
+          "moa": 21,
+          "ia": 11
+        },
+        "ln_cooperation": {
+          "mou": 16,
+          "moa": 10,
+          "ia": 8
+        },
+        "sum_of_cooperation": 89
+      },
+      {
+        "study_program": "S1 Peternakan",
+        "dn_cooperation": {
+          "mou": 12,
+          "moa": 10,
+          "ia": 18
+        },
+        "ln_cooperation": {
+          "mou": 7,
+          "moa": 2,
+          "ia": 4
+        },
+        "sum_of_cooperation": 53
+      },
+      {
+        "study_program": "S1 Teknik Pertanian Dan Biosistem",
+        "dn_cooperation": {
+          "mou": 18,
+          "moa": 10,
+          "ia": 7
+        },
+        "ln_cooperation": {
+          "mou": 17,
+          "moa": 9,
+          "ia": 4
+        },
+        "sum_of_cooperation": 65
+      },
+      {
+        "study_program": "S1 Teknik Kimia",
+        "dn_cooperation": {
+          "mou": 23,
+          "moa": 18,
+          "ia": 8
+        },
+        "ln_cooperation": {
+          "mou": 14,
+          "moa": 13,
+          "ia": 13
+        },
+        "sum_of_cooperation": 89
+      },
+      {
+        "study_program": "S1 Teknik Sipil",
+        "dn_cooperation": {
+          "mou": 14,
+          "moa": 9,
+          "ia": 16
+        },
+        "ln_cooperation": {
+          "mou": 7,
+          "moa": 13,
+          "ia": 16
+        },
+        "sum_of_cooperation": 75
+      },
+      {
+        "study_program": "S1 Teknik Elektro",
+        "dn_cooperation": {
+          "mou": 21,
+          "moa": 16,
+          "ia": 12
+        },
+        "ln_cooperation": {
+          "mou": 25,
+          "moa": 16,
+          "ia": 9
+        },
+        "sum_of_cooperation": 99
+      },
+      {
+        "study_program": "S1 Arsitektur",
+        "dn_cooperation": {
+          "mou": 24,
+          "moa": 12,
+          "ia": 14
+        },
+        "ln_cooperation": {
+          "mou": 9,
+          "moa": 13,
+          "ia": 8
+        },
+        "sum_of_cooperation": 80
+      },
+      {
+        "study_program": "S1 Ekonomi Pembangunan",
+        "dn_cooperation": {
+          "mou": 8,
+          "moa": 12,
+          "ia": 9
+        },
+        "ln_cooperation": {
+          "mou": 11,
+          "moa": 8,
+          "ia": 6
+        },
+        "sum_of_cooperation": 54
+      },
+      {
+        "study_program": "S1 Akuntansi",
+        "dn_cooperation": {
+          "mou": 13,
+          "moa": 9,
+          "ia": 10
+        },
+        "ln_cooperation": {
+          "mou": 11,
+          "moa": 7,
+          "ia": 2
+        },
+        "sum_of_cooperation": 52
+      },
+      {
+        "study_program": "S1 Matematika",
+        "dn_cooperation": {
+          "mou": 3,
+          "moa": 6,
+          "ia": 7
+        },
+        "ln_cooperation": {
+          "mou": 2,
+          "moa": 6,
+          "ia": 1
+        },
+        "sum_of_cooperation": 25
+      },
+      {
+        "study_program": "S1 Ilmu Komputer",
+        "dn_cooperation": {
+          "mou": 9,
+          "moa": 6,
+          "ia": 6
+        },
+        "ln_cooperation": {
+          "mou": 8,
+          "moa": 2,
+          "ia": 3
+        },
+        "sum_of_cooperation": 34
+      },
+      {
+        "study_program": "S1 Teknik Informatika",
+        "dn_cooperation": {
+          "mou": 19,
+          "moa": 16,
+          "ia": 20
+        },
+        "ln_cooperation": {
+          "mou": 17,
+          "moa": 8,
+          "ia": 11
+        },
+        "sum_of_cooperation": 91
+      }
+    ]
+  },
+  {
+    "event_id": "E-002",
+    "event_name": "Pemberian reward Program Studi yang melaksanakan kerja sama MBKM",
+    "program_name": "Menguatkan kapasitas Departemen/Program Studi dalam keterlibatan kerja sama Universitas yang berskala nasional maupun internasional",
+    "dashboard_model": {
+      "use_table": true,
+      "chart_type": "Bar",
+      "cluster": "MBKM"
+    },
+    "data": [
+      {
+        "study_program": "S1 Kedokteran",
+        "cooperation": {
+          "kkn_tematik": 14,
+          "student_exchange": 15,
+          "internship": 20,
+          "teaching_assistance": 13,
+          "research": 12,
+          "humanitarian_project": 10,
+          "entrepreneurial_activity": 8,
+          "independent_project": 9
+        },
+        "sum_of_cooperation": 101
+      },
+      {
+        "study_program": "S1 Ilmu Hukum",
+        "cooperation": {
+          "kkn_tematik": 10,
+          "student_exchange": 9,
+          "internship": 11,
+          "teaching_assistance": 11,
+          "research": 15,
+          "humanitarian_project": 6,
+          "entrepreneurial_activity": 5,
+          "independent_project": 8
+        },
+        "sum_of_cooperation": 75
+      },
+      {
+        "study_program": "S1 Agroteknologi",
+        "cooperation": {
+          "kkn_tematik": 12,
+          "student_exchange": 14,
+          "internship": 16,
+          "teaching_assistance": 15,
+          "research": 13,
+          "humanitarian_project": 5,
+          "entrepreneurial_activity": 7,
+          "independent_project": 6
+        },
+        "sum_of_cooperation": 88
+      },
+      {
+        "study_program": "S1 Agribisnis",
+        "cooperation": {
+          "kkn_tematik": 17,
+          "student_exchange": 11,
+          "internship": 16,
+          "teaching_assistance": 8,
+          "research": 18,
+          "humanitarian_project": 6,
+          "entrepreneurial_activity": 3,
+          "independent_project": 4
+        },
+        "sum_of_cooperation": 83
+      },
+      {
+        "study_program": "S1 Peternakan",
+        "cooperation": {
+          "kkn_tematik": 9,
+          "student_exchange": 14,
+          "internship": 19,
+          "teaching_assistance": 7,
+          "research": 12,
+          "humanitarian_project": 7,
+          "entrepreneurial_activity": 8,
+          "independent_project": 3
+        },
+        "sum_of_cooperation": 79
+      },
+      {
+        "study_program": "S1 Teknik Pertanian Dan Biosistem",
+        "cooperation": {
+          "kkn_tematik": 6,
+          "student_exchange": 8,
+          "internship": 9,
+          "teaching_assistance": 4,
+          "research": 16,
+          "humanitarian_project": 13,
+          "entrepreneurial_activity": 4,
+          "independent_project": 8
+        },
+        "sum_of_cooperation": 68
+      },
+      {
+        "study_program": "S1 Teknik Kimia",
+        "cooperation": {
+          "kkn_tematik": 4,
+          "student_exchange": 6,
+          "internship": 12,
+          "teaching_assistance": 4,
+          "research": 13,
+          "humanitarian_project": 7,
+          "entrepreneurial_activity": 4,
+          "independent_project": 16
+        },
+        "sum_of_cooperation": 66
+      },
+      {
+        "study_program": "S1 Teknik Sipil",
+        "cooperation": {
+          "kkn_tematik": 7,
+          "student_exchange": 13,
+          "internship": 9,
+          "teaching_assistance": 5,
+          "research": 13,
+          "humanitarian_project": 3,
+          "entrepreneurial_activity": 3,
+          "independent_project": 10
+        },
+        "sum_of_cooperation": 63
+      },
+      {
+        "study_program": "S1 Teknik Elektro",
+        "cooperation": {
+          "kkn_tematik": 12,
+          "student_exchange": 8,
+          "internship": 14,
+          "teaching_assistance": 9,
+          "research": 11,
+          "humanitarian_project": 5,
+          "entrepreneurial_activity": 2,
+          "independent_project": 17
+        },
+        "sum_of_cooperation": 78
+      },
+      {
+        "study_program": "S1 Arsitektur",
+        "cooperation": {
+          "kkn_tematik": 11,
+          "student_exchange": 6,
+          "internship": 19,
+          "teaching_assistance": 6,
+          "research": 9,
+          "humanitarian_project": 11,
+          "entrepreneurial_activity": 9,
+          "independent_project": 12
+        },
+        "sum_of_cooperation": 83
+      },
+      {
+        "study_program": "S1 Ekonomi Pembangunan",
+        "cooperation": {
+          "kkn_tematik": 5,
+          "student_exchange": 9,
+          "internship": 15,
+          "teaching_assistance": 13,
+          "research": 6,
+          "humanitarian_project": 15,
+          "entrepreneurial_activity": 7,
+          "independent_project": 5
+        },
+        "sum_of_cooperation": 75
+      },
+      {
+        "study_program": "S1 Akuntansi",
+        "cooperation": {
+          "kkn_tematik": 15,
+          "student_exchange": 6,
+          "internship": 8,
+          "teaching_assistance": 17,
+          "research": 8,
+          "humanitarian_project": 7,
+          "entrepreneurial_activity": 16,
+          "independent_project": 13
+        },
+        "sum_of_cooperation": 90
+      },
+      {
+        "study_program": "S1 Matematika",
+        "cooperation": {
+          "kkn_tematik": 2,
+          "student_exchange": 3,
+          "internship": 7,
+          "teaching_assistance": 20,
+          "research": 5,
+          "humanitarian_project": 9,
+          "entrepreneurial_activity": 4,
+          "independent_project": 9
+        },
+        "sum_of_cooperation": 59
+      },
+      {
+        "study_program": "S1 Ilmu Komputer",
+        "cooperation": {
+          "kkn_tematik": 8,
+          "student_exchange": 13,
+          "internship": 9,
+          "teaching_assistance": 11,
+          "research": 6,
+          "humanitarian_project": 6,
+          "entrepreneurial_activity": 2,
+          "independent_project": 14
+        },
+        "sum_of_cooperation": 69
+      },
+      {
+        "study_program": "S1 Teknik Informatika",
+        "cooperation": {
+          "kkn_tematik": 13,
+          "student_exchange": 16,
+          "internship": 19,
+          "teaching_assistance": 5,
+          "research": 18,
+          "humanitarian_project": 4,
+          "entrepreneurial_activity": 5,
+          "independent_project": 15
+        },
+        "sum_of_cooperation": 95
+      }
+    ]
+  },
+  {
+    "event_id": "E-003",
+    "event_name": "Bidik Kerja Sama Dalam Negeri",
+    "program_name": "Mengembangkan kemitraan strategis di bidang TALENTA sehingga menjadi rujukan institusi dalam negeri maupun internasional (program kerja no 21 pada RENSTRA)",
+    "dashboard_model": {
+      "use_table": true,
+      "chart_type": "Bar",
+      "cluster": "MBKM"
+    },
+
+    "data": [
+      {
+        "study_program": "S1 Agribisnis",
+        "kkn_tematik": 12,
+        "student_exchange": 15,
+        "internship": 20,
+        "teaching_assistance": 13,
+        "research": 12,
+        "humanitarian_project": 10,
+        "entrepreneurial_activity": 8,
+        "independent_project": 9,
+        "accumulated_cooperation": 101,
+        "total_funding": 250
+      },
+      {
+        "study_program": "S1 Agroteknologi",
+        "kkn_tematik": 12,
+        "student_exchange": 14,
+        "internship": 16,
+        "teaching_assistance": 15,
+        "research": 13,
+        "humanitarian_project": 5,
+        "entrepreneurial_activity": 7,
+        "independent_project": 6,
+        "accumulated_cooperation": 88,
+        "total_funding": 300
+      },
+      {
+        "study_program": "S1 Ilmu Komputer",
+        "kkn_tematik": 10,
+        "student_exchange": 9,
+        "internship": 11,
+        "teaching_assistance": 11,
+        "research": 15,
+        "humanitarian_project": 6,
+        "entrepreneurial_activity": 5,
+        "independent_project": 8,
+        "accumulated_cooperation": 75,
+        "total_funding": 350
+      },
+      {
+        "study_program": "S1 Teknik Elektro",
+        "kkn_tematik": 5,
+        "student_exchange": 7,
+        "internship": 9,
+        "teaching_assistance": 8,
+        "research": 12,
+        "humanitarian_project": 3,
+        "entrepreneurial_activity": 2,
+        "independent_project": 5,
+        "accumulated_cooperation": 45,
+        "total_funding": 250
+      },
+      {
+        "study_program": "S1 Sistem Informasi",
+        "kkn_tematik": 7,
+        "student_exchange": 8,
+        "internship": 10,
+        "teaching_assistance": 9,
+        "research": 14,
+        "humanitarian_project": 5,
+        "entrepreneurial_activity": 4,
+        "independent_project": 7,
+        "accumulated_cooperation": 65,
+        "total_funding": 300
+      },
+      {
+        "study_program": "S1 Teknik Mesin",
+        "kkn_tematik": 6,
+        "student_exchange": 8,
+        "internship": 10,
+        "teaching_assistance": 9,
+        "research": 13,
+        "humanitarian_project": 4,
+        "entrepreneurial_activity": 3,
+        "independent_project": 6,
+        "accumulated_cooperation": 60,
+        "total_funding": 275
+      },
+      {
+        "study_program": "S1 Teknik Sipil",
+        "kkn_tematik": 8,
+        "student_exchange": 9,
+        "internship": 11,
+        "teaching_assistance": 10,
+        "research": 15,
+        "humanitarian_project": 5,
+        "entrepreneurial_activity": 4,
+        "independent_project": 7,
+        "accumulated_cooperation": 70,
+        "total_funding": 325
+      },
+      {
+        "study_program": "S1 Teknik Pertanian Dan Biosistem",
+        "kkn_tematik": 5,
+        "student_exchange": 12,
+        "internship": 15,
+        "teaching_assistance": 13,
+        "research": 17,
+        "humanitarian_project": 10,
+        "entrepreneurial_activity": 8,
+        "independent_project": 5,
+        "accumulated_cooperation": 80,
+        "total_funding": 360
+      },
+      {
+        "study_program": "S1 Teknik Informatika",
+        "kkn_tematik": 8,
+        "student_exchange": 7,
+        "internship": 12,
+        "teaching_assistance": 10,
+        "research": 16,
+        "humanitarian_project": 4,
+        "entrepreneurial_activity": 3,
+        "independent_project": 9,
+        "accumulated_cooperation": 70,
+        "total_funding": 350
+      },
+      {
+        "study_program": "S1 Akuntansi",
+        "kkn_tematik": 6,
+        "student_exchange": 9,
+        "internship": 10,
+        "teaching_assistance": 8,
+        "research": 14,
+        "humanitarian_project": 5,
+        "entrepreneurial_activity": 4,
+        "independent_project": 7,
+        "accumulated_cooperation": 65,
+        "total_funding": 325
+      },
+      {
+        "study_program": "S1 Fisika",
+        "kkn_tematik": 9,
+        "student_exchange": 8,
+        "internship": 13,
+        "teaching_assistance": 11,
+        "research": 17,
+        "humanitarian_project": 5,
+        "entrepreneurial_activity": 4,
+        "independent_project": 10,
+        "accumulated_cooperation": 75,
+        "total_funding": 420
+      },
+      {
+        "study_program": "S1 Peternakan",
+        "kkn_tematik": 10,
+        "student_exchange": 7,
+        "internship": 14,
+        "teaching_assistance": 12,
+        "research": 18,
+        "humanitarian_project": 6,
+        "entrepreneurial_activity": 5,
+        "independent_project": 11,
+        "accumulated_cooperation": 80,
+        "total_funding": 400
+      },
+      {
+        "study_program": "S1 Farmasi",
+        "kkn_tematik": 9,
+        "student_exchange": 8,
+        "internship": 13,
+        "teaching_assistance": 12,
+        "research": 17,
+        "humanitarian_project": 7,
+        "entrepreneurial_activity": 6,
+        "independent_project": 10,
+        "accumulated_cooperation": 80,
+        "total_funding": 370
+      },
+      {
+        "study_program": "S1 Teknik Lingkungan",
+        "kkn_tematik": 7,
+        "student_exchange": 8,
+        "internship": 11,
+        "teaching_assistance": 10,
+        "research": 15,
+        "humanitarian_project": 6,
+        "entrepreneurial_activity": 5,
+        "independent_project": 8,
+        "accumulated_cooperation": 70,
+        "total_funding": 425
+      },
+      {
+        "study_program": "S1 Arsitektur",
+        "kkn_tematik": 6,
+        "student_exchange": 9,
+        "internship": 10,
+        "teaching_assistance": 9,
+        "research": 14,
+        "humanitarian_project": 7,
+        "entrepreneurial_activity": 6,
+        "independent_project": 7,
+        "accumulated_cooperation": 65,
+        "total_funding": 325
+      },
+      {
+        "study_program": "S1 Ilmu Pertanian",
+        "kkn_tematik": 9,
+        "student_exchange": 6,
+        "internship": 13,
+        "teaching_assistance": 12,
+        "research": 17,
+        "humanitarian_project": 9,
+        "entrepreneurial_activity": 8,
+        "independent_project": 10,
+        "accumulated_cooperation": 80,
+        "total_funding": 410
+      },
+      {
+        "study_program": "D3 Sastra Inggris",
+        "kkn_tematik": 10,
+        "student_exchange": 5,
+        "internship": 14,
+        "teaching_assistance": 13,
+        "research": 18,
+        "humanitarian_project": 10,
+        "entrepreneurial_activity": 9,
+        "independent_project": 11,
+        "accumulated_cooperation": 85,
+        "total_funding": 430
+      }
+    ]
+  },
+  {
+    "event_id": "E-004",
+    "event_name": "Jumlah Implementasi Kerja Sama Melibatkan ABGCM (academics, business, government, community, media)",
+    "program_name": "Terselenggaranya penelitian dan penulisan hasil kerja sama internasional serta pemerolehan Hak Kekayaan Intelektual (HKI) di berbagai negara",
+    "dashboard_model": {
+      "use_table": true,
+      "chart_type": "Pie",
+      "cluster": "DN/LN Benua/Negara"
+    },
+    "data": [
+      {
+        "partner_type": "Academics",
+        "dn": 50,
+        "ln": 34,
+        "sum_of_cooperation": 84
+      },
+      {
+        "partner_type": "Business",
+        "dn": 34,
+        "ln": 56,
+        "sum_of_cooperation": 90
+      },
+      {
+        "partner_type": "Government",
+        "dn": 45,
+        "ln": 74,
+        "sum_of_cooperation": 119
+      },
+      {
+        "partner_type": "Community",
+        "dn": 65,
+        "ln": 23,
+        "sum_of_cooperation": 88
+      },
+      {
+        "partner_type": "Media",
+        "dn": 40,
+        "ln": 56,
+        "sum_of_cooperation": 96
+      }
+    ]
+  },
+  {
+    "event_id": "E-005",
+    "event_name": "Jumlah Perolehan Dana Kerja Sama Nasional Dalam Milyar Rupiah",
+    "program_name": "Terselenggaranya penelitian dan penulisan hasil kerja sama internasional serta pemerolehan Hak Kekayaan Intelektual (HKI) di berbagai negara",
+    "dashboard_model": {
+      "use_table": true,
+      "chart_type": "Bar",
+      "cluster": "DN Fakultas Mitra"
+    },
+    "data": [
+      {
+        "study_program": "Fakultas Kedokteran",
+        "contract_value": {
+          "academics": 4.05,
+          "business": 6.5,
+          "government": 5.4,
+          "community": 1.2,
+          "media": 0.89
+        },
+        "accumulated_funds": 18.04
+      },
+      {
+        "study_program": "Fakultas Hukum",
+        "contract_value": {
+          "academics": 2.56,
+          "business": 5.55,
+          "government": 4.89,
+          "community": 2.3,
+          "media": 3.55
+        },
+        "accumulated_funds": 18.85
+      },
+      {
+        "study_program": "Fakultas Pertanian",
+        "contract_value": {
+          "academics": 5.32,
+          "business": 3.45,
+          "government": 4.9,
+          "community": 1.25,
+          "media": 0.65
+        },
+        "accumulated_funds": 15.57
+      },
+      {
+        "study_program": "Fakultas Teknik",
+        "contract_value": {
+          "academics": 6.7,
+          "business": 2.67,
+          "government": 3.22,
+          "community": 3.56,
+          "media": 3.03
+        },
+        "accumulated_funds": 19.18
+      },
+      {
+        "study_program": "Fakultas Ekonomi dan Bisnis",
+        "contract_value": {
+          "academics": 3.46,
+          "business": 7.32,
+          "government": 2.18,
+          "community": 4.08,
+          "media": 2.91
+        },
+        "accumulated_funds": 19.95
+      },
+      {
+        "study_program": "Fakultas Kedokteran Gigi",
+        "contract_value": {
+          "academics": 5.27,
+          "business": 6.12,
+          "government": 4.25,
+          "community": 3.21,
+          "media": 1.18
+        },
+        "accumulated_funds": 20.03
+      },
+      {
+        "study_program": "Fakultas Ilmu Budaya",
+        "contract_value": {
+          "academics": 7.72,
+          "business": 3.43,
+          "government": 3.87,
+          "community": 4.08,
+          "media": 2.03
+        },
+        "accumulated_funds": 21.13
+      },
+      {
+        "study_program": "Fakultas Informatika",
+        "contract_value": {
+          "academics": 4.82,
+          "business": 5.23,
+          "government": 7.18,
+          "community": 5.29,
+          "media": 4.02
+        },
+        "accumulated_funds": 26.54
+      },
+      {
+        "study_program": "Fakultas Matematika dan IPA",
+        "contract_value": {
+          "academics": 5.92,
+          "business": 2.14,
+          "government": 8.21,
+          "community": 7.0,
+          "media": 2.12
+        },
+        "accumulated_funds": 25.39
+      },
+      {
+        "study_program": "Fakultas Ilmu Sosial dan Ilmu Politik",
+        "contract_value": {
+          "academics": 2.41,
+          "business": 5.22,
+          "government": 3.75,
+          "community": 5.93,
+          "media": 3.74
+        },
+        "accumulated_funds": 21.04
+      },
+      {
+        "study_program": "Fakultas Kesehatan Masyarakat",
+        "contract_value": {
+          "academics": 5.33,
+          "business": 7.14,
+          "government": 8.62,
+          "community": 4.18,
+          "media": 2.17
+        },
+        "accumulated_funds": 27.43
+      },
+      {
+        "study_program": "Fakultas Keperawatan",
+        "contract_value": {
+          "academics": 3.21,
+          "business": 8.43,
+          "government": 5.28,
+          "community": 1.73,
+          "media": 4.38
+        },
+        "accumulated_funds": 23.03
+      },
+      {
+        "study_program": "Fakultas Psikologi",
+        "contract_value": {
+          "academics": 4.23,
+          "business": 5.72,
+          "government": 3.19,
+          "community": 2.44,
+          "media": 1.02
+        },
+        "accumulated_funds": 16.59
+      },
+      {
+        "study_program": "Fakultas Farmasi",
+        "contract_value": {
+          "academics": 3.12,
+          "business": 6.93,
+          "government": 2.44,
+          "community": 5.28,
+          "media": 3.07
+        },
+        "accumulated_funds": 20.84
+      },
+      {
+        "study_program": "Fakultas Kehutanan",
+        "contract_value": {
+          "academics": 2.42,
+          "business": 7.12,
+          "government": 4.92,
+          "community": 3.15,
+          "media": 5.23
+        },
+        "accumulated_funds": 22.84
+      }
+    ]
+  },
+  {
+    "event_id": "E-006",
+    "event_name": "Jumlah Perolehan Dana Kerja Sama Internasional Dalam Milyar Rupiah",
+    "program_name": "Terselenggaranya penelitian dan penulisan hasil kerja sama internasional serta pemerolehan Hak Kekayaan Intelektual (HKI) di berbagai negara",
+    "dashboard_model": {
+      "use_table": true,
+      "chart_type": "Bar",
+      "cluster": "LN Fakultas Mitra"
+    },
+    "data": [
+      {
+        "study_program": "Fakultas Kedokteran",
+        "contract_value": {
+          "academics": 5.32,
+          "business": 3.45,
+          "government": 4.9,
+          "community": 1.25,
+          "media": 0.65
+        },
+        "accumulated_funds": 8.76
+      },
+      {
+        "study_program": "Fakultas Hukum",
+        "contract_value": {
+          "academics": 2.42,
+          "business": 7.12,
+          "government": 4.92,
+          "community": 3.15,
+          "media": 5.23
+        },
+        "accumulated_funds": 22.84
+      },
+      {
+        "study_program": "Fakultas Pertanian",
+        "contract_value": {
+          "academics": 4.05,
+          "business": 6.5,
+          "government": 5.4,
+          "community": 1.2,
+          "media": 0.89
+        },
+        "accumulated_funds": 9.54
+      },
+      {
+        "study_program": "Fakultas Teknik",
+        "contract_value": {
+          "academics": 5.33,
+          "business": 7.14,
+          "government": 8.62,
+          "community": 4.18,
+          "media": 2.17
+        },
+        "accumulated_funds": 27.44
+      },
+      {
+        "study_program": "Fakultas Ekonomi dan Bisnis",
+        "contract_value": {
+          "academics": 5.27,
+          "business": 6.12,
+          "government": 4.25,
+          "community": 3.21,
+          "media": 1.18
+        },
+        "accumulated_funds": 20.03
+      },
+      {
+        "study_program": "Fakultas Kedokteran Gigi",
+        "contract_value": {
+          "academics": 7.72,
+          "business": 3.43,
+          "government": 3.87,
+          "community": 4.08,
+          "media": 2.03
+        },
+        "accumulated_funds": 21.13
+      },
+      {
+        "study_program": "Fakultas Ilmu Budaya",
+        "contract_value": {
+          "academics": 2.56,
+          "business": 5.55,
+          "government": 4.89,
+          "community": 2.3,
+          "media": 3.55
+        },
+        "accumulated_funds": 10.76
+      },
+      {
+        "study_program": "Fakultas Informatika",
+        "contract_value": {
+          "academics": 6.7,
+          "business": 2.67,
+          "government": 3.22,
+          "community": 3.56,
+          "media": 3.03
+        },
+        "accumulated_funds": 7.54
+      },
+      {
+        "study_program": "Fakultas Matematika dan IPA",
+        "contract_value": {
+          "academics": 4.82,
+          "business": 5.23,
+          "government": 7.18,
+          "community": 5.29,
+          "media": 4.02
+        },
+        "accumulated_funds": 26.54
+      },
+      {
+        "study_program": "Fakultas Ilmu Sosial dan Ilmu Politik",
+        "contract_value": {
+          "academics": 5.92,
+          "business": 2.14,
+          "government": 8.21,
+          "community": 7.0,
+          "media": 2.12
+        },
+        "accumulated_funds": 25.39
+      },
+      {
+        "study_program": "Fakultas Kesehatan Masyarakat",
+        "contract_value": {
+          "academics": 2.41,
+          "business": 5.22,
+          "government": 3.75,
+          "community": 5.93,
+          "media": 3.74
+        },
+        "accumulated_funds": 21.05
+      },
+      {
+        "study_program": "Fakultas Keperawatan",
+        "contract_value": {
+          "academics": 3.21,
+          "business": 8.43,
+          "government": 5.28,
+          "community": 1.73,
+          "media": 4.38
+        },
+        "accumulated_funds": 23.03
+      },
+      {
+        "study_program": "Fakultas Psikologi",
+        "contract_value": {
+          "academics": 4.23,
+          "business": 5.72,
+          "government": 3.19,
+          "community": 2.44,
+          "media": 1.02
+        },
+        "accumulated_funds": 16.6
+      },
+      {
+        "study_program": "Fakultas Farmasi",
+        "contract_value": {
+          "academics": 3.12,
+          "business": 6.93,
+          "government": 2.44,
+          "community": 5.28,
+          "media": 3.07
+        },
+        "accumulated_funds": 20.84
+      },
+      {
+        "study_program": "Fakultas Kehutanan",
+        "contract_value": {
+          "academics": 3.46,
+          "business": 7.32,
+          "government": 2.18,
+          "community": 4.08,
+          "media": 2.91
+        },
+        "accumulated_funds": 19.95
+      }
+    ]
+  },
+  {
+    "event_id": "E-007",
+    "event_name": "Jumlah Peserta Internasional Summer Course",
+    "program_name": "Terselenggaranya penelitian dan penulisan hasil kerja sama internasional serta pemerolehan Hak Kekayaan Intelektual (HKI) di berbagai negara",
+    "dashboard_model": {
+      "use_table": true,
+      "chart_type": "Pie",
+      "cluster": "LN Benua Negara"
+    },
+    "data": [
+      {
+        "summer_course_event": "Oxford Summer Course 2023",
+        "cooperation": {
+          "asia": 0,
+          "afrika": 0,
+          "eropa": 10,
+          "amerika_utara": 0,
+          "amerika_selatan": 0,
+          "australia": 0
+        },
+        "accumulated_summer_course": 10
+      },
+      {
+        "summer_course_event": "NLC Summer Enrichment",
+        "cooperation": {
+          "asia": 3,
+          "afrika": 0,
+          "eropa": 0,
+          "amerika_utara": 6,
+          "amerika_selatan": 0,
+          "australia": 2
+        },
+        "accumulated_summer_course": 11
+      },
+      {
+        "summer_course_event": "EF Summer Course",
+        "cooperation": {
+          "asia": 5,
+          "afrika": 3,
+          "eropa": 6,
+          "amerika_utara": 0,
+          "amerika_selatan": 7,
+          "australia": 0
+        },
+        "accumulated_summer_course": 21
+      },
+      {
+        "summer_course_event": "Summer School",
+        "cooperation": {
+          "asia": 6,
+          "afrika": 6,
+          "eropa": 0,
+          "amerika_utara": 8,
+          "amerika_selatan": 0,
+          "australia": 9
+        },
+        "accumulated_summer_course": 29
+      },
+      {
+        "summer_course_event": "Digital Learning 2020 Summer & Autumn Workshop",
+        "cooperation": {
+          "asia": 2,
+          "afrika": 0,
+          "eropa": 5,
+          "amerika_utara": 0,
+          "amerika_selatan": 6,
+          "australia": 0
+        },
+        "accumulated_summer_course": 13
+      },
+      {
+        "summer_course_event": "Les Roches Summer Program",
+        "cooperation": {
+          "asia": 4,
+          "afrika": 0,
+          "eropa": 0,
+          "amerika_utara": 0,
+          "amerika_selatan": 0,
+          "australia": 3
+        },
+        "accumulated_summer_course": 7
+      },
+      {
+        "summer_course_event": "Antai Global Summer Program",
+        "cooperation": {
+          "asia": 2,
+          "afrika": 0,
+          "eropa": 1,
+          "amerika_utara": 7,
+          "amerika_selatan": 7,
+          "australia": 0
+        },
+        "accumulated_summer_course": 10
+      },
+      {
+        "summer_course_event": "IBC Summer Camp",
+        "cooperation": {
+          "asia": 0,
+          "afrika": 2,
+          "eropa": 6,
+          "amerika_utara": 0,
+          "amerika_selatan": 0,
+          "australia": 0
+        },
+        "accumulated_summer_course": 8
+      },
+      {
+        "summer_course_event": "Summer Art Portfolio Intensive Program",
+        "cooperation": {
+          "asia": 0,
+          "afrika": 0,
+          "eropa": 2,
+          "amerika_utara": 6,
+          "amerika_selatan": 7,
+          "australia": 0
+        },
+        "accumulated_summer_course": 15
+      },
+      {
+        "summer_course_event": "Asian Business Cases Summer Course",
+        "cooperation": {
+          "asia": 7,
+          "afrika": 0,
+          "eropa": 0,
+          "amerika_utara": 0,
+          "amerika_selatan": 0,
+          "australia": 3
+        },
+        "accumulated_summer_course": 10
+      }
+    ]
+  },
+  {
+    "event_id": "E-008",
+    "event_name": "Jumlah Dosen Asing",
+    "program_name": "Terselenggaranya penelitian dan penulisan hasil kerja sama internasional serta pemerolehan Hak Kekayaan Intelektual (HKI) di berbagai negara",
+    "dashboard_model": {
+      "use_table": true,
+      "chart_type": "Pie",
+      "cluster": "LN Benua Negara"
+    },
+    "data": [
+      {
+        "university": "Harvard University",
+        "country": "Amerika Serikat",
+        "number_of_lecturer": 15
+      },
+      {
+        "university": "Stanford University",
+        "country": "Amerika Serikat",
+        "number_of_lecturer": 12
+      },
+      {
+        "university": "Massachusetts Institute of Technology",
+        "country": "Amerika Serikat",
+        "number_of_lecturer": 13
+      },
+      {
+        "university": "University of Oxford",
+        "country": "Inggris",
+        "number_of_lecturer": 10
+      },
+      {
+        "university": "University of California Berkeley",
+        "country": "Inggris",
+        "number_of_lecturer": 7
+      },
+      {
+        "university": "University of Cambridge",
+        "country": "Inggris",
+        "number_of_lecturer": 9
+      },
+      {
+        "university": "University of Chicago",
+        "country": "Amerika Serikat",
+        "number_of_lecturer": 5
+      },
+      {
+        "university": "University of Tokyo",
+        "country": "Jepang",
+        "number_of_lecturer": 11
+      },
+      {
+        "university": "University College London",
+        "country": "Inggris",
+        "number_of_lecturer": 3
+      },
+      {
+        "university": "University of Toronto",
+        "country": "Kanada",
+        "number_of_lecturer": 2
+      }
+    ]
+  },
+  {
+    "event_id": "E-009",
+    "event_name": "Persentase Program Studi S1 Dan D4/D3/D2 Yang Melaksanakan Kerja Sama Dengan Mitra",
+    "program_name": "[S3] Meningkatnya kualitas kurikulum dan pembelajaran",
+    "dashboard_model": {
+      "use_table": true,
+      "chart_type": "Pie",
+      "cluster": "DN/LN Benua Negara"
+    },
+    "data": [
+      {
+        "study_program": "Sarjana",
+        "dn_cooperation": {
+          "moa": 13,
+          "ia": 6
+        },
+        "ln_cooperation": {
+          "moa": 12,
+          "ia": 7
+        },
+        "sum_of_cooperation": 32
+      },
+      {
+        "study_program": "Diploma 4",
+        "dn_cooperation": {
+          "moa": 12,
+          "ia": 5
+        },
+        "ln_cooperation": {
+          "moa": 14,
+          "ia": 4
+        },
+        "sum_of_cooperation": 34
+      },
+      {
+        "study_program": "Dimploma 3",
+        "dn_cooperation": {
+          "moa": 11,
+          "ia": 8
+        },
+        "ln_cooperation": {
+          "moa": 17,
+          "ia": 5
+        },
+        "sum_of_cooperation": 29
+      },
+      {
+        "study_program": "Diploma 2",
+        "dn_cooperation": {
+          "moa": 16,
+          "ia": 4
+        },
+        "ln_cooperation": {
+          "moa": 21,
+          "ia": 8
+        },
+        "sum_of_cooperation": 34
+      }
+    ]
+  },
+  {
+    "event_id": "E-010",
+    "event_name": "Persentase dosen yang berkegiatan tridarma di kampus lain, di QS100 berdasarkan bidang ilmu (QS100 by subject)",
+    "program_name": "[S2] Meningkatnya Kualitas Dosen Pendidikan Tinggi",
+    "dashboard_model": {
+      "use_table": true,
+      "chart_type": "Pie",
+      "cluster": "DN/LN Benua Negara"
+    },
+    "data": [
+      {
+        "study_program": "S2 Ilmu Keperawatan",
+        "dn": [
+          {
+            "type": "Pendidikan dan Pengajaran",
+            "moa": 6,
+            "ia": 0
+          },
+          {
+            "type": "Penelitian dan Pengembangan",
+            "moa": 0,
+            "ia": 7
+          },
+          {
+            "type": "Pengabdian Kepada Masyarakat",
+            "moa": 4,
+            "ia": 0
+          }
+        ],
+        "ln": [
+          {
+            "type": "Pendidikan dan Pengajaran",
+            "moa": 4,
+            "ia": 0
+          },
+          {
+            "type": "Penelitian dan Pengembangan",
+            "moa": 0,
+            "ia": 5
+          },
+          {
+            "type": "Pengabdian Kepada Masyarakat",
+            "moa": 0,
+            "ia": 2
+          }
+        ]
+      },
+      {
+        "study_program": "S1 Kesehatan Masyarakat",
+        "dn": [
+          {
+            "type": "Pendidikan dan Pengajaran",
+            "moa": 0,
+            "ia": 6
+          },
+          {
+            "type": "Penelitian dan Pengembangan",
+            "moa": 8,
+            "ia": 0
+          },
+          {
+            "type": "Pengabdian Kepada Masyarakat",
+            "moa": 0,
+            "ia": 10
+          }
+        ],
+        "ln": [
+          {
+            "type": "Pendidikan dan Pengajaran",
+            "moa": 11,
+            "ia": 0
+          },
+          {
+            "type": "Penelitian dan Pengembangan",
+            "moa": 9,
+            "ia": 0
+          },
+          {
+            "type": "Pengabdian Kepada Masyarakat",
+            "moa": 6,
+            "ia": 0
+          }
+        ]
+      },
+      {
+        "study_program": "S2 Agroteknologi",
+        "dn": [
+          {
+            "type": "Pendidikan dan Pengajaran",
+            "moa": 5,
+            "ia": 0
+          },
+          {
+            "type": "Penelitian dan Pengembangan",
+            "moa": 6,
+            "ia": 0
+          },
+          {
+            "type": "Pengabdian Kepada Masyarakat",
+            "moa": 2,
+            "ia": 0
+          }
+        ],
+        "ln": [
+          {
+            "type": "Pendidikan dan Pengajaran",
+            "moa": 5,
+            "ia": 0
+          },
+          {
+            "type": "Penelitian dan Pengembangan",
+            "moa": 3,
+            "ia": 0
+          },
+          {
+            "type": "Pengabdian Kepada Masyarakat",
+            "moa": 0,
+            "ia": 1
+          }
+        ]
+      },
+      {
+        "study_program": "D3 Sastra Inggris",
+        "dn": [
+          {
+            "type": "Pendidikan dan Pengajaran",
+            "moa": 8,
+            "ia": 0
+          },
+          {
+            "type": "Penelitian dan Pengembangan",
+            "moa": 0,
+            "ia": 9
+          },
+          {
+            "type": "Pengabdian Kepada Masyarakat",
+            "moa": 0,
+            "ia": 8
+          }
+        ],
+        "ln": [
+          {
+            "type": "Pendidikan dan Pengajaran",
+            "moa": 0,
+            "ia": 8
+          },
+          {
+            "type": "Penelitian dan Pengembangan",
+            "moa": 0,
+            "ia": 12
+          },
+          {
+            "type": "Pengabdian Kepada Masyarakat",
+            "moa": 5,
+            "ia": 1
+          }
+        ]
+      },
+      {
+        "study_program": "S2 Peternakan",
+        "dn": [
+          {
+            "type": "Pendidikan dan Pengajaran",
+            "moa": 0,
+            "ia": 9
+          },
+          {
+            "type": "Penelitian dan Pengembangan",
+            "moa": 9,
+            "ia": 0
+          },
+          {
+            "type": "Pengabdian Kepada Masyarakat",
+            "moa": 7,
+            "ia": 0
+          }
+        ],
+        "ln": [
+          {
+            "type": "Pendidikan dan Pengajaran",
+            "moa": 0,
+            "ia": 5
+          },
+          {
+            "type": "Penelitian dan Pengembangan",
+            "moa": 4,
+            "ia": 0
+          },
+          {
+            "type": "Pengabdian Kepada Masyarakat",
+            "moa": 0,
+            "ia": 6
+          }
+        ]
+      },
+      {
+        "study_program": "S1 Teknik Pertanian Dan Biosistem",
+        "dn": [
+          {
+            "type": "Pendidikan dan Pengajaran",
+            "moa": 3,
+            "ia": 5
+          },
+          {
+            "type": "Penelitian dan Pengembangan",
+            "moa": 0,
+            "ia": 3
+          },
+          {
+            "type": "Pengabdian Kepada Masyarakat",
+            "moa": 0,
+            "ia": 7
+          }
+        ],
+        "ln": [
+          {
+            "type": "Pendidikan dan Pengajaran",
+            "moa": 4,
+            "ia": 0
+          },
+          {
+            "type": "Penelitian dan Pengembangan",
+            "moa": 2,
+            "ia": 6
+          },
+          {
+            "type": "Pengabdian Kepada Masyarakat",
+            "moa": 3,
+            "ia": 0
+          }
+        ]
+      },
+      {
+        "study_program": "S1 Teknik Kimia",
+        "dn": [
+          {
+            "type": "Pendidikan dan Pengajaran",
+            "moa": 7,
+            "ia": 0
+          },
+          {
+            "type": "Penelitian dan Pengembangan",
+            "moa": 2,
+            "ia": 1
+          },
+          {
+            "type": "Pengabdian Kepada Masyarakat",
+            "moa": 6,
+            "ia": 0
+          }
+        ],
+        "ln": [
+          {
+            "type": "Pendidikan dan Pengajaran",
+            "moa": 3,
+            "ia": 6
+          },
+          {
+            "type": "Penelitian dan Pengembangan",
+            "moa": 1,
+            "ia": 4
+          },
+          {
+            "type": "Pengabdian Kepada Masyarakat",
+            "moa": 0,
+            "ia": 5
+          }
+        ]
+      },
+      {
+        "study_program": "S1 Teknik Sipil",
+        "dn": [
+          {
+            "type": "Pendidikan dan Pengajaran",
+            "moa": 0,
+            "ia": 9
+          },
+          {
+            "type": "Penelitian dan Pengembangan",
+            "moa": 4,
+            "ia": 0
+          },
+          {
+            "type": "Pengabdian Kepada Masyarakat",
+            "moa": 7,
+            "ia": 1
+          }
+        ],
+        "ln": [
+          {
+            "type": "Pendidikan dan Pengajaran",
+            "moa": 2,
+            "ia": 7
+          },
+          {
+            "type": "Penelitian dan Pengembangan",
+            "moa": 0,
+            "ia": 2
+          },
+          {
+            "type": "Pengabdian Kepada Masyarakat",
+            "moa": 7,
+            "ia": 2
+          }
+        ]
+      },
+      {
+        "study_program": "S1 Teknik Elektro",
+        "dn": [
+          {
+            "type": "Pendidikan dan Pengajaran",
+            "moa": 2,
+            "ia": 3
+          },
+          {
+            "type": "Penelitian dan Pengembangan",
+            "moa": 0,
+            "ia": 2
+          },
+          {
+            "type": "Pengabdian Kepada Masyarakat",
+            "moa": 4,
+            "ia": 0
+          }
+        ],
+        "ln": [
+          {
+            "type": "Pendidikan dan Pengajaran",
+            "moa": 5,
+            "ia": 0
+          },
+          {
+            "type": "Penelitian dan Pengembangan",
+            "moa": 1,
+            "ia": 7
+          },
+          {
+            "type": "Pengabdian Kepada Masyarakat",
+            "moa": 2,
+            "ia": 9
+          }
+        ]
+      },
+      {
+        "study_program": "S1 Arsitektur",
+        "dn": [
+          {
+            "type": "Pendidikan dan Pengajaran",
+            "moa": 7,
+            "ia": 0
+          },
+          {
+            "type": "Penelitian dan Pengembangan",
+            "moa": 4,
+            "ia": 1
+          },
+          {
+            "type": "Pengabdian Kepada Masyarakat",
+            "moa": 8,
+            "ia": 2
+          }
+        ],
+        "ln": [
+          {
+            "type": "Pendidikan dan Pengajaran",
+            "moa": 0,
+            "ia": 1
+          },
+          {
+            "type": "Penelitian dan Pengembangan",
+            "moa": 2,
+            "ia": 0
+          },
+          {
+            "type": "Pengabdian Kepada Masyarakat",
+            "moa": 0,
+            "ia": 3
+          }
+        ]
+      }
+    ],
+    "total_moa_ia_dn": {
+      "Pendidikan dan Pengajaran": 70,
+      "Penelitian dan Pengembangan": 56,
+      "Pengabdian Kepada Masyarakat": 66
+    },
+    "total_moa_ia_ln": {
+      "Pendidikan dan Pengajaran": 61,
+      "Penelitian dan Pengembangan": 58,
+      "Pengabdian Kepada Masyarakat": 52
+    }
+  },
+  {
+    "event_id": "E-011",
+    "event_name": "Persentase Dosen Yang Bekerja Sebagai Praktisi Di Dunia Industri",
+    "program_name": "[S2] Meningkatnya Kualitas Dosen Pendidikan Tinggi",
+    "dashboard_model": {
+      "use_table": true,
+      "chart_type": "Pie",
+      "cluster": "DN/LN Benua Negara"
+    },
+    "data": [
+      {
+        "partner": "Amazon.com Inc. (AMZN)",
+        "dn_cooperation": {
+          "moa": 0,
+          "ia": 0
+        },
+        "ln_cooperation": {
+          "moa": 15,
+          "ia": 9
+        },
+        "sum_of_cooperation": 24
+      },
+      {
+        "partner": "Apple Inc. (AAPL)",
+        "dn_cooperation": {
+          "moa": 0,
+          "ia": 0
+        },
+        "ln_cooperation": {
+          "moa": 13,
+          "ia": 7
+        },
+        "sum_of_cooperation": 20
+      },
+      {
+        "partner": "Bayan Resource",
+        "dn_cooperation": {
+          "moa": 10,
+          "ia": 5
+        },
+        "ln_cooperation": {
+          "moa": 0,
+          "ia": 0
+        },
+        "sum_of_cooperation": 15
+      },
+      {
+        "partner": "Astra Internasional",
+        "dn_cooperation": {
+          "moa": 8,
+          "ia": 16
+        },
+        "ln_cooperation": {
+          "moa": 0,
+          "ia": 0
+        },
+        "sum_of_cooperation": 24
+      },
+      {
+        "partner": "Toyota Motor",
+        "dn_cooperation": {
+          "moa": 0,
+          "ia": 0
+        },
+        "ln_cooperation": {
+          "moa": 12,
+          "ia": 6
+        },
+        "sum_of_cooperation": 18
+      },
+      {
+        "partner": "Telkom Indonesia",
+        "dn_cooperation": {
+          "moa": 14,
+          "ia": 13
+        },
+        "ln_cooperation": {
+          "moa": 0,
+          "ia": 0
+        },
+        "sum_of_cooperation": 27
+      },
+      {
+        "partner": "Microsoft Corporation",
+        "dn_cooperation": {
+          "moa": 0,
+          "ia": 0
+        },
+        "ln_cooperation": {
+          "moa": 15,
+          "ia": 7
+        },
+        "sum_of_cooperation": 22
+      },
+      {
+        "partner": "PT Adaro Energy Indonesia Tbk",
+        "dn_cooperation": {
+          "moa": 7,
+          "ia": 12
+        },
+        "ln_cooperation": {
+          "moa": 0,
+          "ia": 0
+        },
+        "sum_of_cooperation": 19
+      },
+      {
+        "partner": "CVS Health Corp. (CVS)",
+        "dn_cooperation": {
+          "moa": 0,
+          "ia": 0
+        },
+        "ln_cooperation": {
+          "moa": 17,
+          "ia": 13
+        },
+        "sum_of_cooperation": 30
+      },
+      {
+        "partner": "PT Industri Jamu dan Farmasi Sido Muncul Tbk",
+        "dn_cooperation": {
+          "moa": 8,
+          "ia": 13
+        },
+        "ln_cooperation": {
+          "moa": 0,
+          "ia": 0
+        },
+        "sum_of_cooperation": 21
+      }
+    ]
+  },
+  {
+    "event_id": "E-012",
+    "event_name": "Perrsentase dosen yang membina mahasiswa yang berhasil meraih prestasi paling rendah tingkat nasional dalam 5 (lima) tahun terakhir",
+    "program_name": "[S2] Meningkatnya Kualitas Dosen Pendidikan Tinggi",
+    "dashboard_model": {
+      "use_table": true,
+      "chart_type": "Pie",
+      "cluster": "Yes (KS DN/LN, Benua, Negara)"
+    },
+    "data": [
+      {
+        "study_program": "S1 Agribisnis",
+        "sum_permanent_lecturer": 300,
+        "sum_supervisor_lecturer": 60,
+        "sum_outstanding_student": 340,
+        "moa_count": 20,
+        "ia_count": 0,
+        "success_percentage": "20%"
+      },
+      {
+        "study_program": "S1 Agroteknologi",
+        "sum_permanent_lecturer": 280,
+        "sum_supervisor_lecturer": 64,
+        "sum_outstanding_student": 300,
+        "moa_count": 50,
+        "ia_count": 0,
+        "success_percentage": "22%"
+      },
+      {
+        "study_program": "S1 Akuntansi",
+        "sum_permanent_lecturer": 290,
+        "sum_supervisor_lecturer": 70,
+        "sum_outstanding_student": 290,
+        "moa_count": 0,
+        "ia_count": 35,
+        "success_percentage": "24%"
+      },
+      {
+        "study_program": "S1 Arsitektur",
+        "sum_permanent_lecturer": 220,
+        "sum_supervisor_lecturer": 50,
+        "sum_outstanding_student": 320,
+        "moa_count": 0,
+        "ia_count": 30,
+        "success_percentage": "23%"
+      },
+      {
+        "study_program": "S1 Ekonomi Pembangunan",
+        "sum_permanent_lecturer": 180,
+        "sum_supervisor_lecturer": 54,
+        "sum_outstanding_student": 240,
+        "moa_count": 25,
+        "ia_count": 0,
+        "success_percentage": "24%"
+      },
+      {
+        "study_program": "S1 Teknik Elektro",
+        "sum_permanent_lecturer": 250,
+        "sum_supervisor_lecturer": 55,
+        "sum_outstanding_student": 270,
+        "moa_count": 0,
+        "ia_count": 10,
+        "success_percentage": "25%"
+      },
+      {
+        "study_program": "S1 Teknik Kimia",
+        "sum_permanent_lecturer": 280,
+        "sum_supervisor_lecturer": 60,
+        "sum_outstanding_student": 300,
+        "moa_count": 0,
+        "ia_count": 5,
+        "success_percentage": "26%"
+      },
+      {
+        "study_program": "S1 Teknik Industri",
+        "sum_permanent_lecturer": 290,
+        "sum_supervisor_lecturer": 65,
+        "sum_outstanding_student": 310,
+        "moa_count": 25,
+        "ia_count": 0,
+        "success_percentage": "27%"
+      },
+      {
+        "study_program": "S1 Teknik Sipil",
+        "sum_permanent_lecturer": 220,
+        "sum_supervisor_lecturer": 50,
+        "sum_outstanding_student": 270,
+        "moa_count": 10,
+        "ia_count": 0,
+        "success_percentage": "26%"
+      },
+      {
+        "study_program": "S1 Teknik Mesin",
+        "sum_permanent_lecturer": 180,
+        "sum_supervisor_lecturer": 54,
+        "sum_outstanding_student": 240,
+        "moa_count": 0,
+        "ia_count": 5,
+        "success_percentage": "27%"
+      },
+      {
+        "study_program": "S1 Ilmu Komputer",
+        "sum_permanent_lecturer": 300,
+        "sum_supervisor_lecturer": 60,
+        "sum_outstanding_student": 350,
+        "moa_count": 30,
+        "ia_count": 0,
+        "success_percentage": "30%"
+      },
+      {
+        "study_program": "S1 Sistem Informasi",
+        "sum_permanent_lecturer": 280,
+        "sum_supervisor_lecturer": 64,
+        "sum_outstanding_student": 310,
+        "moa_count": 0,
+        "ia_count": 10,
+        "success_percentage": "29%"
+      },
+      {
+        "study_program": "S1 Desain Komunikasi Visual",
+        "sum_permanent_lecturer": 290,
+        "sum_supervisor_lecturer": 70,
+        "sum_outstanding_student": 300,
+        "moa_count": 20,
+        "ia_count": 0,
+        "success_percentage": "28%"
+      },
+      {
+        "study_program": "S1 Psikologi",
+        "sum_permanent_lecturer": 200,
+        "sum_supervisor_lecturer": 50,
+        "sum_outstanding_student": 250,
+        "moa_count": 25,
+        "ia_count": 0,
+        "success_percentage": "25%"
+      },
+      {
+        "study_program": "S1 Hukum",
+        "sum_permanent_lecturer": 270,
+        "sum_supervisor_lecturer": 60,
+        "sum_outstanding_student": 280,
+        "moa_count": 0,
+        "ia_count": 12,
+        "success_percentage": "26%"
+      }
+    ]
+  }
+]

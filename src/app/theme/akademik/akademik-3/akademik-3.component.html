@@ -1,0 +1,95 @@
+<div class="row">
+  <div class="col-12">
+    <app-card [hidHeader]="true" [options]="false" *ngIf="listData?.length != 0">
+      <app-apex-chart chartID="bar-1" [chartConfig]="chartConfig1"></app-apex-chart>
+    </app-card>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    <app-card [hidHeader]="true" [options]="false" *ngIf="listData?.length != 0">
+      <app-apex-chart chartID="line" [chartConfig]="chartConfig2"></app-apex-chart>
+    </app-card>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    <app-card [hidHeader]="true" [options]="false" *ngIf="listData?.length != 0">
+      <app-apex-chart chartID="bar-2" [chartConfig]="chartConfig3"></app-apex-chart>
+    </app-card>
+  </div>
+</div>
+<div class="row" id="auto-clicked">
+  <div class="col-12">
+    <app-card cardClass="card-datatable" headerClass="text-center text-md-left" [hidHeader]="true" [options]="false" [loading]="loadCard">
+      <div class="table-responsive pb-1 p-2 page-bg">
+        <table datatable [dtOptions]="dtOptions" class="table table-hover table-bordered display compact" [dtTrigger]="dtTrigger">
+          <thead class="thead-light">
+            <tr>
+              <th rowspan="2" width="10">No.</th>
+              <th rowspan="2">Program Studi</th>
+              <th colspan="2" class="text-center">Aktif</th>
+              <th colspan="2" class="text-center">Cuti</th>
+              <th colspan="2" class="text-center">Non Aktif</th>
+              <th colspan="2" class="text-center">Total (aktif + cuti + non aktif)</th>
+              <th rowspan="2" class="text-center">Lulus</th>
+              <th rowspan="2" class="text-center">Undur Diri</th>
+              <th rowspan="2" class="text-center">Meninggal</th>
+              <th rowspan="2" class="text-center">Pindah Prodi</th>
+              <th rowspan="2" class="text-center">Inbound</th>
+              <th rowspan="2" class="text-center">Outbound</th>
+              <th rowspan="2" class="text-center">Total</th>
+            </tr>
+            <tr>
+              <th class="text-center">Reguler</th>
+              <th class="text-center">Transfer</th>
+              <th class="text-center">Reguler</th>
+              <th class="text-center">Transfer</th>
+              <th class="text-center">Reguler</th>
+              <th class="text-center">Transfer</th>
+              <th class="text-center">Reguler</th>
+              <th class="text-center">Transfer</th>
+            </tr>
+          </thead>
+          <tbody *ngIf="listData?.length != 0">
+            <tr *ngFor="let data of listData; let i = index;">
+              <th>{{i+1}}.</th>
+              <td class="word-wrap">{{data.study_program}}</td>
+              <td class="text-center">{{data.active.regular}}</td>
+              <td class="text-center">{{data.active.transfer}}</td>
+              <td class="text-center">{{data.cuti.regular}}</td>
+              <td class="text-center">{{data.cuti.transfer}}</td>
+              <td class="text-center">{{data.non_active.regular}}</td>
+              <td class="text-center">{{data.non_active.transfer}}</td>
+              <td class="text-center">{{data.total_active_cuti_non_active.regular}}</td>
+              <td class="text-center">{{data.total_active_cuti_non_active.transfer}}</td>
+              <td class="text-center">{{data.graduated}}</td>
+              <td class="text-center">{{data.resign}}</td>
+              <td class="text-center">{{data.die}}</td>
+              <td class="text-center">{{data.switch_study_program}}</td>
+              <td class="text-center">{{data.inbound}}</td>
+              <td class="text-center">{{data.outbound}}</td>
+              <td class="text-center">{{data.total}}</td>
+            </tr>
+          </tbody>
+          <tbody *ngIf="listData?.length == 0 && spinnerLoading">
+            <tr>
+              <td colspan="17" class="no-data-available text-center">
+                <img src='assets/images/infinity-situ.svg'>
+              </td>
+            </tr>
+          </tbody>
+          <tbody *ngIf="listData?.length == 0 && !spinnerLoading">
+            <tr>
+              <td colspan="17" class="no-data-available text-center">
+                <div class="col-12 text-center pt-3 pb-1">
+                  <app-no-data-found></app-no-data-found>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </app-card>
+  </div>
+</div>

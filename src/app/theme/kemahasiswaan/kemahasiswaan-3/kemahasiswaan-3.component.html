@@ -1,0 +1,109 @@
+<div class="row">
+  <div class="col-12">
+    <app-card [hidHeader]="true" [options]="false" *ngIf="listData?.length != 0">
+      <app-apex-chart chartID="bar-hor-1" [chartConfig]="chartConfig1"></app-apex-chart>
+    </app-card>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    <app-card [hidHeader]="true" [options]="false" *ngIf="listData?.length != 0">
+      <app-apex-chart chartID="bar-1" [chartConfig]="chartConfig2"></app-apex-chart>
+    </app-card>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    <app-card [hidHeader]="true" [options]="false" *ngIf="listData?.length != 0">
+      <app-apex-chart chartID="bar-2" [chartConfig]="chartConfig3"></app-apex-chart>
+    </app-card>
+  </div>
+</div>
+<div class="row" id="auto-clicked">
+  <div class="col-12">
+    <app-card cardClass="card-datatable" headerClass="text-center text-md-left" [hidHeader]="true" [options]="false" [loading]="loadCard">
+      <div class="table-responsive pb-1 p-2 page-bg">
+        <table datatable [dtOptions]="dtOptions" class="table table-hover table-bordered display compact" [dtTrigger]="dtTrigger">
+          <thead class="thead-light">
+            <tr>
+              <th></th>
+              <th colspan="7" class="text-center">Beasiswa</th>
+            </tr>
+            <tr>
+              <th rowspan="2" width="10">No.</th>
+              <th rowspan="2">Fakultas</th>
+              <th colspan="2" class="text-center">Beasiswa Internal</th>
+              <th colspan="2" class="text-center">Beasiswa Eksternal</th>
+              <th rowspan="2" class="text-center">Rata-rata IPK</th>
+            </tr>
+            <tr>
+              <th class="word-wrap text-center">Jumlah Beasiswa</th>
+              <th class="word-wrap text-center">Jumlah Mahasiswa</th>
+              <th class="word-wrap text-center">Jumlah Beasiswa</th>
+              <th class="word-wrap text-center">Jumlah Mahasiswa</th>
+            </tr>
+          </thead>
+          <tbody *ngIf="listData?.length != 0">
+            <tr *ngFor="let data of listData; let i = index;">
+              <th>{{i+1}}.</th>
+              <td class="word-wrap">{{data.faculty}}</td>
+              <td class="text-center">Rp. {{data.bea_internal}}</td>
+              <td class="text-center">{{data.internal_scholarship_student}}</td>
+              <td class="text-center">Rp. {{data.bea_eksternal}}</td>
+              <td class="text-center">{{data.external_scholarship_student}}</td>
+              <td class="text-center">{{data.average_gpa}}</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <th></th>
+              <th colspan="10"></th>
+            </tr>
+            <tr>
+              <th rowspan="5"></th>
+              <th>Total Mahasiswa Penerima Beasiswa</th>
+              <th>1553</th>
+              <th colspan="4"></th>
+            </tr>
+            <tr>
+              <th>Total Penerimaan Beasiswa</th>
+              <th>Rp. 980.345.576</th>
+              <th colspan="4"></th>
+            </tr>
+            <tr>
+              <th>Rata-rata Penerimaan Beasiswa</th>
+              <th>Rp. 140.456.463</th>
+              <th colspan="4"></th>
+            </tr>
+            <tr>
+              <th>Rata-rata IPK Semua Penerima</th>
+              <th>3.95</th>
+              <th colspan="4"></th>
+            </tr>
+            <tr>
+              <th>Jumlah Jenis Beasiswa</th>
+              <th>75</th>
+              <th colspan="4"></th>
+            </tr>
+          </tbody>
+          <tbody *ngIf="listData?.length == 0 && spinnerLoading">
+            <tr>
+              <td colspan="7" class="no-data-available text-center">
+                <img src='assets/images/infinity-situ.svg'>
+              </td>
+            </tr>
+          </tbody>
+          <tbody *ngIf="listData?.length == 0 && !spinnerLoading">
+            <tr>
+              <td colspan="7" class="no-data-available text-center">
+                <div class="col-12 text-center pt-3 pb-1">
+                  <app-no-data-found></app-no-data-found>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </app-card>
+  </div>
+</div>

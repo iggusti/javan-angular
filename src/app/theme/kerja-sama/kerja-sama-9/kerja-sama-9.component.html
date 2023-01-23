@@ -1,0 +1,66 @@
+<div class="row">
+  <div class="col-12">
+    <app-card [hidHeader]="true" [options]="false" *ngIf="listData?.length != 0">
+      <app-apex-chart chartID="donut" [chartConfig]="chartConfig"></app-apex-chart>
+    </app-card>
+  </div>
+</div>
+<div class="row" id="auto-clicked">
+  <div class="col-12">
+    <app-card cardClass="card-datatable" headerClass="text-center text-md-left" [hidHeader]="true" [options]="false"
+              [loading]="loadCard">
+      <div class="table-responsive pb-1 p-2 page-bg">
+        <table datatable [dtOptions]="dtOptions" class="table table-hover table-bordered display compact"
+               [dtTrigger]="dtTrigger">
+          <thead class="thead-light">
+            <tr>
+              <th></th>
+              <th colspan="7" class="text-center">Kegiatan - Persentase Program Studi S1 Dan D4/D3/D2 Yang Melaksanakan
+                Kerja Sama Dengan Mitra</th>
+            </tr>
+            <tr>
+              <th rowspan="2" width="10" class="text-center">No.</th>
+              <th rowspan="2">Jenjang Studi – Program Studi</th>
+              <th colspan="2" class="text-center">Dalam Negeri</th>
+              <th colspan="2" class="text-center">Luar Negeri</th>
+              <th rowspan="2" class="text-center">Akumulasi Kerja Sama</th>
+            </tr>
+            <tr>
+              <th class="text-center">MoA</th>
+              <th class="text-center">IA</th>
+              <th class="text-center">MoA</th>
+              <th class="text-center">IA</th>
+            </tr>
+          </thead>
+          <tbody *ngIf="listData?.length != 0">
+            <tr *ngFor="let data of listData; let i = index;">
+              <th>{{i+1}}.</th>
+              <td class="word-wrap">{{data.study_program}}</td>
+              <td class="text-center">{{data.dn_cooperation.moa}}</td>
+              <td class="text-center">{{data.dn_cooperation.ia}}</td>
+              <td class="text-center">{{data.ln_cooperation.moa}}</td>
+              <td class="text-center">{{data.ln_cooperation.ia}}</td>
+              <td class="text-center">{{data.sum_of_cooperation}}</td>
+            </tr>
+          </tbody>
+          <tbody *ngIf="listData?.length == 0 && spinnerLoading">
+            <tr>
+              <td colspan="4" class="no-data-available text-center">
+                <img src='assets/images/infinity-situ.svg'>
+              </td>
+            </tr>
+          </tbody>
+          <tbody *ngIf="listData?.length == 0 && !spinnerLoading">
+            <tr>
+              <td colspan="7" class="no-data-available text-center">
+                <div class="col-12 text-center pt-3 pb-1">
+                  <app-no-data-found></app-no-data-found>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </app-card>
+  </div>
+</div>

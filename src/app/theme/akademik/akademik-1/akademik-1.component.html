@@ -1,0 +1,87 @@
+<div class="row">
+  <div class="col-sm-6">
+    <app-card [hidHeader]="true" [options]="false" *ngIf="listData?.length != 0">
+      <app-apex-chart chartID="pie-1" [chartConfig]="chartConfig1"></app-apex-chart>
+    </app-card>
+  </div>
+  <div class="col-sm-6">
+    <app-card [hidHeader]="true" [options]="false" *ngIf="listData?.length != 0">
+      <app-apex-chart chartID="pie-2" [chartConfig]="chartConfig2"></app-apex-chart>
+    </app-card>
+  </div>
+</div>
+<div class="row" id="auto-clicked">
+  <div class="col-12">
+    <app-card cardClass="card-datatable" headerClass="text-center text-md-left" [hidHeader]="true" [options]="false" [loading]="loadCard">
+      <div class="table-responsive pb-1 p-2 page-bg">
+        <table datatable [dtOptions]="dtOptions" class="table table-hover table-bordered display compact" [dtTrigger]="dtTrigger">
+          <thead class="thead-light">
+            <tr>
+              <th></th>
+              <th colspan="10" class="text-center">Program</th>
+            </tr>
+            <tr>
+              <th width="10">No.</th>
+              <th>Status Akreditasi</th>
+              <th class="text-center">Diploma 2</th>
+              <th class="text-center">Diploma 3</th>
+              <th class="text-center">Diploma 4</th>
+              <th class="text-center">Sarjana (S-1)</th>
+              <th class="text-center">Profesi</th>
+              <th class="text-center">Magister (S-2)</th>
+              <th class="text-center">Doktor (S-3)</th>
+              <th class="text-center">Spesialis</th>
+              <th class="text-center">Total</th>
+            </tr>
+          </thead>
+          <tbody *ngIf="listData?.length != 0">
+            <tr *ngFor="let data of listData; let i = index;">
+              <th>{{i+1}}.</th>
+              <td class="word-wrap">{{data.accreditation_status}}</td>
+              <td class="text-center">{{data.program[0].total}}</td>
+              <td class="text-center">{{data.program[1].total}}</td>
+              <td class="text-center">{{data.program[2].total}}</td>
+              <td class="text-center">{{data.program[3].total}}</td>
+              <td class="text-center">{{data.program[4].total}}</td>
+              <td class="text-center">{{data.program[5].total}}</td>
+              <td class="text-center">{{data.program[6].total}}</td>
+              <td class="text-center">{{data.program[7].total}}</td>
+              <td class="text-center">{{data.total_program}}</td>
+            </tr>
+          </tbody>
+          <tbody *ngIf="listData?.length != 0">
+            <tr>
+              <th></th>
+              <th>Total</th>
+              <th class="text-center">{{totalDiploma2}}</th>
+              <th class="text-center">{{totalDiploma3}}</th>
+              <th class="text-center">{{totalDiploma4}}</th>
+              <th class="text-center">{{totalSarjanaS1}}</th>
+              <th class="text-center">{{totalProfesi}}</th>
+              <th class="text-center">{{totalMagisterS2}}</th>
+              <th class="text-center">{{totalDoktorS3}}</th>
+              <th class="text-center">{{totalSpesialis}}</th>
+              <th class="text-center">{{totalProgram}}</th>
+            </tr>
+          </tbody>
+          <tbody *ngIf="listData?.length == 0 && spinnerLoading">
+            <tr>
+              <td colspan="11" class="no-data-available text-center">
+                <img src='assets/images/infinity-situ.svg'>
+              </td>
+            </tr>
+          </tbody>
+          <tbody *ngIf="listData?.length == 0 && !spinnerLoading">
+            <tr>
+              <td colspan="11" class="no-data-available text-center">
+                <div class="col-12 text-center pt-3 pb-1">
+                  <app-no-data-found></app-no-data-found>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </app-card>
+  </div>
+</div>

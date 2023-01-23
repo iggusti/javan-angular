@@ -1,0 +1,117 @@
+<div class="row">
+  <div class="col-12">
+    <app-card [hidHeader]="true" [options]="false" *ngIf="listData?.length != 0">
+      <app-apex-chart chartID="bar-1" [chartConfig]="chartConfig1"></app-apex-chart>
+    </app-card>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    <app-card [hidHeader]="true" [options]="false" *ngIf="listData?.length != 0">
+      <app-apex-chart chartID="bar-2" [chartConfig]="chartConfig2"></app-apex-chart>
+    </app-card>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    <app-card [hidHeader]="true" [options]="false" *ngIf="listData?.length != 0">
+      <app-apex-chart chartID="bar-3" [chartConfig]="chartConfig3"></app-apex-chart>
+    </app-card>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    <app-card [hidHeader]="true" [options]="false" *ngIf="listData?.length != 0">
+      <app-apex-chart chartID="bar-hor-1" [chartConfig]="chartConfig4"></app-apex-chart>
+    </app-card>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    <app-card [hidHeader]="true" [options]="false" *ngIf="listData?.length != 0">
+      <app-apex-chart chartID="bar-hor-2" [chartConfig]="chartConfig5"></app-apex-chart>
+    </app-card>
+  </div>
+</div>
+<div class="row" id="auto-clicked">
+  <div class="col-12">
+    <app-card cardClass="card-datatable" headerClass="text-center text-md-left" [hidHeader]="true" [options]="false" [loading]="loadCard">
+      <div class="table-responsive pb-1 p-2 page-bg">
+        <table datatable [dtOptions]="dtOptions" class="table table-hover table-bordered display compact" [dtTrigger]="dtTrigger">
+          <thead class="thead-light">
+            <tr>
+              <th></th>
+              <th colspan="19" class="text-center">Tracer Study</th>
+            </tr>
+            <tr>
+              <th width="10" rowspan="2">No.</th>
+              <th rowspan="2">Fakultas</th>
+              <th rowspan="2" class="text-center">Jumlah Alumni</th>
+              <th colspan="4" class="text-center">Kondisi Lulusan (Jumlah Alumni)</th>
+              <th colspan="5" class="text-center">Jenis Perusahaan Tempat Kerja (Jumlah Alumni)</th>
+              <th colspan="4" class="text-center">Linieritas dan Stakeholder</th>
+              <th colspan="3" class="text-center">PT Lulusan</th>
+            </tr>
+            <tr>
+              <th class="text-center">Bekerja</th>
+              <th class="text-center">Wiraswasta</th>
+              <th class="text-center">Melanjutkan Studi</th>
+              <th class="text-center">Belum Bekerja</th>
+              <th class="text-center">Instansi Pemerintah</th>
+              <th class="text-center">Organisasi Non Profit</th>
+              <th class="text-center">Swasta</th>
+              <th class="text-center">Perusahaan Sendiri</th>
+              <th class="text-center">BUMN / BUMD</th>
+              <th class="text-center">Sangat Erat</th>
+              <th class="text-center">Erat</th>
+              <th class="text-center">Cukup Erat</th>
+              <th class="text-center">Kurang Erat</th>
+              <th class="text-center">PTN</th>
+              <th class="text-center">PTS</th>
+              <th class="text-center">PTLN</th>
+            </tr>
+          </thead>
+          <tbody *ngIf="listData?.length != 0">
+            <tr *ngFor="let data of listData; let i = index;">
+              <th>{{i+1}}.</th>
+              <td>{{data.faculty}}</td>
+              <td class="text-center">{{data.alumni_count}}</td>
+              <td class="text-center">{{data.graduate_condition.working}}</td>
+              <td class="text-center">{{data.graduate_condition.entrepreneur}}</td>
+              <td class="text-center">{{data.graduate_condition.continuing_study}}</td>
+              <td class="text-center">{{data.graduate_condition.not_yet_working}}</td>
+              <td class="text-center">{{data.company_type.government}}</td>
+              <td class="text-center">{{data.company_type.non_profit_organization}}</td>
+              <td class="text-center">{{data.company_type.swasta}}</td>
+              <td class="text-center">{{data.company_type.own_company}}</td>
+              <td class="text-center">{{data.company_type.bumn}}</td>
+              <td class="text-center">{{data.linearity.very_tight}}</td>
+              <td class="text-center">{{data.linearity.tightly}}</td>
+              <td class="text-center">{{data.linearity.enough_tight}}</td>
+              <td class="text-center">{{data.linearity.less_tight}}</td>
+              <td class="text-center">{{data.graduate_pt.ptn}}</td>
+              <td class="text-center">{{data.graduate_pt.pts}}</td>
+              <td class="text-center">{{data.graduate_pt.pt_ln}}</td>
+            </tr>
+          </tbody>
+          <tbody *ngIf="listData?.length == 0 && spinnerLoading">
+            <tr>
+              <td colspan="19" class="no-data-available text-center">
+                <img src='assets/images/infinity-situ.svg'>
+              </td>
+            </tr>
+          </tbody>
+          <tbody *ngIf="listData?.length == 0 && !spinnerLoading">
+            <tr>
+              <td colspan="19" class="no-data-available text-center">
+                <div class="col-12 text-center pt-3 pb-1">
+                  <app-no-data-found></app-no-data-found>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </app-card>
+  </div>
+</div>
