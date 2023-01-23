@@ -4,19 +4,19 @@
       <div class="col-sm-10 auth-content w-auto">
         <!-- <div class="col-sm-10 auth-content w-auto text-center" style="height: 90%; position: relative; display: inline-block; overflow: hidden;">
         </div> -->
-        <img src="assets/images/usu-logo.png" alt="" class="img-login landscape mb-4">
+        <img src="assets/images/logo-putih.svg" alt="" class="img-login landscape mb-4">
         <h4 class="text-white font-weight-normal">{{ 'LOGIN.welcome_to' | translate }}</h4>
         <!-- <h1 class="text-white text-capitalize">{{ defApp }} | {{ defAppDesc }}</h1> -->
         <h1 class="text-white text-capitalize">{{ defAppDesc }}</h1>
         <!-- <h5 class="text-white font-weight-normal">Universitas Sumatera Utara</h5> -->
-        <img src="assets/images/auth/auth-logo.png" alt="" class="img-fluid mt-4">
+        <!-- <img src="assets/images/auth/auth-logo.png" alt="" class="img-fluid mt-4"> -->
         <!-- <particles [params]="myParams" [style]="myStyle" [width]="width" [height]="height"></particles> -->
       </div>
     </div>
     <div class="auth-side-form">
       <div class=" auth-content">
         <form [formGroup]="loginForm" (submit)="doLogin($event)" class="md-float-material form-material" action="javascript:">
-          <img src="assets/images/usu-logo.png" alt="" style="margin: auto;" class="mb-4 d-block d-xl-none d-lg-none img-login">
+          <img src="assets/images/logo-putih.svg" alt="" style="margin: auto;" class="mb-4 d-block d-xl-none d-lg-none img-login">
           <h3 class="text-c-telu text-green f-w-400 text-uppercase d-none d-xl-block d-lg-block">{{ defApp }}</h3>
           <h6 class="mb-4 text-inverse f-w-400 d-none d-xl-block d-lg-block">Single Account, Single Sign On login</h6>
           <h3 class="text-c-telu text-green text-center f-w-400 text-uppercase d-block d-xl-none d-lg-none">{{ defApp }}
@@ -24,7 +24,7 @@
           <h6 class="mb-4 text-center text-inverse f-w-400 d-block d-xl-none d-lg-none">Single Account, Single Sign On
             login</h6>
           <div class="input-group mb-3">
-            <input type="text" class="form-control" name="username" required formControlName="username" placeholder="Username SSO" [ngClass]="loginForm.controls.username.invalid && (loginForm.controls.username.dirty || loginForm.controls.username.touched)?'is-invalid':(loginForm.controls.username.valid?'is-valid':'')" autocomplete="username">
+            <input type="text" class="form-control" name="username" required formControlName="username" placeholder="Username" [ngClass]="loginForm.controls.username.invalid && (loginForm.controls.username.dirty || loginForm.controls.username.touched)?'is-invalid':(loginForm.controls.username.valid?'is-valid':'')" autocomplete="username">
             <label *ngIf="{'is-invalid': loginForm.controls.username.invalid && (loginForm.controls.username.dirty || loginForm.controls.username.touched)}" id="validation-email-error" class="error jquery-validation-error small form-text invalid-feedback">Please input username.</label>
           </div>
           <div class="input-group mb-4">
@@ -39,11 +39,6 @@
             <span *ngIf="this.loading" class="load-text"> Loading...</span>
             <span *ngIf="!this.loading" class="btn-text">Login</span>
           </button>
-          <div class="text-center">
-            <div class="saprator cust my-4 d-block d-xl-none d-lg-none"><span style="font-size: 12px;">Powered
-                By:</span></div>
-            <img src="assets/images/auth/SITU.png" alt="" class="img-fluid mb-4 d-block d-xl-none d-lg-none">
-          </div>
         </form>
       </div>
     </div>

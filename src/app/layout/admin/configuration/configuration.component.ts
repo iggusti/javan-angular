@@ -191,11 +191,11 @@ export class ConfigurationComponent implements OnInit {
     this.layoutType = layout;
     if (layout === "menu-light" || layout === "reset") {
       document.querySelector(".pcoded-navbar").classList.add("menu-light");
-      this.setHeaderBackground("background-grd-green");
+      this.setHeaderBackground("background-blue");
       localStorage.setItem("layoutType", layout);
     }
     if (layout === "dark") {
-      this.setHeaderBackground("background-grd-green");
+      this.setHeaderBackground("background-blue");
       document.querySelector("body").classList.add("able-pro-dark");
       localStorage.setItem("layoutType", layout);
     }
