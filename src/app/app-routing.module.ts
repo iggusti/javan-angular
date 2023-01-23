@@ -16,13 +16,13 @@ const routes: Routes = [
         pathMatch: "full",
       },
       {
-        path: "javan",
-        loadChildren: "./theme/javan/javan.module#JavanModule",
-        data: { animation: "2" },
-      },
-      {
         path: "home",
         loadChildren: "./theme/_home/home.module#HomeModule",
+        data: { animation: "1" },
+      },
+      {
+        path: "javan",
+        loadChildren: "./theme/javan/javan.module#JavanModule",
         data: { animation: "1" },
       },
       {

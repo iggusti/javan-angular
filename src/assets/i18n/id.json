@@ -91,6 +91,11 @@
     "nns": "Nomor Punggung",
     "form_table": "Form & Tabel",
     "not_found": "Kosong",
-    "print": "Cetak"
+    "print": "Cetak",
+    "name": "Nama",
+    "sex": "Jenis Kelamin",
+    "music": "Musik",
+    "born_date": "Tanggal Lahir",
+    "zip_code": "Kode Pos"
   }
 }

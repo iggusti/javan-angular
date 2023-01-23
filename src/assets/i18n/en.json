@@ -91,6 +91,11 @@
     "nns": "Number Nameset",
     "form_table": "Form & Table",
     "not_found": "Not Found",
-    "print": "Print"
+    "print": "Print",
+    "name": "Name",
+    "sex": "Sex",
+    "music": "Music",
+    "born_date": "Born Date",
+    "zip_code": "Zip Code"
   }
 }

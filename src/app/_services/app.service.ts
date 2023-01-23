@@ -31,4 +31,9 @@ export class AppService extends BaseService {
     const url = this.getUrl(this.namespace, "faq", this.dtParam(param));
     return this.getApi(url);
   }
+
+  getListUsers(): Observable<any> {
+    const url = `https://63ce99f96d27349c2b71ce9a.mockapi.io/api/v1/users`;
+    return this.getApi(url);
+  }
 }
