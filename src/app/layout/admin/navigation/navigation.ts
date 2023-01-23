@@ -64,7 +64,7 @@ const NavigationItems = [
         id: 0,
         title: "Edit",
         type: "item",
-        url: "/javan/edit",
+        url: "/javan/edit/-1",
         classes: "nav-item",
         icon: "ti-home",
       },
