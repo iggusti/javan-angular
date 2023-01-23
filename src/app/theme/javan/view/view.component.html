@@ -1,0 +1,206 @@
+<div class="row">
+  <div class="col-sm-12">
+    <app-card cardTitle="{{'ROOT.table_master_data_process_owner_code' | translate}}" cardClass="card-datatable" headerClass="text-center text-md-left" [hidHeader]="false" [options]="false" [loading]="loadTable">
+      <app-alert type="warning">
+        *{{'ROOT.make_sure_process_owner_code_is_active_when_you_want_to_edit_process_owner_code' | translate}}
+        <!-- <br> *{{'ROOT.proses_singkronisasi_bertujuan_untuk' | translate}} -->
+      </app-alert>
+
+      <div>
+        <button type="button" class="btn btn-info" (click)="openFilter()" [disabled]="dataMasterKodePemilikProses?.length == 0 && spinnerLoading">
+          <div *ngIf="!filter">
+            <i class="fas fa-eye mr-2"></i>{{'ROOT.open_filter' | translate}}
+          </div>
+          <div *ngIf="filter">
+            <i class="fas fa-eye-slash mr-2"></i>{{'ROOT.close_filter' | translate}}
+          </div>
+        </button>
+        <form [formGroup]="formFilter" class="md-float-material form-material" action="javascript:" *ngIf="filter">
+          <br>
+          <div class="form-group row">
+            <div class="col">
+              <label for="unit">{{'ROOT.unit' | translate}}</label>
+              <input type="text" class="form-control" formControlName="unit" id="unit" [(ngModel)]="processOwnerCodeData.unit" placeholder="{{'ROOT.enter_unit' | translate}}" required>
+            </div>
+            <div class="col">
+              <label for="level">{{'ROOT.level' | translate}}</label>
+              <input type="text" class="form-control" formControlName="level" id="level" [(ngModel)]="processOwnerCodeData.level" placeholder="{{'ROOT.enter_level' | translate}}" required>
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col">
+              <div class="form-group row">
+                <div class="col">
+                  <label for="code">{{'ROOT.code' | translate}}</label>
+                  <input type="text" class="form-control" formControlName="code" id="code" [(ngModel)]="processOwnerCodeData.code" placeholder="{{'ROOT.enter_code' | translate}}" [readOnly]="checked">
+                </div>
+                <div class="col">
+                  <label for="last_letter_number">{{'ROOT.last_letter_number' | translate}}</label>
+                  <input type="number" class="form-control" min="1" formControlName="last_letter_number" id="last_letter_number" placeholder="{{'ROOT.enter_last_letter_number' | translate}}" onkeydown="javascript: return event.keyCode === 8 || event.keyCode === 46 ? true : !isNaN(Number(event.key))" required>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <label for="status">{{'ROOT.status' | translate}}</label>
+              <ng-select formControlName="status" [options]="listStatus" placeholder="--- {{'ROOT.select_option' | translate}} ---" filterPlaceholder="{{'ROOT.cari_disini' | translate}}" required></ng-select>
+            </div>
+          </div>
+        </form>
+
+        <div class="form-group" *ngIf="filter">
+          <div class="switch switch-success d-inline m-r-10">
+            <input type="checkbox" id="termandcondition" [(ngModel)]="checked" (click)="switchNullCode()">
+            <label for="termandcondition" class="cr"></label>
+          </div>
+          <label>Null {{'ROOT.code' | translate}}</label>
+        </div>
+        <div class="mb-3" *ngIf="filter">
+          <button type="button" class="btn btn-warning mt-2 mr-2" (click)="filterData()" [disabled]="dataMasterKodePemilikProses?.length == 0 && spinnerLoading">
+            <i class="fa fa-search mr-2"></i>{{'ROOT.filter' | translate}}
+          </button>
+          <button type="button" class="btn btn-danger mt-2 mr-2" (click)="cleanFilter()" [disabled]="dataMasterKodePemilikProses?.length == 0 && spinnerLoading">
+            <i class="fas fa-eraser mr-2"></i>{{'ROOT.clean_filter' | translate}}
+          </button>
+        </div>
+      </div>
+      <br>
+
+      <!-- <div class="float-right mt-3 mb-3">
+        <button type="button" class="btn btn-success" (click)="openFormSave()">
+          <i class="fas fa-plus mr-2"></i>{{'ROOT.add_process_owner_code' | translate}}
+        </button>
+      </div> -->
+      <!-- <div class="float-right mt-3 mb-3">
+        <button type="button" class="btn btn-dark" (click)="sync()">
+          <i class="fas fa-sync"></i>{{'ROOT.sync' | translate}}
+        </button>
+      </div> -->
+
+      <div class="table-responsive pb-1">
+        <table datatable [dtOptions]="dtOptions" class="table table-striped row-border table-hover display compact" [dtTrigger]="dtTrigger">
+          <thead class="thead-light">
+            <tr>
+              <th scope="col" class="pl-1" width="10">No.</th>
+              <th scope="col" class="pl-1">{{'ROOT.unit' | translate}}</th>
+              <th scope="col" class="pl-1">{{'ROOT.level' | translate}}</th>
+              <th scope="col" class="pl-1">{{'ROOT.code' | translate}}</th>
+              <th scope="col" class="pl-1">{{'ROOT.last_letter_number' | translate}}</th>
+              <th scope="col" class="pl-1">{{'ROOT.status' | translate}}</th>
+              <th scope="col" class="pl-1">{{'ROOT.action' | translate}}</th>
+            </tr>
+          </thead>
+          <tbody *ngIf="dataMasterKodePemilikProses?.length != 0">
+            <tr [ngClass]="{'table-danger' : !item.status, 'table-warning' : item.code == null}" *ngFor="let item of dataMasterKodePemilikProses; let i = index;">
+              <th>{{i+1}}.</th>
+              <td class="word-wrap">{{item.unit}}</td>
+              <td class="word-wrap">
+                <div *ngIf="item.level">{{item.level}}</div>
+                <div *ngIf="!item.level">-</div>
+              </td>
+              <td class="word-wrap">
+                <div *ngIf="item.code">{{item.code}}</div>
+                <div *ngIf="!item.code">-</div>
+              </td>
+              <td class="word-wrap">{{item.last_number}}</td>
+              <td class="word-wrap">
+                <label class="badge badge-success" *ngIf="item.status">
+                  {{'ROOT.aktif' | translate}}
+                </label>
+                <label class="badge badge-danger" *ngIf="!item.status">
+                  {{'ROOT.nonaktif' | translate}}
+                </label>
+              </td>
+              <td>
+                <button title="{{'ROOT.edit_process_owner_code' | translate}}" (click)="openFormEdit(item)" class="btn btn-icon btn-rounded btn-outline-warning mr-1" *ngIf="item.status">
+                  <i class="fas fa-edit"></i>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+          <tbody *ngIf="dataMasterKodePemilikProses?.length == 0 && spinnerLoading">
+            <tr>
+              <td colspan="7" class="no-data-available text-center">
+                <img src='assets/images/infinity-situ.svg'>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <br>
+    </app-card>
+  </div>
+</div>
+
+<app-ui-modal #modalTambah [containerClick]="false" [dialogClass]="'modal-dialog-centered modal-xl'" [loading]="loadingForm">
+  <div class="app-modal-header">
+    <h5 class="modal-title">{{'ROOT.form_add_data_process_owner_code' | translate}}</h5>
+    <button type="button" class="close basic-close" data-dismiss="modal" aria-label="Close" (click)="modalTambah.hide()"><span aria-hidden="true">&times;</span></button>
+  </div>
+  <div class="app-modal-body">
+    <form [formGroup]="formDataKodePemilikProses" class="md-float-material form-material" action="javascript:">
+      <div class="form-group">
+        <label for="unit">{{'ROOT.unit' | translate}} <b class="text-danger">*</b></label>
+        <input type="text" class="form-control" formControlName="unit" id="unit" [(ngModel)]="processOwnerCodeData.unit" maxlength="255" placeholder="{{'ROOT.enter_unit' | translate}}" [ngClass]="formDataKodePemilikProses.controls.unit.invalid && (formDataKodePemilikProses.controls.unit.dirty || formDataKodePemilikProses.controls.unit.touched) ? 'is-invalid' :(formDataKodePemilikProses.controls.unit.valid ? 'is-valid' : '')">
+        <label *ngIf="{'is-invalid' : formDataKodePemilikProses.controls.unit.invalid && (formDataKodePemilikProses.controls.unit.dirty || formDataKodePemilikProses.controls.unit.touched)}" id="validation-email-error" class="error jquery-validation-error small form-text invalid-feedback">{{'ROOT.unit' | translate}} {{'ROOT.is_required' | translate}}</label>
+      </div>
+      <div class="form-group">
+        <label for="level">{{'ROOT.level' | translate}} <b class="text-danger">*</b></label>
+        <input type="text" class="form-control" formControlName="level" id="level" [(ngModel)]="processOwnerCodeData.level" maxlength="10" placeholder="{{'ROOT.enter_level' | translate}}" [ngClass]="formDataKodePemilikProses.controls.level.invalid && (formDataKodePemilikProses.controls.level.dirty || formDataKodePemilikProses.controls.level.touched) ? 'is-invalid' :(formDataKodePemilikProses.controls.level.valid ? 'is-valid' : '')">
+        <label *ngIf="{'is-invalid' : formDataKodePemilikProses.controls.level.invalid && (formDataKodePemilikProses.controls.level.dirty || formDataKodePemilikProses.controls.level.touched)}" id="validation-email-error" class="error jquery-validation-error small form-text invalid-feedback">{{'ROOT.level' | translate}} {{'ROOT.is_required' | translate}}</label>
+      </div>
+      <div class="form-group">
+        <label for="code">{{'ROOT.code' | translate}} <b class="text-danger">*</b></label>
+        <input type="text" class="form-control col-sm-5" formControlName="code" id="code" [(ngModel)]="processOwnerCodeData.code" maxlength="20" placeholder="{{'ROOT.enter_code' | translate}}" [ngClass]="formDataKodePemilikProses.controls.code.invalid && (formDataKodePemilikProses.controls.code.dirty || formDataKodePemilikProses.controls.code.touched) ? 'is-invalid' :(formDataKodePemilikProses.controls.code.valid ? 'is-valid' : '')">
+        <label *ngIf="{'is-invalid' : formDataKodePemilikProses.controls.code.invalid && (formDataKodePemilikProses.controls.code.dirty || formDataKodePemilikProses.controls.code.touched)}" id="validation-email-error" class="error jquery-validation-error small form-text invalid-feedback">{{'ROOT.code' | translate}} {{'ROOT.is_required' | translate}}</label>
+      </div>
+    </form>
+  </div>
+  <div class="app-modal-footer">
+    <button type="button" class="btn btn-secondary mr-2" data-dismiss="modal" (click)="modalTambah.hide()">
+      <i class="fas fa-undo mr-2" aria-hidden="true"></i>{{'ROOT.back' | translate}}
+    </button>
+    <button type="button" class="btn btn-success" [disabled]="formDataKodePemilikProses.get('unit').invalid || formDataKodePemilikProses.get('level').invalid || formDataKodePemilikProses.get('code').invalid" (click)="saveData()">
+      <i class="fas fa-save mr-2" aria-hidden="true"></i>{{'ROOT.save' | translate}}
+    </button>
+  </div>
+</app-ui-modal>
+
+<app-ui-modal #modalEdit [containerClick]="false" [dialogClass]="'modal-dialog-centered modal-xl'" [loading]="loadingForm">
+  <div class="app-modal-header">
+    <h5 class="modal-title">{{'ROOT.form_edit_data_process_owner_code' | translate}}</h5>
+    <button type="button" class="close basic-close" data-dismiss="modal" aria-label="Close" (click)="modalEdit.hide()"><span aria-hidden="true">&times;</span></button>
+  </div>
+  <div class="app-modal-body">
+    <form [formGroup]="formDataKodePemilikProses" class="md-float-material form-material" action="javascript:">
+      <input type="hidden" class="form-control" formControlName="id" id="id" required>
+      <div class="form-group">
+        <label for="unit">{{'ROOT.unit' | translate}} <b class="text-danger">*</b></label>
+        <input type="text" class="form-control" formControlName="unit" id="unit" [(ngModel)]="processOwnerCodeData.unit" maxlength="255" placeholder="{{'ROOT.enter_unit' | translate}}" readonly>
+        <label *ngIf="{'is-invalid' : formDataKodePemilikProses.controls.unit.invalid && (formDataKodePemilikProses.controls.unit.dirty || formDataKodePemilikProses.controls.unit.touched)}" id="validation-email-error" class="error jquery-validation-error small form-text invalid-feedback">{{'ROOT.unit' | translate}} {{'ROOT.is_required' | translate}}</label>
+      </div>
+      <div class="form-group">
+        <label for="level">{{'ROOT.level' | translate}} <b class="text-danger">*</b></label>
+        <input type="text" class="form-control" formControlName="level" id="level" [(ngModel)]="processOwnerCodeData.level" maxlength="10" placeholder="{{'ROOT.enter_level' | translate}}" [ngClass]="formDataKodePemilikProses.controls.level.invalid && (formDataKodePemilikProses.controls.level.dirty || formDataKodePemilikProses.controls.level.touched) ? 'is-invalid' :(formDataKodePemilikProses.controls.level.valid ? 'is-valid' : '')">
+        <label *ngIf="{'is-invalid' : formDataKodePemilikProses.controls.level.invalid && (formDataKodePemilikProses.controls.level.dirty || formDataKodePemilikProses.controls.level.touched)}" id="validation-email-error" class="error jquery-validation-error small form-text invalid-feedback">{{'ROOT.level' | translate}} {{'ROOT.is_required' | translate}}</label>
+      </div>
+      <div class="form-group">
+        <label for="code">{{'ROOT.code' | translate}} <b class="text-danger">*</b></label>
+        <input type="text" class="form-control col-sm-5" formControlName="code" id="code" [(ngModel)]="processOwnerCodeData.code" maxlength="20" placeholder="{{'ROOT.enter_code' | translate}}" [ngClass]="formDataKodePemilikProses.controls.code.invalid && (formDataKodePemilikProses.controls.code.dirty || formDataKodePemilikProses.controls.code.touched) ? 'is-invalid' :(formDataKodePemilikProses.controls.code.valid ? 'is-valid' : '')">
+        <label *ngIf="{'is-invalid' : formDataKodePemilikProses.controls.code.invalid && (formDataKodePemilikProses.controls.code.dirty || formDataKodePemilikProses.controls.code.touched)}" id="validation-email-error" class="error jquery-validation-error small form-text invalid-feedback">{{'ROOT.code' | translate}} {{'ROOT.is_required' | translate}}</label>
+      </div>
+      <div class="form-group">
+        <label for="last_letter_number">{{'ROOT.last_letter_number' | translate}} <b class="text-danger">*</b></label>
+        <input type="number" class="form-control col-sm-5" formControlName="last_letter_number" id="last_letter_number" [(ngModel)]="processOwnerCodeData.last_letter_number" maxlength="32" placeholder="{{'ROOT.enter_last_letter_number' | translate}}" onkeydown="javascript: return event.keyCode === 8 || event.keyCode === 46 ? true : !isNaN(Number(event.key))" readonly>
+        <label *ngIf="{'is-invalid' : formDataKodePemilikProses.controls.last_letter_number.invalid && (formDataKodePemilikProses.controls.last_letter_number.dirty || formDataKodePemilikProses.controls.last_letter_number.touched)}" id="validation-email-error" class="error jquery-validation-error small form-text invalid-feedback">{{'ROOT.last_letter_number' | translate}} {{'ROOT.is_required' | translate}}</label>
+      </div>
+    </form>
+  </div>
+  <div class="app-modal-footer">
+    <button type="button" class="btn btn-secondary mr-2" data-dismiss="modal" (click)="modalEdit.hide()">
+      <i class="fas fa-undo mr-2" aria-hidden="true"></i>{{'ROOT.back' | translate}}
+    </button>
+    <button type="button" class="btn btn-warning" [disabled]="formDataKodePemilikProses.get('unit').invalid || formDataKodePemilikProses.get('level').invalid || formDataKodePemilikProses.get('code').invalid || formDataKodePemilikProses.get('last_letter_number').invalid" (click)="saveEditData()">
+      <i class="fas fa-edit mr-2" aria-hidden="true"></i>{{'ROOT.edit' | translate}}
+    </button>
+  </div>
+</app-ui-modal>

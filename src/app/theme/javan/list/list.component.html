@@ -1,0 +1,299 @@
+<div class="row">
+  <div class="col-sm-12">
+    <app-card cardTitle="{{'ROOT.table_master_data_template' | translate}}" cardClass="card-datatable" headerClass="text-center text-md-left" [hidHeader]="false" [options]="false" [loading]="loadTable">
+      <app-alert type="warning">*{{'ROOT.make_sure_the_template_is_active_when_you_want_to_edit_the_template' | translate}}</app-alert>
+
+      <div>
+        <button type="button" class="btn btn-info" (click)="openFilter()" [disabled]="listTemplateMaster?.length == 0 && spinnerLoading">
+          <div *ngIf="!filter">
+            <i class="fas fa-eye mr-2"></i>{{'ROOT.open_filter' | translate}}
+          </div>
+          <div *ngIf="filter">
+            <i class="fas fa-eye-slash mr-2"></i>{{'ROOT.close_filter' | translate}}
+          </div>
+        </button>
+        <form [formGroup]="formFilter" class="md-float-material form-material" action="javascript:" *ngIf="filter">
+          <br>
+          <div class="form-group row">
+            <div class="col">
+              <label for="name">{{'ROOT.template_name' | translate}}</label>
+              <input type="text" class="form-control" formControlName="name" id="name" placeholder="{{'ROOT.enter_template_name' | translate}}" required>
+            </div>
+            <div class="col">
+              <label for="description">{{'ROOT.description' | translate}}</label>
+              <input class="form-control" formControlName="description" id="description" placeholder="{{'ROOT.enter_description' | translate}}" required>
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col">
+              <label for="reviewer">{{'ROOT.reviewer' | translate}} / {{'ROOT.signer' | translate}} / {{'ROOT.letter_numbering' | translate}} / {{'ROOT.disseminator' | translate}}</label>
+              <ng-select formControlName="reviewer" id="reviewer" [options]="listDataPosition" placeholder="--- {{'ROOT.select_option' | translate}} ---" filterPlaceholder="{{'ROOT.cari_disini' | translate}}" required></ng-select>
+            </div>
+            <div class="col">
+              <label for="status">{{'ROOT.status' | translate}}</label>
+              <ng-select formControlName="status" id="status" [options]="listStatus" placeholder="--- {{'ROOT.select_option' | translate}} ---" filterPlaceholder="{{'ROOT.cari_disini' | translate}}" required></ng-select>
+            </div>
+          </div>
+          <div class="mb-3">
+            <button type="button" class="btn btn-warning mt-2 mr-2" (click)="filterData()" [disabled]="listTemplateMaster?.length == 0 && spinnerLoading">
+              <i class="fa fa-search mr-2"></i>{{'ROOT.filter' | translate}}
+            </button>
+            <button type="button" class="btn btn-danger mt-2 mr-2" (click)="cleanFilter()" [disabled]="listTemplateMaster?.length == 0 && spinnerLoading">
+              <i class="fas fa-eraser mr-2"></i>{{'ROOT.clean_filter' | translate}}
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="float-right mt-3 mb-3">
+        <button type="button" class="btn btn-success" (click)="openFormSave()" [disabled]="listTemplateMaster?.length == 0 && spinnerLoading">
+          <i class="fas fa-plus mr-2"></i>{{'ROOT.add_template' | translate}}
+        </button>
+      </div>
+      <div class="table-responsive pb-1">
+        <!-- table table-bordered table-hover -->
+        <table datatable [dtOptions]="dtOptions" class="table table-striped row-border table-hover display compact" [dtTrigger]="dtTrigger">
+          <thead class="thead-light">
+            <tr>
+              <th scope="col" class="pl-1" width="10">No.</th>
+              <th scope="col" class="pl-1">{{'ROOT.template_name' | translate}}</th>
+              <th scope="col" class="pl-1">{{'ROOT.description' | translate}}</th>
+              <th scope="col" class="pl-1">{{'ROOT.status' | translate}}</th>
+              <th scope="col" class="pl-1">{{'ROOT.action' | translate}}</th>
+            </tr>
+          </thead>
+          <tbody *ngIf="listTemplateMaster?.length != 0">
+            <tr [ngClass]="{'table-danger' : item.deleted_at}" *ngFor=" let item of listTemplateMaster; let i=index">
+              <th>{{i+1}}.</th>
+              <td class="word-wrap">{{item.name}}</td>
+              <td class="word-wrap">{{item.description}}</td>
+              <td class="word-wrap">
+                <label class="badge badge-success" *ngIf="!item.deleted_at">
+                  {{'ROOT.aktif' | translate}}
+                </label>
+                <label class="badge badge-danger" *ngIf="item.deleted_at">
+                  {{'ROOT.nonaktif' | translate}}
+                </label>
+              </td>
+              <td>
+                <button title="{{'ROOT.open_reviewers' | translate}}" (click)="openLihatReviewer(item)" class="btn btn-icon btn-rounded btn-outline-info mr-1">
+                  <i class="fas fa-bookmark"></i>
+                </button>
+                <button title="{{'ROOT.edit_template' | translate}}" (click)="openFormEdit(item)" class="btn btn-icon btn-rounded btn-outline-warning mr-1" *ngIf="!item.deleted_at">
+                  <i class="fas fa-edit"></i>
+                </button>
+                <button title="{{'ROOT.activate_template' | translate}}" (click)="activateTemplate(item.id, item.name)" class="btn btn-icon btn-rounded btn-outline-success" *ngIf="!item.is_used && item.deleted_at">
+                  <i class="fas fa-check"></i>
+                </button>
+                <button title="{{'ROOT.deactivate_template' | translate}}" (click)="deleteTemplate(item.id, item.name)" class="btn btn-icon btn-rounded btn-outline-danger" *ngIf="!item.is_used && !item.deleted_at">
+                  <i class="fas fa-ban"></i>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+          <tbody *ngIf="listTemplateMaster?.length == 0 && spinnerLoading">
+            <tr>
+              <td colspan="5" class="no-data-available text-center">
+                <img src='assets/images/infinity-situ.svg'>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </app-card>
+  </div>
+</div>
+
+<app-ui-modal #modalTambah [containerClick]="false" [dialogClass]="'modal-dialog-centered modal-xl'" [loading]="loadingForm">
+  <div class="app-modal-header">
+    <h5 class="modal-title">{{'ROOT.form_add_data_template' | translate}}</h5>
+    <button type="button" class="close basic-close" data-dismiss="modal" aria-label="Close" (click)="modalTambah.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="app-modal-body">
+    <form [formGroup]="formDataTemplate" class="md-float-material form-material" action="javascript:">
+      <div class="form-group">
+        <label for="name">{{'ROOT.template_name' | translate}} <b class="text-danger">*</b></label>
+        <input type="text" class="form-control" formControlName="name" id="name" maxlength="100" placeholder="{{'ROOT.enter_template_name' | translate}}" [ngClass]="formDataTemplate.controls.name.invalid && (formDataTemplate.controls.name.dirty || formDataTemplate.controls.name.touched) ? 'is-invalid' :(formDataTemplate.controls.name.valid ? 'is-valid' : '')">
+        <label *ngIf="{'is-invalid' : formDataTemplate.controls.name.invalid && (formDataTemplate.controls.name.dirty || formDataTemplate.controls.name.touched)}" id="validation-email-error" class="error jquery-validation-error small form-text invalid-feedback">{{'ROOT.template_name' | translate}} {{'ROOT.is_required' | translate}}</label>
+      </div>
+      <div class="form-group">
+        <label for="description">{{'ROOT.description' | translate}} <b class="text-danger">*</b></label>
+        <textarea class="form-control" formControlName="description" id="description" maxlength="3000" placeholder="{{'ROOT.enter_description' | translate}}" [ngClass]="formDataTemplate.controls.description.invalid && (formDataTemplate.controls.description.dirty || formDataTemplate.controls.description.touched) ? 'is-invalid' :(formDataTemplate.controls.description.valid ? 'is-valid' : '')"></textarea>
+        <label *ngIf="{'is-invalid' : formDataTemplate.controls.description.invalid && (formDataTemplate.controls.description.dirty || formDataTemplate.controls.description.touched)}" id="validation-email-error" class="error jquery-validation-error small form-text invalid-feedback">{{'ROOT.description' | translate}} {{'ROOT.is_required' | translate}}</label>
+      </div>
+
+      <h5>{{'ROOT.reviewers' | translate}}</h5>
+      <div formArrayName="jumlahposition">
+        <div class="form-group" *ngFor="let position of jumlahposition().controls; let i = index" [formGroupName]="i">
+          <label for="position_id" class="ml-3">{{'ROOT.reviewer' | translate}} {{i + 1}} <b class="text-danger">*</b></label>
+          <div class="col-sm-14">
+            <div class="d-flex">
+              <ng-select class="ml-3 mr-2" formControlName="positionId" [options]="listDataPosition" placeholder="--- {{'ROOT.select_option' | translate}} ---" filterPlaceholder="{{'ROOT.cari_disini' | translate}}" (selected)="checkListDataPosition()" required></ng-select>
+              <button title="{{'ROOT.delete_reviewer' | translate}} {{i + 1}}" (click)="removePosition(i)" class="btn btn-sm btn-danger">
+                <i class="feather icon-minus"></i>
+              </button>
+            </div>
+            <small *ngIf="formDataTemplate.get('jumlahposition').invalid" class="text-danger ml-3">{{'ROOT.reviewer' | translate}} {{'ROOT.is_required' | translate}}</small>
+          </div>
+        </div>
+        <button type="button" title="{{'ROOT.add_reviewer' | translate}}" (click)="addPosition()" class="btn btn-icon btn-success mr-2">
+          <i class="feather icon-plus"></i>
+        </button>
+      </div>
+
+      <br><br>
+      <div class="form-group">
+        <label for="signer">{{'ROOT.signer' | translate}} <b class="text-danger">*</b></label>
+        <div class="col-sm-14">
+          <ng-select formControlName="signer" id="signer" [options]="listDataSigner" placeholder="--- {{'ROOT.select_option' | translate}} ---" filterPlaceholder="{{'ROOT.cari_disini' | translate}}" required></ng-select>
+          <small *ngIf="formDataTemplate.get('signer').invalid && formDataTemplate.controls.signer.touched" class="text-danger">{{'ROOT.signer' | translate}} {{'ROOT.is_required' | translate}}</small>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="penomoranSurat">{{'ROOT.letter_numbering' | translate}} <b class="text-danger">*</b></label>
+        <div class="col-sm-14">
+          <ng-select formControlName="penomoranSurat" id="penomoranSurat" [options]="listDataPenomoranSurat" placeholder="--- {{'ROOT.select_option' | translate}} ---" filterPlaceholder="{{'ROOT.cari_disini' | translate}}" required></ng-select>
+          <small *ngIf="formDataTemplate.get('penomoranSurat').invalid && formDataTemplate.controls.penomoranSurat.touched" class="text-danger">{{'ROOT.letter_numbering' | translate}} {{'ROOT.is_required' | translate}}</small>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="disseminator">{{'ROOT.disseminator' | translate}} <b class="text-danger">*</b></label>
+        <div class="col-sm-14">
+          <ng-select formControlName="disseminator" id="disseminator" [options]="listDataPosition" placeholder="--- {{'ROOT.select_option' | translate}} ---" filterPlaceholder="{{'ROOT.cari_disini' | translate}}" required></ng-select>
+          <small *ngIf="formDataTemplate.get('disseminator').invalid && formDataTemplate.controls.disseminator.touched" class="text-danger">{{'ROOT.disseminator' | translate}} {{'ROOT.is_required' | translate}}</small>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="app-modal-footer">
+    <button type="button" class="btn btn-secondary mr-2" data-dismiss="modal" (click)="modalTambah.hide()">
+      <i class="fas fa-undo mr-2" aria-hidden="true"></i>{{'ROOT.back' | translate}}
+    </button>
+    <button type="button" class="btn btn-success" [disabled]="formDataTemplate.get('name').invalid || formDataTemplate.get('description').invalid || formDataTemplate.get('jumlahposition').invalid || formDataTemplate.get('penomoranSurat').invalid || formDataTemplate.get('disseminator').invalid" (click)="saveData()">
+      <i class="fas fa-save mr-2" aria-hidden="true"></i>{{'ROOT.save' | translate}}
+    </button>
+  </div>
+</app-ui-modal>
+
+<app-ui-modal #modalEdit [containerClick]="false" [dialogClass]="'modal-dialog-centered modal-xl'" [loading]="loadingForm">
+  <div class="app-modal-header">
+    <h5 class="modal-title">{{'ROOT.form_edit_data_template' | translate}}</h5>
+    <button type="button" class="close basic-close" data-dismiss="modal" aria-label="Close" (click)="modalEdit.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="app-modal-body">
+    <form [formGroup]="formDataTemplate" class="md-float-material form-material" action="javascript:">
+      <input type="hidden" class="form-control" formControlName="id" id="id" required>
+      <div class="form-group">
+        <label for="name">{{'ROOT.template_name' | translate}} <b class="text-danger">*</b></label>
+        <input type="text" class="form-control" formControlName="name" id="name" maxlength="100" placeholder="{{'ROOT.enter_template_name' | translate}}" [ngClass]="formDataTemplate.controls.name.invalid && (formDataTemplate.controls.name.dirty || formDataTemplate.controls.name.touched) ? 'is-invalid' :(formDataTemplate.controls.name.valid ? 'is-valid' : '')">
+        <label *ngIf="{'is-invalid' : formDataTemplate.controls.name.invalid && (formDataTemplate.controls.name.dirty || formDataTemplate.controls.name.touched)}" id="validation-email-error" class="error jquery-validation-error small form-text invalid-feedback">{{'ROOT.template_name' | translate}} {{'ROOT.is_required' | translate}}</label>
+      </div>
+      <div class="form-group">
+        <label for="description">{{'ROOT.description' | translate}} <b class="text-danger">*</b></label>
+        <textarea class="form-control" formControlName="description" id="description" maxlength="3000" placeholder="{{'ROOT.enter_description' | translate}}" [ngClass]="formDataTemplate.controls.description.invalid && (formDataTemplate.controls.description.dirty || formDataTemplate.controls.description.touched) ? 'is-invalid' :(formDataTemplate.controls.description.valid ? 'is-valid' : '')"></textarea>
+        <label *ngIf="{'is-invalid' : formDataTemplate.controls.description.invalid && (formDataTemplate.controls.description.dirty || formDataTemplate.controls.description.touched)}" id="validation-email-error" class="error jquery-validation-error small form-text invalid-feedback">{{'ROOT.description' | translate}} {{'ROOT.is_required' | translate}}</label>
+      </div>
+
+      <h5>{{'ROOT.reviewers' | translate}}</h5>
+      <div formArrayName="jumlahposition">
+        <div class="form-group" *ngFor="let position of jumlahposition().controls; let i = index" [formGroupName]="i">
+          <label for="position_id" class="ml-3">{{'ROOT.reviewer' | translate}} {{i + 1}} <b class="text-danger">*</b></label>
+          <div class="col-sm-14">
+            <div class="d-flex">
+              <ng-select class="ml-3 mr-2" formControlName="positionId" [(ngModel)]="modelPositionId[i]" [options]="listDataPosition" placeholder="--- {{'ROOT.select_option' | translate}} ---" filterPlaceholder="{{'ROOT.cari_disini' | translate}}" (selected)="checkListDataPosition('edit')" required></ng-select>
+              <button title="{{'ROOT.delete_reviewer' | translate}} {{i + 1}}" (click)="removePosition(i)" class="btn btn-sm btn-danger">
+                <i class="feather icon-minus"></i>
+              </button>
+            </div>
+            <small *ngIf="formDataTemplate.get('jumlahposition').invalid" class="text-danger ml-3">{{'ROOT.reviewer' | translate}} {{'ROOT.is_required' | translate}}</small>
+          </div>
+        </div>
+        <button type="button" title="{{'ROOT.add_reviewer' | translate}}" (click)="addPosition()" class="btn btn-icon btn-success mr-2">
+          <i class="feather icon-plus"></i>
+        </button>
+      </div>
+
+      <br><br>
+      <div class="form-group">
+        <label for="signer">{{'ROOT.signer' | translate}} <b class="text-danger">*</b></label>
+        <div class="col-sm-14">
+          <ng-select formControlName="signer" id="signer" [(ngModel)]="modelSigner" [options]="listDataSigner" placeholder="--- {{'ROOT.select_option' | translate}} ---" filterPlaceholder="{{'ROOT.cari_disini' | translate}}" required></ng-select>
+          <small *ngIf="formDataTemplate.get('signer').invalid && formDataTemplate.controls.signer.touched" class="text-danger">{{'ROOT.signer' | translate}} {{'ROOT.is_required' | translate}}</small>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="penomoranSurat">{{'ROOT.letter_numbering' | translate}} <b class="text-danger">*</b></label>
+        <div class="col-sm-14">
+          <ng-select formControlName="penomoranSurat" id="penomoranSurat" [(ngModel)]="modelPenomoranSurat" [options]="listDataPenomoranSurat" placeholder="--- {{'ROOT.select_option' | translate}} ---" filterPlaceholder="{{'ROOT.cari_disini' | translate}}" required></ng-select>
+          <small *ngIf="formDataTemplate.get('penomoranSurat').invalid && formDataTemplate.controls.penomoranSurat.touched" class="text-danger">{{'ROOT.letter_numbering' | translate}} {{'ROOT.is_required' | translate}}</small>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="disseminator">{{'ROOT.disseminator' | translate}} <b class="text-danger">*</b></label>
+        <div class="col-sm-14">
+          <ng-select formControlName="disseminator" id="disseminator" [(ngModel)]="modelDisseminator" [options]="listDataPosition" placeholder="--- {{'ROOT.select_option' | translate}} ---" filterPlaceholder="{{'ROOT.cari_disini' | translate}}" required></ng-select>
+          <small *ngIf="formDataTemplate.get('disseminator').invalid && formDataTemplate.controls.disseminator.touched" class="text-danger">{{'ROOT.disseminator' | translate}} {{'ROOT.is_required' | translate}}</small>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="app-modal-footer">
+    <button type="button" class="btn btn-secondary mr-2" data-dismiss="modal" (click)="modalEdit.hide()">
+      <i class="fas fa-undo mr-2" aria-hidden="true"></i>{{'ROOT.back' | translate}}
+    </button>
+    <button type="button" class="btn btn-warning" [disabled]="formDataTemplate.get('name').invalid || formDataTemplate.get('description').invalid || formDataTemplate.get('jumlahposition').invalid || formDataTemplate.get('penomoranSurat').invalid || formDataTemplate.get('disseminator').invalid" (click)="editData()">
+      <i class="fas fa-edit mr-2" aria-hidden="true"></i>{{'ROOT.edit' | translate}}
+    </button>
+  </div>
+</app-ui-modal>
+
+<app-ui-modal #modalLihatReviewer [containerClick]="true" [dialogClass]="'modal-dialog-centered modal-xl'" [loading]="loadingForm">
+  <div class="app-modal-header">
+    <h5 class="modal-title">{{'ROOT.reviewers' | translate}}</h5>
+    <button type="button" class="close basic-close" data-dismiss="modal" aria-label="Close" (click)="modalLihatReviewer.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="app-modal-body">
+    <div class="row">
+      <p class="col-2 font-weight-bold">• {{'ROOT.template_name' | translate}}</p>
+      <p class="col-10">: {{modelLihatReviewer[0]?.name}}</p>
+    </div>
+    <div class="row">
+      <p class="col-2 font-weight-bold">• {{'ROOT.description' | translate}}</p>
+      <p class="col-10">: {{modelLihatReviewer[0]?.description}}</p>
+    </div>
+    <div class="row">
+      <p class="col-2 font-weight-bold">• {{'ROOT.status' | translate}}</p>
+      <p class="col-10">:
+        <label class="badge badge-success" *ngIf="!modelLihatReviewer[0]?.status">
+          {{'ROOT.aktif' | translate}}
+        </label>
+        <label class="badge badge-danger" *ngIf="modelLihatReviewer[0]?.status">
+          {{'ROOT.nonaktif' | translate}}
+        </label>
+      </p>
+    </div>
+    <div>
+      <div class="row">
+        <p class="col-2 font-weight-bold">• {{'ROOT.reviewer_flow' | translate}}</p>
+        <p class="col-10">:</p>
+      </div>
+      <div class="row" *ngFor="let item of listLihatReviewer; let i = index">
+        <p class="col-2 pl-4">{{i + 1}}. {{item.description | titlecase}}</p>
+        <p class="col-10" *ngIf="item.position_id">
+          → {{item.position_name}} <a href="javascript:">({{item.employee_name}})</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="app-modal-footer">
+    <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="modalLihatReviewer.hide()">
+      <i class="fas fa-undo mr-2" aria-hidden="true"></i>{{'ROOT.back' | translate}}
+    </button>
+  </div>
+</app-ui-modal>
