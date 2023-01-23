@@ -41,6 +41,45 @@ const NavigationItems = [
   },
   {
     id: 1,
+    title: "JAVAN",
+    type: "group",
+    children: [
+      {
+        id: 0,
+        title: "List",
+        type: "item",
+        url: "/javan/list",
+        classes: "nav-item",
+        icon: "ti-home",
+      },
+      {
+        id: 0,
+        title: "Add",
+        type: "item",
+        url: "/javan/add",
+        classes: "nav-item",
+        icon: "ti-home",
+      },
+      {
+        id: 0,
+        title: "Edit",
+        type: "item",
+        url: "/javan/edit",
+        classes: "nav-item",
+        icon: "ti-home",
+      },
+      {
+        id: 0,
+        title: "View",
+        type: "item",
+        url: "/javan/view",
+        classes: "nav-item",
+        icon: "ti-home",
+      },
+    ],
+  },
+  {
+    id: 2,
     title: "Kegiatan",
     type: "group",
     children: [

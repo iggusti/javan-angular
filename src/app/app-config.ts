@@ -1,7 +1,7 @@
 export class DefaultConfig {
   public static Application = {
-    appName: "One Data USU", // set Application name
-    appDesc: "One Data Universitas Sumatera Utara",
+    appName: "JAVAN Test", // set Application name
+    appDesc: "Test Teknis PT JAVAN",
   };
   public static config = {
     layout: "vertical", // vertical, horizontal
