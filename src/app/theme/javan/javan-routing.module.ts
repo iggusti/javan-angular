@@ -16,7 +16,7 @@ const routes: Routes = [
         data: { animation: "2" },
       },
       {
-        path: "edit",
+        path: "edit/:id",
         loadChildren: "./edit/edit.module#EditModule",
         data: { animation: "2" },
       },

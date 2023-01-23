@@ -147,6 +147,10 @@ export class ListComponent implements OnInit {
     this.appService.getListUsers().subscribe(
       (response) => {
         this.listUsers = response;
+        for (let i = 0; i < this.listUsers.length; i++) {
+          this.listUsers[i].sex_update =
+            this.listUsers[i].sex === "male" ? "Male ♂️" : "Female ♀️";
+        }
 
         this.dtTrigger.next(); // Trigger for load datatable
         this.spinnerLoading = false;

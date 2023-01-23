@@ -36,4 +36,24 @@ export class AppService extends BaseService {
     const url = `https://63ce99f96d27349c2b71ce9a.mockapi.io/api/v1/users`;
     return this.getApi(url);
   }
+
+  getUser(context): Observable<any> {
+    const url = `https://63ce99f96d27349c2b71ce9a.mockapi.io/api/v1/users/${context}`;
+    return this.getApi(url);
+  }
+
+  postUser(body): Observable<any> {
+    const url = `https://63ce99f96d27349c2b71ce9a.mockapi.io/api/v1/users`;
+    return this.postApiPlain(url, body);
+  }
+
+  putUser(body, context): Observable<any> {
+    const url = `https://63ce99f96d27349c2b71ce9a.mockapi.io/api/v1/users/${context}`;
+    return this.putApi(url, body);
+  }
+
+  deleteUser(context): Observable<any> {
+    const url = `https://63ce99f96d27349c2b71ce9a.mockapi.io/api/v1/users/${context}`;
+    return this.delApi(url);
+  }
 }

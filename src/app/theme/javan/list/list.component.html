@@ -1,13 +1,12 @@
 <div class="row">
   <div class="col-sm-12">
     <app-card cardTitle="List" cardClass="card-datatable" headerClass="text-center text-md-left" [hidHeader]="false" [options]="false" [loading]="loadTable">
-      <div class="float-right mt-3 mb-3">
-        <button type="button" class="btn btn-success" [disabled]="listUsers?.length == 0 && spinnerLoading">
+      <div class="my-3">
+        <button type="button" class="btn btn-success" routerLink="/javan/add">
           <i class="fas fa-plus mr-2"></i>{{'ROOT.add' | translate}}
         </button>
       </div>
       <div class="table-responsive pb-1">
-        <!-- table table-bordered table-hover -->
         <table datatable [dtOptions]="dtOptions" class="table table-striped row-border table-hover display compact" [dtTrigger]="dtTrigger">
           <thead class="thead-light">
             <tr>
@@ -17,16 +16,21 @@
               <th scope="col">{{'ROOT.music' | translate}}</th>
               <th scope="col">{{'ROOT.born_date' | translate}}</th>
               <th scope="col">{{'ROOT.zip_code' | translate}}</th>
+              <th scope="col">{{'ROOT.action' | translate}}</th>
             </tr>
           </thead>
           <tbody *ngIf="listUsers?.length != 0">
             <tr *ngFor=" let item of listUsers; let i=index">
               <th>{{i+1}}.</th>
               <td class="word-wrap">{{item.name}}</td>
-              <td class="word-wrap">{{item.sex}}</td>
+              <td class="word-wrap">{{item.sex_update}}</td>
               <td class="word-wrap">{{item.music}}</td>
               <td class="word-wrap">{{item.born_date}}</td>
               <td class="word-wrap">{{item.zip_code}}</td>
+              <td>
+                <button type="button" class="btn btn-sm btn-warning mt-1 mr-1" title="{{'ROOT.edit' | translate}}" routerLink="/javan/edit/{{item.id}}"><i class="feather icon-edit"></i></button>
+                <button type="button" class="btn btn-sm btn-danger mt-1 mr-1" title="{{'ROOT.delete' | translate}}"><i class="feather icon-trash"></i></button>
+              </td>
             </tr>
           </tbody>
           <tbody *ngIf="listUsers?.length == 0 && spinnerLoading">

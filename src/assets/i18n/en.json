@@ -96,6 +96,7 @@
     "sex": "Sex",
     "music": "Music",
     "born_date": "Born Date",
-    "zip_code": "Zip Code"
+    "zip_code": "Zip Code",
+    "action": "Action"
   }
 }
