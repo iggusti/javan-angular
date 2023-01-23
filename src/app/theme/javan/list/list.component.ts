@@ -31,29 +31,6 @@ export class ListComponent implements OnInit {
   public loadTable: boolean;
   public loadingForm: boolean;
   public listUsers = [];
-  public formDataTemplate: FormGroup;
-  public listDataPosition = [];
-  public listDataSigner = [];
-  public listDataPenomoranSurat = [];
-  public modelSigner = [];
-  public modelPenomoranSurat = [];
-  public modelDisseminator = [];
-  public modelPositionId = [];
-  public modelLihatReviewer = [];
-  public listLihatReviewer = [];
-
-  public formFilter: FormGroup;
-  public filter: boolean = false;
-  public listStatus = [
-    {
-      value: 1,
-      label: "Aktif",
-    },
-    {
-      value: 0,
-      label: "Tidak Aktif (Non Aktif)",
-    },
-  ];
   public spinnerLoading: boolean;
 
   constructor(
@@ -117,30 +94,13 @@ export class ListComponent implements OnInit {
       },
       initComplete: () => {},
     };
-
-    this.formDataTemplate = this.fb.group({
-      id: new FormControl(""),
-      name: new FormControl("", Validators.required),
-      description: new FormControl("", Validators.required),
-      jumlahposition: this.fb.array([]),
-      signer: new FormControl("", Validators.required),
-      penomoranSurat: new FormControl("", Validators.required),
-      disseminator: new FormControl("", Validators.required),
-    });
-
-    this.formFilter = this.fb.group({
-      name: new FormControl("", Validators.required),
-      description: new FormControl("", Validators.required),
-      reviewer: new FormControl("", Validators.required),
-      status: new FormControl("", Validators.required),
-    });
   }
 
   ngOnInit(): void {
-    this.getList();
+    this.getListUsers();
   }
 
-  getList(): void {
+  getListUsers(): void {
     this.spinnerLoading = true;
     this.listUsers = [];
 
@@ -150,13 +110,40 @@ export class ListComponent implements OnInit {
         for (let i = 0; i < this.listUsers.length; i++) {
           this.listUsers[i].sex_update =
             this.listUsers[i].sex === "male" ? "Male ♂️" : "Female ♀️";
+          this.listUsers[i].born_date_update = this.listUsers[
+            i
+          ].born_date.slice(0, 10);
+          // var mystr = "data-123".slice(5);
         }
 
         this.dtTrigger.next(); // Trigger for load datatable
         this.spinnerLoading = false;
       },
-      (error) => {}
+      (error) => {
+        console.log(error);
+      }
     );
+  }
+
+  deleteUser(id) {
+    Swal.fire({
+      title: "Delete",
+      text: "Hapus User?",
+      type: "error",
+      showCloseButton: true,
+      showCancelButton: true,
+    }).then((result) => {
+      if (result.value) {
+        this.appService.deleteUser(id).subscribe(
+          (response) => {
+            this.getListUsers();
+          },
+          (error) => {
+            console.log(error);
+          }
+        );
+      }
+    });
   }
 
   render(): void {

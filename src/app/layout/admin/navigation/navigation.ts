@@ -72,7 +72,7 @@ const NavigationItems = [
         id: 0,
         title: "View",
         type: "item",
-        url: "/javan/view",
+        url: "/javan/view/-1",
         classes: "nav-item",
         icon: "ti-home",
       },

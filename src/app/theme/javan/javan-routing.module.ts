@@ -21,7 +21,7 @@ const routes: Routes = [
         data: { animation: "2" },
       },
       {
-        path: "view",
+        path: "view/:id",
         loadChildren: "./view/view.module#ViewModule",
         data: { animation: "2" },
       },

@@ -11,6 +11,7 @@ import {
   Validators,
 } from "@angular/forms";
 import Swal from "sweetalert2";
+import { ActivatedRoute, Router } from "@angular/router";
 
 @Component({
   selector: "app-edit",
@@ -45,13 +46,16 @@ export class EditComponent implements OnInit {
       label: "Tidak Aktif (Non Aktif)",
     },
   ];
+  public id: number;
   public spinnerLoading: boolean;
 
   constructor(
     private fb: FormBuilder,
     private broadcasterService: BroadcasterService,
     public translateService: TranslateService,
-    private appService: AppService
+    private appService: AppService,
+    private router: Router,
+    private route: ActivatedRoute
   ) {
     translateService.setDefaultLang(localStorage.getItem("lang"));
     broadcasterService.changeLangBroadcast$.subscribe((res) => {
@@ -124,7 +128,13 @@ export class EditComponent implements OnInit {
     });
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.id = parseInt(this.route.snapshot.paramMap.get("id"));
+
+    if (this.id === -1) {
+      this.router.navigate(["/javan/list"]);
+    }
+  }
 
   render(): void {
     this.dtElement.dtInstance.then((dtInstance: DataTables.Api) => {
