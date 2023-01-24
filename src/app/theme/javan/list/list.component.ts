@@ -51,7 +51,7 @@ export class ListComponent implements OnInit {
       theme: "light",
       y: {
         formatter: function (val) {
-          return val + " Mahasiswa";
+          return val + " User";
         },
       },
     },
