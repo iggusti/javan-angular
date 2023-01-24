@@ -6,3 +6,5 @@ This project was generated with
 [Node js] version 14.17.5
 
 Project ini sudah dideploy di https://javan-angular.vercel.app silakan dipesiksa 😁😁😁😁😁
+
+Untuk akun user loginnya bebas diisi apapun karena masih belum ada validasi
