@@ -21,6 +21,68 @@ export class ListComponent implements OnInit {
   public loadingForm: boolean = false;
   public listUsers = [];
 
+  public chartConfig1 = {
+    chart: { type: "bar", height: 450 },
+    dataLabels: {
+      enabled: true,
+      offsetY: -20,
+      style: {
+        fontSize: "12px",
+        colors: ["#304758"],
+      },
+    },
+    fill: { opacity: 1 },
+    plotOptions: {
+      bar: {
+        borderRadius: 5,
+        // columnWidth: "55%",
+        distributed: true,
+        endingShape: "rounded",
+        // horizontal: false,
+        dataLabels: {
+          position: "top", // top, center, bottom
+        },
+      },
+    },
+    series: [],
+    stroke: { show: true, width: 2, colors: ["transparent"] },
+    title: { text: "Jumlah Musik yang Disukai Setiap User", align: "center" },
+    tooltip: {
+      theme: "light",
+      y: {
+        formatter: function (val) {
+          return val + " Mahasiswa";
+        },
+      },
+    },
+    xaxis: {},
+    yaxis: { title: { text: "Jumlah User" } },
+  };
+  public chartConfig2 = {
+    chart: { height: 400, type: "pie" },
+    dataLabels: { enabled: true, dropShadow: { enabled: false } },
+    labels: [],
+    legend: { position: "bottom", show: true },
+    plotOptions: {
+      pie: {
+        donut: {
+          labels: { name: { show: true }, show: true, value: { show: true } },
+        },
+      },
+    },
+    responsive: [
+      {
+        breakpoint: 480,
+        options: { chart: { width: 200 }, legend: { position: "bottom" } },
+      },
+    ],
+    series: [],
+    title: {
+      align: "center",
+      text: "Jumlah Gender User",
+    },
+  };
+
   constructor(
     private broadcasterService: BroadcasterService,
     public translateService: TranslateService,
@@ -94,14 +156,17 @@ export class ListComponent implements OnInit {
     this.appService.getListUsers().subscribe(
       (response) => {
         this.listUsers = response;
+
         for (let i = 0; i < this.listUsers.length; i++) {
           this.listUsers[i].sex_update =
             this.listUsers[i].sex === "male" ? "Male ♂️" : "Female ♀️";
           this.listUsers[i].birth_date_update = this.listUsers[
             i
           ].birth_date.slice(0, 10);
-          // var mystr = "data-123".slice(5);
         }
+
+        this.graphBar(this.listUsers);
+        this.graphPie(this.listUsers);
 
         this.dtTrigger.next(); // Trigger for load datatable
         this.spinnerLoading = false;
@@ -110,6 +175,51 @@ export class ListComponent implements OnInit {
         console.log(error);
       }
     );
+  }
+
+  graphBar(listUser) {
+    let listMusic: string[] = [];
+    for (let i = 0; i < listUser.length; i++) {
+      listMusic.push(listUser[i].music);
+    }
+    let union = [...new Set([...listMusic])];
+    let unionValue: number[] = [];
+    for (let i = 0; i < union.length; i++) {
+      let valueItem = listMusic.filter((x) => x == union[i]).length;
+      unionValue.push(valueItem);
+    }
+
+    this.chartConfig1.series = [
+      {
+        name: "Jumlah User",
+        data: unionValue,
+      },
+    ];
+
+    this.chartConfig1.xaxis = {
+      categories: union,
+    };
+
+    return this.chartConfig1;
+  }
+
+  graphPie(listUser) {
+    let listSex: string[] = [];
+    for (let i = 0; i < listUser.length; i++) {
+      listSex.push(listUser[i].sex_update);
+    }
+    let union = [...new Set([...listSex])];
+    let unionValue: number[] = [];
+    for (let i = 0; i < union.length; i++) {
+      let valueItem = listSex.filter((x) => x == union[i]).length;
+      unionValue.push(valueItem);
+    }
+
+    this.chartConfig2.series = unionValue;
+
+    this.chartConfig2.labels = union;
+
+    return this.chartConfig2;
   }
 
   deleteUser(id) {

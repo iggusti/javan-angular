@@ -1,4 +1,16 @@
 <div class="row">
+  <div class="col-sm-8">
+    <app-card [hidHeader]="true" [options]="false" *ngIf="listUsers?.length != 0">
+      <app-apex-chart chartID="pie-1" [chartConfig]="chartConfig1"></app-apex-chart>
+    </app-card>
+  </div>
+  <div class="col-sm-4">
+    <app-card [hidHeader]="true" [options]="false" *ngIf="listUsers?.length != 0">
+      <app-apex-chart chartID="pie-2" [chartConfig]="chartConfig2"></app-apex-chart>
+    </app-card>
+  </div>
+</div>
+<div class="row">
   <div class="col-sm-12">
     <app-card cardTitle="List" cardClass="card-datatable" headerClass="text-center text-md-left" [hidHeader]="false" [options]="false" [loading]="loadCard">
       <div class="my-3">
