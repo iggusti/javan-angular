@@ -14,7 +14,7 @@ export class ViewComponent implements OnInit {
   public loadCard: boolean = false;
   public loadingForm: boolean = false;
   public id: number;
-  public spinnerLoading: boolean;
+  public user;
 
   constructor(
     private broadcasterService: BroadcasterService,
@@ -34,7 +34,27 @@ export class ViewComponent implements OnInit {
 
     if (this.id === -1) {
       this.router.navigate(["/javan/list"]);
+    } else {
+      this.getUser();
     }
+  }
+
+  getUser() {
+    this.loadCard = true;
+
+    this.appService.getUser(this.id).subscribe(
+      (response) => {
+        this.user = response;
+        this.user.sex_update =
+          this.user.sex === "male" ? "Male ♂️" : "Female ♀️";
+        this.user.birth_date_update = this.user.birth_date.slice(0, 10);
+
+        this.loadCard = false;
+      },
+      (error) => {
+        console.log(error);
+      }
+    );
   }
 
   messageSuccess(message: string): void {

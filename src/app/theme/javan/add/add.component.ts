@@ -30,11 +30,11 @@ export class AddComponent implements OnInit {
   public listSex = [
     {
       value: "male",
-      label: "Laki - laki",
+      label: "Laki - laki ♂️",
     },
     {
       value: "female",
-      label: "Perempuan",
+      label: "Perempuan ♀️",
     },
   ];
 

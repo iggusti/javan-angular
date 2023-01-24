@@ -50,7 +50,7 @@ const NavigationItems = [
         type: "item",
         url: "/javan/list",
         classes: "nav-item",
-        icon: "ti-home",
+        icon: "ti-list",
       },
       {
         id: 0,
@@ -58,7 +58,7 @@ const NavigationItems = [
         type: "item",
         url: "/javan/add",
         classes: "nav-item",
-        icon: "ti-home",
+        icon: "ti-plus",
       },
       {
         id: 0,
@@ -66,7 +66,7 @@ const NavigationItems = [
         type: "item",
         url: "/javan/edit/-1",
         classes: "nav-item",
-        icon: "ti-home",
+        icon: "ti-pencil-alt",
       },
       {
         id: 0,
@@ -74,7 +74,7 @@ const NavigationItems = [
         type: "item",
         url: "/javan/view/-1",
         classes: "nav-item",
-        icon: "ti-home",
+        icon: "ti-view-grid",
       },
     ],
   },

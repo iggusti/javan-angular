@@ -1,7 +1,38 @@
 <div class="row">
   <div class="col-sm-12">
     <app-card cardTitle="View" cardClass="card-datatable" headerClass="text-center text-md-left" [hidHeader]="false" [options]="false" [loading]="loadCard">
+      <div class="row mb-5">
+        <div class="col-md-6">
+          <h3>{{'ROOT.name' | translate}}</h3>
+          <h4>&nbsp;&nbsp;{{user.name}}</h4>
+        </div>
+        <div class="col-md-6">
+          <h3>{{'ROOT.sex' | translate}}</h3>
+          <h4>&nbsp;&nbsp;{{user.sex_update}}</h4>
+        </div>
+      </div>
 
+      <div class="row mb-5">
+        <div class="col-md-6">
+          <h3>{{'ROOT.music' | translate}}</h3>
+          <h4>&nbsp;&nbsp;{{user.music}}</h4>
+        </div>
+        <div class="col-md-6">
+          <h3>{{'ROOT.zip_code' | translate}}</h3>
+          <h4>&nbsp;&nbsp;{{user.zip_code}}</h4>
+        </div>
+      </div>
+
+      <div class="row mb-5">
+        <div class="col-md-6">
+          <h3>{{'ROOT.birth_place' | translate}}</h3>
+          <h4>&nbsp;&nbsp;{{user.birth_place}}</h4>
+        </div>
+        <div class="col-md-6">
+          <h3>{{'ROOT.birth_date' | translate}}</h3>
+          <h4>&nbsp;&nbsp;{{user.birth_date_update}}</h4>
+        </div>
+      </div>
     </app-card>
   </div>
 </div>
