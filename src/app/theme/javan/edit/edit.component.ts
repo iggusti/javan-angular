@@ -20,6 +20,24 @@ export class EditComponent implements OnInit {
   public loadCard: boolean = false;
   public loadingForm: boolean = false;
   public id: number;
+  public userForm = new FormGroup({
+    name: new FormControl("", Validators.required),
+    sex: new FormControl("", Validators.required),
+    music: new FormControl("", Validators.required),
+    birth_place: new FormControl("", Validators.required),
+    birth_date: new FormControl("", Validators.required),
+    zip_code: new FormControl("", Validators.required),
+  });
+  public listSex = [
+    {
+      value: "male",
+      label: "Laki - laki",
+    },
+    {
+      value: "female",
+      label: "Perempuan",
+    },
+  ];
 
   constructor(
     private fb: FormBuilder,
@@ -40,7 +58,57 @@ export class EditComponent implements OnInit {
 
     if (this.id === -1) {
       this.router.navigate(["/javan/list"]);
+    } else {
+      this.getUser();
     }
+  }
+
+  getUser() {
+    this.loadCard = true;
+
+    this.appService.getUser(this.id).subscribe(
+      (response) => {
+        this.userForm.patchValue({
+          name: response.name,
+          sex: response.sex,
+          music: response.music,
+          birth_place: response.birth_place,
+          birth_date: response.birth_date.slice(0, 10),
+          zip_code: response.zip_code,
+        });
+
+        this.loadCard = false;
+      },
+      (error) => {
+        console.log(error);
+      }
+    );
+  }
+
+  updateUser() {
+    this.loadCard = true;
+
+    const body = {
+      name: this.userForm.value.name,
+      sex: this.userForm.value.sex,
+      music: this.userForm.value.music,
+      birth_place: this.userForm.value.birth_place,
+      birth_date: this.userForm.value.birth_date,
+      zip_code: this.userForm.value.zip_code,
+    };
+
+    this.appService.putUser(body, this.id).subscribe(
+      (response) => {
+        this.userForm.reset();
+        this.loadCard = false;
+        this.router.navigate(["/javan/list"]);
+        this.messageSuccess("User Berhasil Diupdate");
+      },
+      (error) => {
+        console.log(error);
+        this.loadCard = false;
+      }
+    );
   }
 
   messageSuccess(message: string): void {

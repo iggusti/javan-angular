@@ -1,7 +1,48 @@
 <div class="row">
   <div class="col-sm-12">
-    <app-card cardTitle="Edit" cardClass="card-datatable" headerClass="text-center text-md-left" [hidHeader]="false" [options]="false" [loading]="loadTable">
+    <app-card cardTitle="Edit" cardClass="card-datatable" headerClass="text-center text-md-left" [hidHeader]="false" [options]="false" [loading]="loadCard">
+      <form [formGroup]="userForm" class="mt-3">
 
+        <div class="row mb-5">
+          <div class="col-md-6">
+            <label for="name">{{'ROOT.name' | translate}}</label>
+            <input id="name" type="text" formControlName="name" class="form-control">
+          </div>
+          <div class="col-md-6">
+            <label for="sex">{{'ROOT.sex' | translate}}</label>
+            <ng-select id="sex" formControlName="sex" [options]="listSex" placeholder="pilih disini" filterPlaceholder="cari disini">
+            </ng-select>
+          </div>
+        </div>
+
+        <div class="row mb-5">
+          <div class="col-md-6">
+            <label for="music">{{'ROOT.music' | translate}}</label>
+            <input id="music" type="text" formControlName="music" class="form-control">
+          </div>
+          <div class="col-md-6">
+            <label for="zip_code">{{'ROOT.zip_code' | translate}}</label>
+            <input id="zip_code" type="text" formControlName="zip_code" class="form-control">
+          </div>
+        </div>
+
+        <div class="row mb-5">
+          <div class="col-md-6">
+            <label for="birth_place">{{'ROOT.birth_place' | translate}}</label>
+            <input id="birth_place" type="text" formControlName="birth_place" class="form-control">
+          </div>
+          <div class="col-md-6">
+            <label for="birth_date">{{'ROOT.birth_date' | translate}}</label>
+            <input id="birth_date" type="date" formControlName="birth_date" class="form-control">
+          </div>
+        </div>
+
+        <div class="float-right my-3">
+          <button type="button" class="btn btn-success" (click)="updateUser()">
+            <i class="fas fa-save mr-2"></i>{{'ROOT.edit' | translate}}
+          </button>
+        </div>
+      </form>
     </app-card>
   </div>
 </div>
