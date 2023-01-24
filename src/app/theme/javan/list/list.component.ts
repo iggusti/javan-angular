@@ -97,9 +97,9 @@ export class ListComponent implements OnInit {
         for (let i = 0; i < this.listUsers.length; i++) {
           this.listUsers[i].sex_update =
             this.listUsers[i].sex === "male" ? "Male ♂️" : "Female ♀️";
-          this.listUsers[i].born_date_update = this.listUsers[
+          this.listUsers[i].birth_date_update = this.listUsers[
             i
-          ].born_date.slice(0, 10);
+          ].birth_date.slice(0, 10);
           // var mystr = "data-123".slice(5);
         }
 
@@ -141,7 +141,7 @@ export class ListComponent implements OnInit {
 
   messageSuccess(message: string): void {
     this.broadcasterService.notifBroadcast(true, {
-      title: this.translateService.instant("ROOT.success"),
+      title: "Success",
       msg: message,
       timeout: 5000,
       theme: "default",

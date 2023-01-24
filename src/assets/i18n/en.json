@@ -95,8 +95,9 @@
     "name": "Name",
     "sex": "Sex",
     "music": "Music",
-    "born_date": "Born Date",
+    "birth_date": "Birth Date",
     "zip_code": "Zip Code",
-    "action": "Action"
+    "action": "Action",
+    "birth_place": "Birth Place"
   }
 }

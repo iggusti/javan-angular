@@ -45,7 +45,7 @@ export class EditComponent implements OnInit {
 
   messageSuccess(message: string): void {
     this.broadcasterService.notifBroadcast(true, {
-      title: this.translateService.instant("ROOT.success"),
+      title: "Success",
       msg: message,
       timeout: 5000,
       theme: "default",

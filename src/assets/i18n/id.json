@@ -95,8 +95,9 @@
     "name": "Nama",
     "sex": "Jenis Kelamin",
     "music": "Musik",
-    "born_date": "Tanggal Lahir",
+    "birth_date": "Tanggal Lahir",
     "zip_code": "Kode Pos",
-    "action": "Aksi"
+    "action": "Aksi",
+    "birth_place": "Tempat Lahir"
   }
 }
