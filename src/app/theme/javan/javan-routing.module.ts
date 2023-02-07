@@ -6,6 +6,11 @@ const routes: Routes = [
     path: "",
     children: [
       {
+        path: "live-code",
+        loadChildren: "./live-code/live-code.module#LiveCodeModule",
+        data: { animation: "2" },
+      },
+      {
         path: "list",
         loadChildren: "./list/list.module#ListModule",
         data: { animation: "2" },

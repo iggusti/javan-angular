@@ -1,0 +1,71 @@
+<div class="row">
+  <div class="col-sm-12">
+    <app-card cardTitle="List Coffee" cardClass="card-datatable" headerClass="text-center text-md-left" [hidHeader]="false" [options]="false" [loading]="loadCard">
+      <div class="table-responsive pb-1">
+        <table datatable [dtOptions]="dtOptions" class="table table-striped row-border table-hover display compact" [dtTrigger]="dtTrigger">
+          <thead class="thead-light">
+            <tr>
+              <th scope="col" width="10">No.</th>
+              <th scope="col" width="50">Title</th>
+              <th scope="col">Description</th>
+              <th scope="col">Ingredients</th>
+              <th scope="col">{{'ROOT.action' | translate}}</th>
+            </tr>
+          </thead>
+          <tbody *ngIf="listData?.length != 0">
+            <tr *ngFor=" let item of listData; let i=index">
+              <th>{{i+1}}.</th>
+              <td>
+                <div (click)="openPopUp(item)" style="cursor: pointer;">
+                  {{item.title}}
+                </div>
+                <img [src]="item.image" alt="coffee-image" width="50%" length="50%" (click)="openPopUp(item)" style="cursor: pointer;">
+              </td>
+              <td class="word-wrap">{{item.description}}</td>
+              <td class="word-wrap">
+                <div *ngFor="let data of item.ingredients; let j=index">
+                  - {{data}}
+                </div>
+              </td>
+              <td>
+                <button type="button" class="btn btn-sm btn-info mt-1 mr-1" title="{{'ROOT.detail' | translate}}" (click)="openPopUp(item)"><i class="feather icon-info"></i></button>
+              </td>
+            </tr>
+          </tbody>
+          <tbody *ngIf="listData?.length == 0 && spinnerLoading">
+            <tr>
+              <td colspan="7" class="no-data-available text-center">
+                <img src='assets/images/infinity-situ.svg'>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </app-card>
+  </div>
+</div>
+
+<app-ui-modal #modalPopUp [containerClick]="true" dialogClass="modal-dialog-centered modal-xl" [loading]="loadingForm">
+  <div class="app-modal-header">
+    <h5 class="modal-title">Detail Coffee</h5>
+    <button type="button" class="close basic-close" data-dismiss="modal" aria-label="Close" (click)="modalPopUp.hide()"><span aria-hidden="true">&times;</span></button>
+  </div>
+  <div class="app-modal-body">
+    <div class="row">
+      <div class="col-6">
+        <h2>{{detailItem?.title}}</h2>
+        <p>{{detailItem?.description}}</p>
+        <div>Ingredients :</div>
+        <div *ngFor="let item of detailItem?.ingredients; let j=index">
+          - {{item}}
+        </div>
+      </div>
+      <div class="col-6">
+        <img [src]="detailItem?.image" alt="detail-coffee" width="50%" length="50%">
+      </div>
+    </div>
+  </div>
+  <div class="app-modal-footer">
+    <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="modalPopUp.hide()"><i class="fas fa-undo mr-2" aria-hidden="true"></i>Kembali</button>
+  </div>
+</app-ui-modal>

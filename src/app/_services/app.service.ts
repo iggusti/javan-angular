@@ -32,6 +32,11 @@ export class AppService extends BaseService {
     return this.getApi(url);
   }
 
+  getLiveCode(): Observable<any> {
+    const url = `https://api.sampleapis.com/coffee/hot`;
+    return this.getApi(url);
+  }
+
   getListUsers(): Observable<any> {
     const url = `https://63ce99f96d27349c2b71ce9a.mockapi.io/api/v1/users`;
     return this.getApi(url);

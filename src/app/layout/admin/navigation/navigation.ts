@@ -46,6 +46,14 @@ const NavigationItems = [
     children: [
       {
         id: 0,
+        title: "Get Data",
+        type: "item",
+        url: "/javan/live-code",
+        classes: "nav-item",
+        icon: "ti-list",
+      },
+      {
+        id: 0,
         title: "List",
         type: "item",
         url: "/javan/list",
